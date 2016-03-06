@@ -1,0 +1,27 @@
+(DELAYFILE
+ (SDFVERSION "IEEE 1497 4.0")
+ (DATE "2016-02-26T23:11:26Z")
+ (DESIGN "145capsenseled-ble")
+ (VENDOR "Cypress Semiconductor")
+ (PROGRAM "PSoC Creator")
+ (VERSION " 3.3 SP2.2")
+ (DIVIDER .)
+ (TIMESCALE 1 ns)
+ (CELL
+  (CELLTYPE "145capsenseled-ble")
+  (INSTANCE *)
+  (DELAY
+   (ABSOLUTE
+    (INTERCONNECT ClockBlock.hfclk \\ble\:bless_isr\\.clock (0.000:0.000:0.000))
+    (INTERCONNECT \\ble\:cy_m0s8_ble\\.interrupt \\ble\:bless_isr\\.interrupt (1.000:1.000:1.000))
+    (INTERCONNECT ClockBlock.ff_div_1 \\uart\:SCB\\.clock (0.000:0.000:0.000))
+    (INTERCONNECT \\uart\:rx\(0\)\\.fb \\uart\:SCB\\.rx (0.000:0.000:0.000))
+    (INTERCONNECT \\uart\:tx\(0\)\\.pad_out \\uart\:tx\(0\)\\.pad_in (0.000:0.000:0.000))
+    (INTERCONNECT \\uart\:SCB\\.tx \\uart\:tx\(0\)\\.pin_input (0.000:0.000:0.000))
+    (INTERCONNECT \\uart\:tx\(0\)\\.pad_out \\uart\:tx\(0\)_PAD\\ (0.000:0.000:0.000))
+    (INTERCONNECT \\uart\:tx\(0\)_PAD\\ \\uart\:tx\(0\)\\.pad_in (0.000:0.000:0.000))
+    (INTERCONNECT \\uart\:rx\(0\)_PAD\\ \\uart\:rx\(0\)\\.pad_in (0.000:0.000:0.000))
+   )
+  )
+ )
+)

@@ -1,0 +1,1591 @@
+Archive member included because of file (symbol)
+
+.\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(cyfitter_cfg.o)
+                              .\CortexM0p\ARM_GCC_493\Debug\Cm0plusStart.o (cyfitter_cfg)
+.\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Control.o)
+                              .\CortexM0p\ARM_GCC_493\Debug\main.o (capsense_Start)
+.\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Processing.o)
+                              .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Control.o) (capsense_DpInitialize)
+.\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Structure.o)
+                              .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Control.o) (capsense_DsInitialize)
+.\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Tuner.o)
+                              .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Control.o) (capsense_TuInitialize)
+.\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Filter.o)
+                              .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Control.o) (capsense_FtInitialize)
+.\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Sensing.o)
+                              .\CortexM0p\ARM_GCC_493\Debug\main.o (capsense_IsBusy)
+.\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_SensingCSD_LL.o)
+                              .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Sensing.o) (capsense_CSDConnectSns)
+.\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Centroid_LL.o)
+                              .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Processing.o) (capsense_DpFindLocalMaxSd)
+.\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led0.o)
+                              .\CortexM0p\ARM_GCC_493\Debug\main.o (led0_Write)
+.\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led1.o)
+                              .\CortexM0p\ARM_GCC_493\Debug\main.o (led1_Write)
+.\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led2.o)
+                              .\CortexM0p\ARM_GCC_493\Debug\main.o (led2_Write)
+.\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led3.o)
+                              .\CortexM0p\ARM_GCC_493\Debug\main.o (led3_Write)
+.\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led4.o)
+                              .\CortexM0p\ARM_GCC_493\Debug\main.o (led4_Write)
+.\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(blue.o)
+                              .\CortexM0p\ARM_GCC_493\Debug\main.o (blue_Write)
+.\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(uart.o)
+                              .\CortexM0p\ARM_GCC_493\Debug\main.o (uart_Start)
+.\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(uart_SPI_UART.o)
+                              .\CortexM0p\ARM_GCC_493\Debug\main.o (uart_SpiUartReadRxData)
+.\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(uart_UART.o)
+                              .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(uart.o) (uart_UartInit)
+.\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_ISR.o)
+                              .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Sensing.o) (capsense_ISR_StartEx)
+.\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyBootAsmGnu.o)
+                              .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_SensingCSD_LL.o) (CyDelayCycles)
+.\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLib.o)
+                              .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_SensingCSD_LL.o) (CyIntEnable)
+.\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(cyPm.o)
+                              .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Control.o) (CySysPmSleep)
+.\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLFClk.o)
+                              .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLib.o) (CySysClkWcoEnabled)
+.\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_INT.o)
+                              .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_SensingCSD_LL.o) (capsense_CSDPostSingleScan)
+.\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyFlash.o)
+                              .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLib.o) (CySysFlashSetWaitCycles)
+C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CapSense_P4_v3_0\PSoC4\Library\Capsense_P4Library_GCCp.a(CapSense_SmartSense_LL_v3_0.o)
+                              .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Sensing.o) (SmartSense_TunePrescalers)
+C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CapSense_P4_v3_0\PSoC4\Library\Capsense_P4Library_GCCp.a(CapSense_SmartSense_SL_v3_0.o)
+                              .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Processing.o) (SmartSense_UpdateThresholds)
+c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_udivsi3.o)
+                              .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Sensing.o) (__aeabi_uidiv)
+c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_divsi3.o)
+                              .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Centroid_LL.o) (__aeabi_idiv)
+c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_dvmd_tls.o)
+                              c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_udivsi3.o) (__aeabi_idiv0)
+c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-errno.o)
+                              .\CortexM0p\ARM_GCC_493\Debug\Cm0plusStart.o (__errno)
+c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-exit.o)
+                              c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m/crt0.o (exit)
+c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-impure.o)
+                              c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-exit.o) (_global_impure_ptr)
+c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-init.o)
+                              c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m/crt0.o (__libc_init_array)
+c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-memcpy.o)
+                              .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Structure.o) (memcpy)
+c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-memset.o)
+                              c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m/crt0.o (memset)
+
+Allocating common symbols
+Common symbol       size              file
+
+capsense_dsRam      0x64              .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Structure.o)
+capsense_curRamSnsPtr
+                    0x4               .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Sensing.o)
+
+Discarded input sections
+
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crti.o
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crti.o
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crti.o
+ .data          0x00000000        0x4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtbegin.o
+ .text          0x00000000       0x78 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m/crt0.o
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m/crt0.o
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m/crt0.o
+ .ARM.extab     0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m/crt0.o
+ .ARM.exidx     0x00000000        0x8 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m/crt0.o
+ .text          0x00000000        0x0 .\CortexM0p\ARM_GCC_493\Debug\main.o
+ .data          0x00000000        0x0 .\CortexM0p\ARM_GCC_493\Debug\main.o
+ .bss           0x00000000        0x0 .\CortexM0p\ARM_GCC_493\Debug\main.o
+ .text          0x00000000        0x0 .\CortexM0p\ARM_GCC_493\Debug\cymetadata.o
+ .data          0x00000000        0x0 .\CortexM0p\ARM_GCC_493\Debug\cymetadata.o
+ .bss           0x00000000        0x0 .\CortexM0p\ARM_GCC_493\Debug\cymetadata.o
+ .text          0x00000000        0x0 .\CortexM0p\ARM_GCC_493\Debug\Cm0plusStart.o
+ .data          0x00000000        0x4 .\CortexM0p\ARM_GCC_493\Debug\Cm0plusStart.o
+ .bss           0x00000000        0x0 .\CortexM0p\ARM_GCC_493\Debug\Cm0plusStart.o
+ .text._exit    0x00000000        0xc .\CortexM0p\ARM_GCC_493\Debug\Cm0plusStart.o
+ .text._sbrk    0x00000000       0x30 .\CortexM0p\ARM_GCC_493\Debug\Cm0plusStart.o
+ .text          0x00000000        0x0 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(cyfitter_cfg.o)
+ .data          0x00000000        0x0 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(cyfitter_cfg.o)
+ .bss           0x00000000        0x0 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(cyfitter_cfg.o)
+ .text          0x00000000        0x0 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Control.o)
+ .data          0x00000000        0x0 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Control.o)
+ .text.capsense_Stop
+                0x00000000       0x10 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Control.o)
+ .text.capsense_Resume
+                0x00000000       0x1c .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Control.o)
+ .text.capsense_ProcessWidget
+                0x00000000       0x54 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Control.o)
+ .text.capsense_ProcessWidgetExt
+                0x00000000       0x5c .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Control.o)
+ .text.capsense_ProcessSensorExt
+                0x00000000       0x44 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Control.o)
+ .text.capsense_Sleep
+                0x00000000        0x4 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Control.o)
+ .text.capsense_Wakeup
+                0x00000000        0x4 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Control.o)
+ .text.capsense_SaveConfig
+                0x00000000        0x4 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Control.o)
+ .text.capsense_RestoreConfig
+                0x00000000        0x4 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Control.o)
+ .text          0x00000000        0x0 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Processing.o)
+ .data          0x00000000        0x0 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Processing.o)
+ .bss           0x00000000        0x0 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Processing.o)
+ .text.capsense_DpProcessCsdSensorRawCountsExt
+                0x00000000       0x48 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Processing.o)
+ .text          0x00000000        0x0 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Structure.o)
+ .data          0x00000000        0x0 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Structure.o)
+ .text.DsParseParamId
+                0x00000000       0x74 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Structure.o)
+ .text.capsense_GetParam
+                0x00000000       0x60 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Structure.o)
+ .text.capsense_SetParam
+                0x00000000       0x58 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Structure.o)
+ .text.capsense_IsAnyWidgetActive
+                0x00000000       0x20 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Structure.o)
+ .text.capsense_IsWidgetActive
+                0x00000000       0x24 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Structure.o)
+ .text.capsense_IsSensorActive
+                0x00000000       0x34 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Structure.o)
+ .text          0x00000000        0x0 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Tuner.o)
+ .data          0x00000000        0x0 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Tuner.o)
+ .text.capsense_RunTuner
+                0x00000000       0xe8 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Tuner.o)
+ .rodata        0x00000000       0x18 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Tuner.o)
+ .text          0x00000000        0x0 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Filter.o)
+ .data          0x00000000        0x0 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Filter.o)
+ .bss           0x00000000        0x0 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Filter.o)
+ .text.capsense_FtInitializeBaseline
+                0x00000000       0x20 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Filter.o)
+ .text.capsense_RunNoiseEnvelope
+                0x00000000       0x34 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Filter.o)
+ .text.capsense_InitializeNoiseEnvelope
+                0x00000000       0x34 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Filter.o)
+ .text          0x00000000        0x0 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Sensing.o)
+ .data          0x00000000        0x0 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Sensing.o)
+ .text.capsense_SetPinState
+                0x00000000       0x90 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Sensing.o)
+ .text.capsense_IsrInitialize
+                0x00000000        0x8 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Sensing.o)
+ .text.capsense_ConfigureClocks
+                0x00000000       0x14 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Sensing.o)
+ .text.capsense_CalibrateWidget
+                0x00000000       0x10 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Sensing.o)
+ .text.capsense_CalibrateAllWidgets
+                0x00000000       0x1c .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Sensing.o)
+ .text          0x00000000        0x0 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_SensingCSD_LL.o)
+ .text.capsense_CSDSetupWidgetExt
+                0x00000000       0x68 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_SensingCSD_LL.o)
+ .text          0x00000000        0x0 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Centroid_LL.o)
+ .data          0x00000000        0x0 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Centroid_LL.o)
+ .text          0x00000000        0x0 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led0.o)
+ .data          0x00000000        0x0 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led0.o)
+ .bss           0x00000000        0x0 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led0.o)
+ .text.led0_SetDriveMode
+                0x00000000       0x18 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led0.o)
+ .text.led0_Read
+                0x00000000       0x10 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led0.o)
+ .text.led0_ReadDataReg
+                0x00000000       0x10 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led0.o)
+ .text.led0_SetInterruptMode
+                0x00000000       0x14 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led0.o)
+ .text.led0_ClearInterrupt
+                0x00000000       0x14 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led0.o)
+ .text          0x00000000        0x0 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led1.o)
+ .data          0x00000000        0x0 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led1.o)
+ .bss           0x00000000        0x0 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led1.o)
+ .text.led1_SetDriveMode
+                0x00000000       0x18 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led1.o)
+ .text.led1_Read
+                0x00000000       0x10 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led1.o)
+ .text.led1_ReadDataReg
+                0x00000000       0x10 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led1.o)
+ .text.led1_SetInterruptMode
+                0x00000000       0x14 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led1.o)
+ .text.led1_ClearInterrupt
+                0x00000000       0x14 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led1.o)
+ .text          0x00000000        0x0 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led2.o)
+ .data          0x00000000        0x0 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led2.o)
+ .bss           0x00000000        0x0 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led2.o)
+ .text.led2_SetDriveMode
+                0x00000000       0x18 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led2.o)
+ .text.led2_Read
+                0x00000000       0x10 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led2.o)
+ .text.led2_ReadDataReg
+                0x00000000       0x10 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led2.o)
+ .text.led2_SetInterruptMode
+                0x00000000       0x14 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led2.o)
+ .text.led2_ClearInterrupt
+                0x00000000       0x14 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led2.o)
+ .text          0x00000000        0x0 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led3.o)
+ .data          0x00000000        0x0 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led3.o)
+ .bss           0x00000000        0x0 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led3.o)
+ .text.led3_SetDriveMode
+                0x00000000       0x18 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led3.o)
+ .text.led3_Read
+                0x00000000       0x10 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led3.o)
+ .text.led3_ReadDataReg
+                0x00000000       0x10 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led3.o)
+ .text.led3_SetInterruptMode
+                0x00000000       0x14 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led3.o)
+ .text.led3_ClearInterrupt
+                0x00000000       0x14 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led3.o)
+ .text          0x00000000        0x0 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led4.o)
+ .data          0x00000000        0x0 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led4.o)
+ .bss           0x00000000        0x0 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led4.o)
+ .text.led4_SetDriveMode
+                0x00000000       0x18 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led4.o)
+ .text.led4_Read
+                0x00000000       0x10 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led4.o)
+ .text.led4_ReadDataReg
+                0x00000000       0x10 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led4.o)
+ .text.led4_SetInterruptMode
+                0x00000000       0x14 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led4.o)
+ .text.led4_ClearInterrupt
+                0x00000000       0x14 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led4.o)
+ .text          0x00000000        0x0 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(blue.o)
+ .data          0x00000000        0x0 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(blue.o)
+ .bss           0x00000000        0x0 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(blue.o)
+ .text.blue_SetDriveMode
+                0x00000000       0x18 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(blue.o)
+ .text.blue_Read
+                0x00000000       0x10 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(blue.o)
+ .text.blue_ReadDataReg
+                0x00000000       0x10 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(blue.o)
+ .text.blue_SetInterruptMode
+                0x00000000       0x14 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(blue.o)
+ .text.blue_ClearInterrupt
+                0x00000000       0x14 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(blue.o)
+ .text          0x00000000        0x0 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(uart.o)
+ .data          0x00000000        0x0 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(uart.o)
+ .text.uart_ScbModeStop
+                0x00000000        0x8 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(uart.o)
+ .text.uart_Stop
+                0x00000000       0x20 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(uart.o)
+ .text.uart_SetRxFifoLevel
+                0x00000000       0x14 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(uart.o)
+ .text.uart_SetTxFifoLevel
+                0x00000000       0x14 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(uart.o)
+ .text          0x00000000        0x0 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(uart_SPI_UART.o)
+ .data          0x00000000        0x0 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(uart_SPI_UART.o)
+ .bss           0x00000000        0x0 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(uart_SPI_UART.o)
+ .text.uart_SpiUartClearRxBuffer
+                0x00000000       0x20 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(uart_SPI_UART.o)
+ .text.uart_SpiUartPutArray
+                0x00000000       0x18 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(uart_SPI_UART.o)
+ .text.uart_SpiUartClearTxBuffer
+                0x00000000       0x20 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(uart_SPI_UART.o)
+ .text.uart_SpiUartDisableIntRx
+                0x00000000       0x10 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(uart_SPI_UART.o)
+ .text.uart_SpiUartDisableIntTx
+                0x00000000       0x10 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(uart_SPI_UART.o)
+ .text          0x00000000        0x0 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(uart_UART.o)
+ .data          0x00000000        0x0 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(uart_UART.o)
+ .bss           0x00000000        0x0 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(uart_UART.o)
+ .text.uart_UartStop
+                0x00000000       0x14 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(uart_UART.o)
+ .text.uart_UartSetRxAddress
+                0x00000000       0x14 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(uart_UART.o)
+ .text.uart_UartSetRxAddressMask
+                0x00000000       0x18 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(uart_UART.o)
+ .text.uart_UartGetChar
+                0x00000000       0x2c .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(uart_UART.o)
+ .text.uart_UartGetByte
+                0x00000000       0x30 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(uart_UART.o)
+ .text.uart_UartSetRtsPolarity
+                0x00000000       0x28 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(uart_UART.o)
+ .text.uart_UartSetRtsFifoLevel
+                0x00000000       0x14 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(uart_UART.o)
+ .text.uart_UartPutString
+                0x00000000       0x18 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(uart_UART.o)
+ .text.uart_UartPutCRLF
+                0x00000000       0x14 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(uart_UART.o)
+ .text.uart_UartEnableCts
+                0x00000000       0x14 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(uart_UART.o)
+ .text.uart_UartDisableCts
+                0x00000000       0x14 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(uart_UART.o)
+ .text.uart_UartSetCtsPolarity
+                0x00000000       0x28 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(uart_UART.o)
+ .text          0x00000000        0x0 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_ISR.o)
+ .data          0x00000000        0x0 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_ISR.o)
+ .bss           0x00000000        0x0 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_ISR.o)
+ .text.capsense_ISR_Interrupt
+                0x00000000        0x4 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_ISR.o)
+ .text.capsense_ISR_GetVector
+                0x00000000        0xc .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_ISR.o)
+ .text.capsense_ISR_GetPriority
+                0x00000000       0x10 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_ISR.o)
+ .text.capsense_ISR_GetState
+                0x00000000       0x14 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_ISR.o)
+ .text.capsense_ISR_Start
+                0x00000000       0x1c .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_ISR.o)
+ .text.capsense_ISR_Stop
+                0x00000000       0x14 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_ISR.o)
+ .text.capsense_ISR_SetPending
+                0x00000000       0x10 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_ISR.o)
+ .text.capsense_ISR_ClearPending
+                0x00000000       0x10 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_ISR.o)
+ .data          0x00000000        0x0 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyBootAsmGnu.o)
+ .bss           0x00000000        0x0 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyBootAsmGnu.o)
+ .text          0x00000000        0x0 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLib.o)
+ .bss           0x00000000       0x18 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLib.o)
+ .text.CySysClkImoStart
+                0x00000000       0x14 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLib.o)
+ .text.CySysClkImoStop
+                0x00000000       0x18 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLib.o)
+ .text.CySysClkWriteHfclkDirect
+                0x00000000       0x20 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLib.o)
+ .text.CySysClkGetSysclkSource
+                0x00000000       0x1c .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLib.o)
+ .text.CySysClkWriteSysclkDiv
+                0x00000000       0x24 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLib.o)
+ .text.CySysClkWriteHfclkDiv
+                0x00000000       0x24 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLib.o)
+ .text.CySysGetResetReason
+                0x00000000       0x14 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLib.o)
+ .text.CyDisableInts
+                0x00000000       0x10 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLib.o)
+ .text.CyEnableInts
+                0x00000000        0xc .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLib.o)
+ .text.CyIntGetState
+                0x00000000       0x18 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLib.o)
+ .text.CyIntSetPending
+                0x00000000       0x14 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLib.o)
+ .text.CyIntSetSysVector
+                0x00000000       0x20 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLib.o)
+ .text.CyIntGetSysVector
+                0x00000000       0x1c .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLib.o)
+ .text.CyIntSetVector
+                0x00000000       0x24 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLib.o)
+ .text.CyIntGetVector
+                0x00000000       0x20 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLib.o)
+ .text.CyIntSetPriority
+                0x00000000       0x4c .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLib.o)
+ .text.CyIntGetPriority
+                0x00000000       0x2c .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLib.o)
+ .text.CySoftwareReset
+                0x00000000       0x18 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLib.o)
+ .text.CyDelayUs
+                0x00000000       0x14 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLib.o)
+ .text.CyDelayFreq
+                0x00000000       0x4c .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLib.o)
+ .text.CySysTickStop
+                0x00000000       0x10 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLib.o)
+ .text.CySysTickEnableInterrupt
+                0x00000000       0x10 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLib.o)
+ .text.CySysTickEnable
+                0x00000000       0x18 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLib.o)
+ .text.CySysTickDisableInterrupt
+                0x00000000       0x10 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLib.o)
+ .text.CySysTickSetReload
+                0x00000000       0x10 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLib.o)
+ .text.CySysTickGetReload
+                0x00000000       0x10 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLib.o)
+ .text.CySysTickGetValue
+                0x00000000       0x10 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLib.o)
+ .text.CySysTickSetClockSource
+                0x00000000       0x20 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLib.o)
+ .text.CySysTickGetCountFlag
+                0x00000000       0x10 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLib.o)
+ .text.CySysTickServiceCallbacks
+                0x00000000       0x28 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLib.o)
+ .text.CySysTickClear
+                0x00000000        0xc .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLib.o)
+ .text.CySysTickInit
+                0x00000000       0x4c .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLib.o)
+ .text.CySysTickStart
+                0x00000000       0x20 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLib.o)
+ .text.CySysTickSetCallback
+                0x00000000       0x10 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLib.o)
+ .text.CySysTickGetCallback
+                0x00000000        0xc .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLib.o)
+ .text.CyGetUniqueId
+                0x00000000       0x70 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLib.o)
+ .text          0x00000000        0x0 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(cyPm.o)
+ .data          0x00000000        0x0 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(cyPm.o)
+ .bss           0x00000000        0x0 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(cyPm.o)
+ .text.CySysPmDeepSleep
+                0x00000000       0x30 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(cyPm.o)
+ .text.CySysPmSetWakeupHoldoff
+                0x00000000       0x18 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(cyPm.o)
+ .text          0x00000000        0x0 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLFClk.o)
+ .data          0x00000000        0x0 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLFClk.o)
+ .bss           0x00000000        0x8 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLFClk.o)
+ .text.CySysClkIloStart
+                0x00000000       0x14 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLFClk.o)
+ .text.CySysClkIloStop
+                0x00000000       0x10 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLFClk.o)
+ .text.CySysClkIloStartMeasurement
+                0x00000000       0x34 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLFClk.o)
+ .text.CySysClkIloStopMeasurement
+                0x00000000       0x28 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLFClk.o)
+ .text.CySysClkIloCompensate
+                0x00000000      0x108 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLFClk.o)
+ .text.CySysClkWcoStart
+                0x00000000       0x40 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLFClk.o)
+ .text.CySysClkWcoStop
+                0x00000000       0x1c .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLFClk.o)
+ .text.CySysClkWcoSetPowerMode
+                0x00000000       0x4c .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLFClk.o)
+ .text.CySysClkWcoClockOutSelect
+                0x00000000       0x2c .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLFClk.o)
+ .text.CySysWdtGetEnabledStatus
+                0x00000000       0x1c .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLFClk.o)
+ .text.CySysWdtEnable
+                0x00000000        0xc .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLFClk.o)
+ .text.CySysWdtSetMatch
+                0x00000000       0x18 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLFClk.o)
+ .text.CySysWdtGetMatch
+                0x00000000       0x10 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLFClk.o)
+ .text.CySysWdtGetCount
+                0x00000000        0xc .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLFClk.o)
+ .text.CySysWdtSetIgnoreBits
+                0x00000000       0x20 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLFClk.o)
+ .text.CySysWdtGetIgnoreBits
+                0x00000000       0x10 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLFClk.o)
+ .text.CySysWdtClearInterrupt
+                0x00000000       0x10 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLFClk.o)
+ .text.CySysWdtMaskInterrupt
+                0x00000000       0x10 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLFClk.o)
+ .text.CySysWdtUnmaskInterrupt
+                0x00000000       0x10 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLFClk.o)
+ .text.CySysWdtSetInterruptCallback
+                0x00000000       0x10 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLFClk.o)
+ .text.CySysWdtGetInterruptCallback
+                0x00000000        0xc .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLFClk.o)
+ .text.CySysWdtIsr
+                0x00000000       0x18 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLFClk.o)
+ .text          0x00000000        0x0 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_INT.o)
+ .data          0x00000000        0x0 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_INT.o)
+ .bss           0x00000000        0x0 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_INT.o)
+ .text          0x00000000        0x0 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyFlash.o)
+ .data          0x00000000        0x0 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyFlash.o)
+ .bss           0x00000000       0x18 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyFlash.o)
+ .text.CySysFlashClockBackup
+                0x00000000       0x54 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyFlash.o)
+ .text.CySysFlashClockConfig
+                0x00000000       0x44 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyFlash.o)
+ .text.CySysFlashClockRestore
+                0x00000000       0x54 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyFlash.o)
+ .text.CySysFlashWriteRow
+                0x00000000       0xf4 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyFlash.o)
+ .text.CySysSFlashWriteUserRow
+                0x00000000       0xec .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyFlash.o)
+ .text          0x00000000        0x0 C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CapSense_P4_v3_0\PSoC4\Library\Capsense_P4Library_GCCp.a(CapSense_SmartSense_LL_v3_0.o)
+ .data          0x00000000        0x0 C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CapSense_P4_v3_0\PSoC4\Library\Capsense_P4Library_GCCp.a(CapSense_SmartSense_LL_v3_0.o)
+ .bss           0x00000000        0x0 C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CapSense_P4_v3_0\PSoC4\Library\Capsense_P4Library_GCCp.a(CapSense_SmartSense_LL_v3_0.o)
+ .text          0x00000000        0x0 C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CapSense_P4_v3_0\PSoC4\Library\Capsense_P4Library_GCCp.a(CapSense_SmartSense_SL_v3_0.o)
+ .data          0x00000000        0x0 C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CapSense_P4_v3_0\PSoC4\Library\Capsense_P4Library_GCCp.a(CapSense_SmartSense_SL_v3_0.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_udivsi3.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_udivsi3.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_divsi3.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_divsi3.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_dvmd_tls.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_dvmd_tls.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-errno.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-errno.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-errno.o)
+ .text.__errno  0x00000000        0xc c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-errno.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-exit.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-exit.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-exit.o)
+ .text.exit     0x00000000       0x2c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-exit.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-impure.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-impure.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-impure.o)
+ .data.impure_data
+                0x00000000       0x60 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-impure.o)
+ .data._impure_ptr
+                0x00000000        0x4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-impure.o)
+ .rodata.str1.1
+                0x00000000        0x2 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-impure.o)
+ .rodata._global_impure_ptr
+                0x00000000        0x4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-impure.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-init.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-init.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-init.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-memcpy.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-memcpy.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-memcpy.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-memset.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-memset.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-memset.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtend.o
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtend.o
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtend.o
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtn.o
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtn.o
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtn.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+rom              0x00000000         0x00008000         xr
+ram              0x20000000         0x00001000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crti.o
+LOAD c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtbegin.o
+LOAD c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m/crt0.o
+START GROUP
+LOAD .\CortexM0p\ARM_GCC_493\Debug\main.o
+LOAD .\CortexM0p\ARM_GCC_493\Debug\cymetadata.o
+LOAD .\CortexM0p\ARM_GCC_493\Debug\Cm0plusStart.o
+LOAD .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a
+LOAD C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CapSense_P4_v3_0\PSoC4\Library\Capsense_P4Library_GCCp.a
+END GROUP
+START GROUP
+LOAD c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a
+LOAD c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a
+LOAD c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a
+END GROUP
+START GROUP
+LOAD c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a
+LOAD c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a
+END GROUP
+LOAD c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtend.o
+LOAD c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtn.o
+START GROUP
+LOAD c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a
+LOAD c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libc.a
+LOAD c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libnosys.a
+END GROUP
+                0x00000000                CY_APPL_ORIGIN = 0x0
+                0x00000080                CY_FLASH_ROW_SIZE = 0x80
+                0x00000001                CY_APPL_NUM = 0x1
+                0x00000001                CY_APPL_MAX = 0x1
+                0x00000040                CY_METADATA_SIZE = 0x40
+                0x00000000                CY_APPL_LOADABLE = 0x0
+                0x00000000                CY_CHECKSUM_EXCLUDE_SIZE = ALIGN (0x0, CY_FLASH_ROW_SIZE)
+                0x00000000                CY_APP_FOR_STACK_AND_COPIER = 0x0
+                0x20000198                PROVIDE (__cy_heap_start, _end)
+                0x00000001                PROVIDE (__cy_region_num, ((__cy_regions_end - __cy_regions) / 0x10))
+                0x20001000                PROVIDE (__cy_stack, (ORIGIN (ram) + 0x1000))
+                0x20000c00                PROVIDE (__cy_heap_end, (__cy_stack - 0x400))
+
+.cybootloader   0x00000000        0x0
+ *(.cybootloader)
+                0x00000000                appl1_start = CY_APPL_ORIGIN?CY_APPL_ORIGIN:ALIGN (CY_FLASH_ROW_SIZE)
+                0x00003f80                appl2_start = (appl1_start + ALIGN ((((0x8000 - appl1_start) - (0x2 * CY_FLASH_ROW_SIZE)) / 0x2), CY_FLASH_ROW_SIZE))
+                0x00000000                appl_start = (CY_APPL_NUM == 0x1)?appl1_start:appl2_start
+                0x00000001                cy_project_type_bootloader = (appl_start == 0x0)?0x1:0x0
+                0x00000000                cy_project_type_app_for_stack_and_copier = (CY_APP_FOR_STACK_AND_COPIER == 0x1)?0x1:0x0
+
+.text           0x00000000     0x1fa6
+ CREATE_OBJECT_SYMBOLS
+                0x00000000                PROVIDE (__cy_interrupt_vector, RomVectors)
+ *(.romvectors)
+ .romvectors    0x00000000       0x10 .\CortexM0p\ARM_GCC_493\Debug\Cm0plusStart.o
+                0x00000000                RomVectors
+                0x00000001                ASSERT ((. != __cy_interrupt_vector), No interrupt vector)
+                0x00000001                ASSERT (CY_APPL_ORIGIN?(SIZEOF (.cybootloader) <= CY_APPL_ORIGIN):0x1, Wrong image location)
+                0x00000010                PROVIDE (__cy_reset, Reset)
+ *(.text.Reset)
+ .text.Reset    0x00000010        0xc .\CortexM0p\ARM_GCC_493\Debug\Cm0plusStart.o
+                0x00000010                Reset
+                0x00000001                ASSERT ((. != __cy_reset), No reset code)
+ *(.psocinit)
+ .psocinit      0x0000001c       0xf4 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(cyfitter_cfg.o)
+                0x00000080                cyfitter_cfg
+                0x00000110                . = MAX (., 0x100)
+ *(.text .text.* .gnu.linkonce.t.*)
+ .text          0x00000110       0x60 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtbegin.o
+ .text.main     0x00000170       0xd8 .\CortexM0p\ARM_GCC_493\Debug\main.o
+                0x00000170                main
+ .text.IntDefaultHandler
+                0x00000248        0x4 .\CortexM0p\ARM_GCC_493\Debug\Cm0plusStart.o
+                0x00000248                IntDefaultHandler
+ .text.Start_c  0x0000024c       0x48 .\CortexM0p\ARM_GCC_493\Debug\Cm0plusStart.o
+                0x0000024c                Start_c
+ .text.initialize_psoc
+                0x00000294       0x48 .\CortexM0p\ARM_GCC_493\Debug\Cm0plusStart.o
+                0x00000294                initialize_psoc
+ .text.SetAnalogRoutingPumps
+                0x000002dc       0x38 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(cyfitter_cfg.o)
+                0x000002dc                SetAnalogRoutingPumps
+ .text.AnalogSetDefault
+                0x00000314       0x20 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(cyfitter_cfg.o)
+ .text.capsense_Initialize
+                0x00000334       0x28 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Control.o)
+                0x00000334                capsense_Initialize
+ .text.capsense_Start
+                0x0000035c       0x50 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Control.o)
+                0x0000035c                capsense_Start
+ .text.capsense_ProcessAllWidgets
+                0x000003ac       0x44 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Control.o)
+                0x000003ac                capsense_ProcessAllWidgets
+ .text.capsense_DpInitialize
+                0x000003f0       0x70 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Processing.o)
+                0x000003f0                capsense_DpInitialize
+ .text.capsense_DpUpdateThresholds
+                0x00000460       0x34 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Processing.o)
+                0x00000460                capsense_DpUpdateThresholds
+ .text.capsense_DpUpdateDifferences
+                0x00000494       0x14 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Processing.o)
+                0x00000494                capsense_DpUpdateDifferences
+ .text.capsense_DpProcessCsdWidgetRawCounts
+                0x000004a8       0x54 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Processing.o)
+                0x000004a8                capsense_DpProcessCsdWidgetRawCounts
+ .text.capsense_DpProcessSlider
+                0x000004fc       0xd8 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Processing.o)
+                0x000004fc                capsense_DpProcessSlider
+ .text.capsense_DpProcessCsdWidgetStatus
+                0x000005d4       0x58 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Processing.o)
+                0x000005d4                capsense_DpProcessCsdWidgetStatus
+ .text.capsense_DsInitialize
+                0x0000062c       0x64 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Structure.o)
+                0x0000062c                capsense_DsInitialize
+ .text.capsense_GetCentroidPos
+                0x00000690       0x38 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Structure.o)
+                0x00000690                capsense_GetCentroidPos
+ .text.capsense_TuInitialize
+                0x000006c8       0x14 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Tuner.o)
+                0x000006c8                capsense_TuInitialize
+ .text.capsense_FtInitialize
+                0x000006dc       0x50 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Filter.o)
+                0x000006dc                capsense_FtInitialize
+ .text.capsense_FtInitializeBaselineChannel
+                0x0000072c       0x1c .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Filter.o)
+                0x0000072c                capsense_FtInitializeBaselineChannel
+ .text.capsense_InitializeSensorBaseline
+                0x00000748       0x3c .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Filter.o)
+                0x00000748                capsense_InitializeSensorBaseline
+ .text.capsense_InitializeWidgetBaseline
+                0x00000784       0x28 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Filter.o)
+                0x00000784                capsense_InitializeWidgetBaseline
+ .text.capsense_InitializeAllBaselines
+                0x000007ac       0x18 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Filter.o)
+                0x000007ac                capsense_InitializeAllBaselines
+ .text.capsense_FtIIR1stOrder
+                0x000007c4       0x14 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Filter.o)
+                0x000007c4                capsense_FtIIR1stOrder
+ .text.capsense_FtUpdateBaseline
+                0x000007d8       0x94 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Filter.o)
+                0x000007d8                capsense_FtUpdateBaseline
+ .text.capsense_UpdateSensorBaseline
+                0x0000086c       0x2c .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Filter.o)
+                0x0000086c                capsense_UpdateSensorBaseline
+ .text.capsense_UpdateWidgetBaseline
+                0x00000898       0x30 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Filter.o)
+                0x00000898                capsense_UpdateWidgetBaseline
+ .text.capsense_UpdateAllBaselines
+                0x000008c8       0x1c .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Filter.o)
+                0x000008c8                capsense_UpdateAllBaselines
+ .text.capsense_IsBusy
+                0x000008e4       0x10 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Sensing.o)
+                0x000008e4                capsense_IsBusy
+ .text.capsense_SetupWidget
+                0x000008f4       0x48 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Sensing.o)
+                0x000008f4                capsense_SetupWidget
+ .text.capsense_Scan
+                0x0000093c       0x1c .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Sensing.o)
+                0x0000093c                capsense_Scan
+ .text.capsense_ScanAllWidgets
+                0x00000958       0x50 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Sensing.o)
+                0x00000958                capsense_ScanAllWidgets
+ .text.capsense_SsInitialize
+                0x000009a8        0xc .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Sensing.o)
+                0x000009a8                capsense_SsInitialize
+ .text.capsense_PostAllWidgetsScan
+                0x000009b4        0x4 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Sensing.o)
+                0x000009b4                capsense_PostAllWidgetsScan
+ .text.capsense_ConfigureModClkClock
+                0x000009b8       0x30 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Sensing.o)
+                0x000009b8                capsense_ConfigureModClkClock
+ .text.capsense_ConfigureSnsClock
+                0x000009e8       0x14 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Sensing.o)
+                0x000009e8                capsense_ConfigureSnsClock
+ .text.capsense_AutoTune
+                0x000009fc       0xf4 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Sensing.o)
+                0x000009fc                capsense_AutoTune
+ .text.capsense_SsCsdCalcLfsr
+                0x00000af0       0x30 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_SensingCSD_LL.o)
+ .text.capsense_SsCsdCalcPrsSize
+                0x00000b20       0x24 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_SensingCSD_LL.o)
+ .text.capsense_GetNumberOfConversions
+                0x00000b44       0x6c .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_SensingCSD_LL.o)
+ .text.capsense_SsCSDCalibrateCheck
+                0x00000bb0       0x28 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_SensingCSD_LL.o)
+ .text.capsense_SetUpIdacs
+                0x00000bd8       0x44 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_SensingCSD_LL.o)
+                0x00000bd8                capsense_SetUpIdacs
+ .text.capsense_CSDConfigurePrsMode
+                0x00000c1c       0x54 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_SensingCSD_LL.o)
+                0x00000c1c                capsense_CSDConfigurePrsMode
+ .text.capsense_CSDStartSample
+                0x00000c70      0x168 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_SensingCSD_LL.o)
+                0x00000c70                capsense_CSDStartSample
+ .text.capsense_CSDScanExt
+                0x00000dd8       0x1c .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_SensingCSD_LL.o)
+                0x00000dd8                capsense_CSDScanExt
+ .text.capsense_CSDConnectSns
+                0x00000df4       0x34 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_SensingCSD_LL.o)
+                0x00000df4                capsense_CSDConnectSns
+ .text.capsense_CSDScan
+                0x00000e28       0x8c .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_SensingCSD_LL.o)
+                0x00000e28                capsense_CSDScan
+ .text.capsense_CSDDisconnectSns
+                0x00000eb4       0x40 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_SensingCSD_LL.o)
+                0x00000eb4                capsense_CSDDisconnectSns
+ .text.capsense_SsClearCSDSensors
+                0x00000ef4       0x4c .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_SensingCSD_LL.o)
+ .text.capsense_SsCSDv2Initialize
+                0x00000f40      0x118 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_SensingCSD_LL.o)
+ .text.capsense_CSDInitialize
+                0x00001058        0x8 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_SensingCSD_LL.o)
+                0x00001058                capsense_CSDInitialize
+ .text.capsense_CSDElectrodeCheck
+                0x00001060       0x1c .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_SensingCSD_LL.o)
+                0x00001060                capsense_CSDElectrodeCheck
+ .text.capsense_CSDSetupWidget
+                0x0000107c       0x68 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_SensingCSD_LL.o)
+                0x0000107c                capsense_CSDSetupWidget
+ .text.capsense_SsCSDCalibrateOneSensor
+                0x000010e4      0x110 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_SensingCSD_LL.o)
+ .text.capsense_CSDCalibrateWidget
+                0x000011f4      0x114 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_SensingCSD_LL.o)
+                0x000011f4                capsense_CSDCalibrateWidget
+ .text.capsense_DpFindLocalMaxSd
+                0x00001308       0x9c .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Centroid_LL.o)
+                0x00001308                capsense_DpFindLocalMaxSd
+ .text.capsense_DpCalcLinearCentroid
+                0x000013a4       0x80 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Centroid_LL.o)
+                0x000013a4                capsense_DpCalcLinearCentroid
+ .text.led0_Write
+                0x00001424       0x18 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led0.o)
+                0x00001424                led0_Write
+ .text.led1_Write
+                0x0000143c       0x18 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led1.o)
+                0x0000143c                led1_Write
+ .text.led2_Write
+                0x00001454       0x18 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led2.o)
+                0x00001454                led2_Write
+ .text.led3_Write
+                0x0000146c       0x18 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led3.o)
+                0x0000146c                led3_Write
+ .text.led4_Write
+                0x00001484       0x18 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led4.o)
+                0x00001484                led4_Write
+ .text.blue_Write
+                0x0000149c       0x18 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(blue.o)
+                0x0000149c                blue_Write
+ .text.uart_ScbModePostEnable
+                0x000014b4        0x8 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(uart.o)
+ .text.uart_Init
+                0x000014bc        0x8 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(uart.o)
+                0x000014bc                uart_Init
+ .text.uart_Enable
+                0x000014c4       0x18 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(uart.o)
+                0x000014c4                uart_Enable
+ .text.uart_Start
+                0x000014dc       0x20 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(uart.o)
+                0x000014dc                uart_Start
+ .text.uart_SpiUartReadRxData
+                0x000014fc        0xc .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(uart_SPI_UART.o)
+                0x000014fc                uart_SpiUartReadRxData
+ .text.uart_SpiUartGetRxBufferSize
+                0x00001508       0x10 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(uart_SPI_UART.o)
+                0x00001508                uart_SpiUartGetRxBufferSize
+ .text.uart_SpiUartWriteTxData
+                0x00001518       0x1c .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(uart_SPI_UART.o)
+                0x00001518                uart_SpiUartWriteTxData
+ .text.uart_SpiUartGetTxBufferSize
+                0x00001534       0x10 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(uart_SPI_UART.o)
+                0x00001534                uart_SpiUartGetTxBufferSize
+ .text.uart_UartInit
+                0x00001544       0x9c .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(uart_UART.o)
+                0x00001544                uart_UartInit
+ .text.uart_UartPostEnable
+                0x000015e0       0x1c .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(uart_UART.o)
+                0x000015e0                uart_UartPostEnable
+ .text.capsense_ISR_SetVector
+                0x000015fc        0xc .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_ISR.o)
+                0x000015fc                capsense_ISR_SetVector
+ .text.capsense_ISR_SetPriority
+                0x00001608       0x24 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_ISR.o)
+                0x00001608                capsense_ISR_SetPriority
+ .text.capsense_ISR_Enable
+                0x0000162c       0x10 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_ISR.o)
+                0x0000162c                capsense_ISR_Enable
+ .text.capsense_ISR_Disable
+                0x0000163c       0x10 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_ISR.o)
+                0x0000163c                capsense_ISR_Disable
+ .text.capsense_ISR_StartEx
+                0x0000164c       0x1c .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_ISR.o)
+                0x0000164c                capsense_ISR_StartEx
+ .text          0x00001668       0x20 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyBootAsmGnu.o)
+                0x00001668                CyDelayCycles
+                0x0000167a                CyEnterCriticalSection
+                0x00001682                CyExitCriticalSection
+ .text.CySysClkImoDisableWcoLock
+                0x00001688       0x14 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLib.o)
+                0x00001688                CySysClkImoDisableWcoLock
+ .text.CySysClkImoGetWcoLock
+                0x0000169c       0x14 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLib.o)
+                0x0000169c                CySysClkImoGetWcoLock
+ .text.CyIntEnable
+                0x000016b0       0x14 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLib.o)
+                0x000016b0                CyIntEnable
+ .text.CyIntDisable
+                0x000016c4       0x14 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLib.o)
+                0x000016c4                CyIntDisable
+ .text.CyIntClearPending
+                0x000016d8       0x14 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLib.o)
+                0x000016d8                CyIntClearPending
+ .text.CyHalt   0x000016ec        0x4 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLib.o)
+                0x000016ec                CyHalt
+ .text.CyDelay  0x000016f0       0x30 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLib.o)
+                0x000016f0                CyDelay
+ .text.CySysClkImoEnableWcoLock
+                0x00001720       0xbc .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLib.o)
+                0x00001720                CySysClkImoEnableWcoLock
+ .text.CySysClkWriteImoFreq
+                0x000017dc       0xd8 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLib.o)
+                0x000017dc                CySysClkWriteImoFreq
+ .text.CySysPmSleep
+                0x000018b4       0x1c .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(cyPm.o)
+                0x000018b4                CySysPmSleep
+ .text.CySysClkWcoEnabled
+                0x000018d0       0x14 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLFClk.o)
+                0x000018d0                CySysClkWcoEnabled
+ .text.CySysWdtDisable
+                0x000018e4       0x10 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLFClk.o)
+                0x000018e4                CySysWdtDisable
+ .text.capsense_SsPostScan
+                0x000018f4       0x44 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_INT.o)
+ .text.capsense_CSDPostSingleScan
+                0x00001938       0x2c .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_INT.o)
+                0x00001938                capsense_CSDPostSingleScan
+ .text.capsense_CSDPostMultiScan
+                0x00001964       0xd8 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_INT.o)
+                0x00001964                capsense_CSDPostMultiScan
+ .text.CySysFlashSetWaitCycles
+                0x00001a3c       0x54 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyFlash.o)
+                0x00001a3c                CySysFlashSetWaitCycles
+ .text.SmartSense_TunePrescalers
+                0x00001a90       0x54 C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CapSense_P4_v3_0\PSoC4\Library\Capsense_P4Library_GCCp.a(CapSense_SmartSense_LL_v3_0.o)
+                0x00001a90                SmartSense_TunePrescalers
+ .text.SmartSense_TuneSensitivity
+                0x00001ae4       0x48 C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CapSense_P4_v3_0\PSoC4\Library\Capsense_P4Library_GCCp.a(CapSense_SmartSense_LL_v3_0.o)
+                0x00001ae4                SmartSense_TuneSensitivity
+ .text.SmartSense_UpdateThresholds
+                0x00001b2c       0x44 C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CapSense_P4_v3_0\PSoC4\Library\Capsense_P4Library_GCCp.a(CapSense_SmartSense_SL_v3_0.o)
+                0x00001b2c                SmartSense_UpdateThresholds
+ .text.SmartSense_InitializeNoiseEnvelope
+                0x00001b70       0x28 C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CapSense_P4_v3_0\PSoC4\Library\Capsense_P4Library_GCCp.a(CapSense_SmartSense_SL_v3_0.o)
+                0x00001b70                SmartSense_InitializeNoiseEnvelope
+ .text.SmartSense_RunNoiseEnvelope
+                0x00001b98       0x9a C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CapSense_P4_v3_0\PSoC4\Library\Capsense_P4Library_GCCp.a(CapSense_SmartSense_SL_v3_0.o)
+                0x00001b98                SmartSense_RunNoiseEnvelope
+ *fill*         0x00001c32        0x2 
+ .text          0x00001c34      0x120 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_udivsi3.o)
+                0x00001c34                __aeabi_uidiv
+                0x00001c34                __udivsi3
+                0x00001d40                __aeabi_uidivmod
+ .text          0x00001d54      0x1e0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_divsi3.o)
+                0x00001d54                __divsi3
+                0x00001d54                __aeabi_idiv
+                0x00001f20                __aeabi_idivmod
+ .text          0x00001f34        0x4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_dvmd_tls.o)
+                0x00001f34                __aeabi_idiv0
+                0x00001f34                __aeabi_ldiv0
+ .text.__libc_init_array
+                0x00001f38       0x4c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-init.o)
+                0x00001f38                __libc_init_array
+ .text.memcpy   0x00001f84       0x12 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-memcpy.o)
+                0x00001f84                memcpy
+ .text.memset   0x00001f96       0x10 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-memset.o)
+                0x00001f96                memset
+ *(.plt)
+ *(.gnu.warning)
+ *(.glue_7t)
+ .glue_7t       0x00000000        0x0 linker stubs
+ *(.glue_7)
+ .glue_7        0x00000000        0x0 linker stubs
+ *(.vfp11_veneer)
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+ *(.bootloader)
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+ *(.gcc_except_table)
+
+.v4_bx          0x00001fa8        0x0
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.iplt           0x00001fa8        0x0
+ .iplt          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtbegin.o
+
+.eh_frame_hdr
+ *(.eh_frame_hdr)
+
+.eh_frame       0x00001fa8        0x4
+ *(.eh_frame)
+ .eh_frame      0x00001fa8        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtbegin.o
+ .eh_frame      0x00001fa8        0x4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtend.o
+                0x00001fac                PROVIDE (__exidx_start, .)
+
+.ARM.exidx
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+                0x00001fac                __exidx_end = .
+
+.rodata         0x00001fac      0x124
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata        0x00001fac       0xd0 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Structure.o)
+                0x00001fb4                capsense_dsFlash
+                0x00001ff0                capsense_ioList
+ .rodata        0x0000207c        0x1 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Sensing.o)
+                0x0000207c                capsense_scanFreqIndex
+ *fill*         0x0000207d        0x3 
+ .rodata        0x00002080       0x18 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLib.o)
+                0x00002080                cyImoFreqMhz2DpllOffset
+                0x00002098                . = ALIGN (0x4)
+ *(.init)
+ .init          0x00002098        0x4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crti.o
+                0x00002098                _init
+ .init          0x0000209c        0x8 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtn.o
+                0x000020a4                . = ALIGN (0x4)
+                0x000020a4                __preinit_array_start = .
+ *(.preinit_array)
+                0x000020a4                __preinit_array_end = .
+                0x000020a4                . = ALIGN (0x4)
+                0x000020a4                __init_array_start = .
+ *(SORT(.init_array.*))
+ *(.init_array)
+ .init_array    0x000020a4        0x4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtbegin.o
+ .init_array    0x000020a8        0x4 .\CortexM0p\ARM_GCC_493\Debug\Cm0plusStart.o
+                0x000020ac                __init_array_end = .
+                0x000020ac                . = ALIGN (0x4)
+ *(.fini)
+ .fini          0x000020ac        0x4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crti.o
+                0x000020ac                _fini
+ .fini          0x000020b0        0x8 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtn.o
+                0x000020b8                . = ALIGN (0x4)
+                0x000020b8                __fini_array_start = .
+ *(.fini_array)
+ .fini_array    0x000020b8        0x4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtbegin.o
+ *(SORT(.fini_array.*))
+                0x000020bc                __fini_array_end = .
+                0x000020bc                . = ALIGN (0x4)
+ *crtbegin.o(.ctors)
+ *(EXCLUDE_FILE(*crtend.o) .ctors)
+ *(SORT(.ctors.*))
+ *crtend.o(.ctors)
+                0x000020bc                . = ALIGN (0x4)
+ *crtbegin.o(.dtors)
+ *(EXCLUDE_FILE(*crtend.o) .dtors)
+ *(SORT(.dtors.*))
+ *crtend.o(.dtors)
+                0x000020bc                . = ALIGN (0x4)
+                0x000020bc                __cy_regions = .
+                0x000020bc        0x4 LONG 0x20d0 __cy_region_init_ram
+                0x000020c0        0x4 LONG 0x20000088 __cy_region_start_data
+                0x000020c4        0x4 LONG 0x18 __cy_region_init_size_ram
+                0x000020c8        0x4 LONG 0xf8 __cy_region_zero_size_ram
+                0x000020cc                __cy_regions_end = .
+                0x000020d0                . = ALIGN (0x8)
+ *fill*         0x000020cc        0x4 
+                0x000020d0                _etext = .
+
+.cy_checksum_exclude
+                0x000020d0        0x0
+ *(.cy_checksum_exclude)
+
+.ramvectors     0x20000000       0x80
+                0x20000000                __cy_region_start_ram = .
+ *(.ramvectors)
+ .ramvectors    0x20000000       0x80 .\CortexM0p\ARM_GCC_493\Debug\Cm0plusStart.o
+                0x20000000                CyRamVectors
+
+.noinit         0x20000080        0x4
+ *(.noinit)
+ .noinit        0x20000080        0x4 .\CortexM0p\ARM_GCC_493\Debug\Cm0plusStart.o
+
+.data           0x20000088       0x18 load address 0x000020d0
+                0x20000088                __cy_region_start_data = .
+ *(.jcr)
+ .jcr           0x20000088        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtbegin.o
+ .jcr           0x20000088        0x4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtend.o
+ *(.got.plt)
+ *(.got)
+ *(.shdata)
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x2000008c        0x4 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_SensingCSD_LL.o)
+                0x2000008c                capsense_configCsd
+ .data          0x20000090       0x10 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLib.o)
+                0x20000090                cydelay32kMs
+                0x20000094                cydelayFreqKhz
+                0x20000098                cydelayFreqMhz
+                0x2000009c                cydelayFreqHz
+                0x200000a0                . = ALIGN (0x8)
+ *(.ram)
+                0x200000a0                _edata = .
+
+.igot.plt       0x200000a0        0x0 load address 0x000020e8
+ .igot.plt      0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtbegin.o
+
+.bss            0x200000a0       0xf8 load address 0x000020e8
+                0x200000a0                PROVIDE (__bss_start__, .)
+ *(.shbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x200000a0       0x1c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtbegin.o
+ .bss           0x200000bc        0x1 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Control.o)
+ *fill*         0x200000bd        0x3 
+ .bss           0x200000c0       0x44 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Structure.o)
+ .bss           0x20000104        0x4 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Tuner.o)
+ .bss           0x20000108        0xc .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Sensing.o)
+                0x20000108                capsense_widgetIndex
+                0x20000109                capsense_requestScanAllWidget
+                0x2000010a                capsense_prescalersTuningDone
+                0x2000010c                capsense_curWidgetResolution
+                0x20000110                capsense_sensorIndex
+ .bss           0x20000114        0x8 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_SensingCSD_LL.o)
+ .bss           0x2000011c       0x10 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Centroid_LL.o)
+ .bss           0x2000012c        0x1 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(uart.o)
+                0x2000012c                uart_initVar
+ *fill*         0x2000012d        0x1 
+ .bss           0x2000012e        0x2 C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CapSense_P4_v3_0\PSoC4\Library\Capsense_P4Library_GCCp.a(CapSense_SmartSense_SL_v3_0.o)
+ *(COMMON)
+ COMMON         0x20000130       0x64 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Structure.o)
+                0x20000130                capsense_dsRam
+ COMMON         0x20000194        0x4 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Sensing.o)
+                0x20000194                capsense_curRamSnsPtr
+                0x20000198                . = ALIGN (0x8)
+ *(.ram.b)
+                0x20000198                _end = .
+                0x20000198                __end = .
+                0x20000198                PROVIDE (end, .)
+                0x20000198                PROVIDE (__bss_end__, .)
+                0x000020d0                __cy_region_init_ram = LOADADDR (.data)
+                0x00000018                __cy_region_init_size_ram = (_edata - ADDR (.data))
+                0x000000f8                __cy_region_zero_size_ram = (_end - _edata)
+
+.heap           0x20000198       0x80 load address 0x000020e8
+                0x20000198                . = _end
+                0x20000218                . = (. + 0x80)
+ *fill*         0x20000198       0x80 
+                0x20000218                __cy_heap_limit = .
+
+.stack          0x20000c00      0x400
+                0x20000c00                __cy_stack_limit = .
+                0x20001000                . = (. + 0x400)
+ *fill*         0x20000c00      0x400 
+                0x00000001                ASSERT ((__cy_stack_limit >= __cy_heap_limit), region RAM overflowed with stack)
+                0x00000000                cy_checksum_exclude_size = (CY_APPL_LOADABLE == 0x1)?SIZEOF (.cy_checksum_exclude):0x0
+                0x00000001                ASSERT ((cy_checksum_exclude_size <= CY_CHECKSUM_EXCLUDE_SIZE), CY_BOOT: Section .cy_checksum_exclude size exceedes specified limit.)
+                0x00007fc0                cyloadermeta_start = (cy_project_type_bootloader || cy_project_type_app_for_stack_and_copier)?(0x8000 - CY_METADATA_SIZE):0xf0000000
+
+.cyloadermeta
+ *(.cyloadermeta)
+                0x00007fc0                cyloadablemeta_start = cy_project_type_app_for_stack_and_copier?((0x8000 - CY_FLASH_ROW_SIZE) - CY_METADATA_SIZE):((0x8000 - (CY_FLASH_ROW_SIZE * (CY_APPL_NUM - 0x1))) - CY_METADATA_SIZE)
+
+.cyloadablemeta
+ *(.cyloadablemeta)
+
+.cyflashprotect
+                0x90400000       0x20
+ *(.cyflashprotect)
+ .cyflashprotect
+                0x90400000       0x20 .\CortexM0p\ARM_GCC_493\Debug\cymetadata.o
+                0x90400000                cy_meta_flashprotect
+
+.cymeta         0x90500000        0xc
+ *(.cymeta)
+ .cymeta        0x90500000        0xc .\CortexM0p\ARM_GCC_493\Debug\cymetadata.o
+                0x90500000                cy_metadata
+
+.cychipprotect  0x90600000        0x4
+ *(.cychipprotect)
+ .cychipprotect
+                0x90600000        0x4 .\CortexM0p\ARM_GCC_493\Debug\cymetadata.o
+                0x90600000                cy_meta_chipprotect
+
+.rel.dyn        0x000020e8        0x0 load address 0x90600004
+ .rel.iplt      0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtbegin.o
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0xac8
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x20 .\CortexM0p\ARM_GCC_493\Debug\main.o
+ .debug_aranges
+                0x00000020       0x18 .\CortexM0p\ARM_GCC_493\Debug\cymetadata.o
+ .debug_aranges
+                0x00000038       0x48 .\CortexM0p\ARM_GCC_493\Debug\Cm0plusStart.o
+ .debug_aranges
+                0x00000080       0x38 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(cyfitter_cfg.o)
+ .debug_aranges
+                0x000000b8       0x78 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Control.o)
+ .debug_aranges
+                0x00000130       0x50 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Processing.o)
+ .debug_aranges
+                0x00000180       0x58 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Structure.o)
+ .debug_aranges
+                0x000001d8       0x28 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Tuner.o)
+ .debug_aranges
+                0x00000200       0x80 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Filter.o)
+ .debug_aranges
+                0x00000280       0x88 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Sensing.o)
+ .debug_aranges
+                0x00000308       0xb0 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_SensingCSD_LL.o)
+ .debug_aranges
+                0x000003b8       0x28 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Centroid_LL.o)
+ .debug_aranges
+                0x000003e0       0x48 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led0.o)
+ .debug_aranges
+                0x00000428       0x48 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led1.o)
+ .debug_aranges
+                0x00000470       0x48 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led2.o)
+ .debug_aranges
+                0x000004b8       0x48 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led3.o)
+ .debug_aranges
+                0x00000500       0x48 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led4.o)
+ .debug_aranges
+                0x00000548       0x48 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(blue.o)
+ .debug_aranges
+                0x00000590       0x58 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(uart.o)
+ .debug_aranges
+                0x000005e8       0x60 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(uart_SPI_UART.o)
+ .debug_aranges
+                0x00000648       0x88 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(uart_UART.o)
+ .debug_aranges
+                0x000006d0       0x80 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_ISR.o)
+ .debug_aranges
+                0x00000750       0x20 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyBootAsmGnu.o)
+ .debug_aranges
+                0x00000770      0x180 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLib.o)
+ .debug_aranges
+                0x000008f0       0x30 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(cyPm.o)
+ .debug_aranges
+                0x00000920       0xd8 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLFClk.o)
+ .debug_aranges
+                0x000009f8       0x30 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_INT.o)
+ .debug_aranges
+                0x00000a28       0x48 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyFlash.o)
+ .debug_aranges
+                0x00000a70       0x28 C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CapSense_P4_v3_0\PSoC4\Library\Capsense_P4Library_GCCp.a(CapSense_SmartSense_LL_v3_0.o)
+ .debug_aranges
+                0x00000a98       0x30 C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CapSense_P4_v3_0\PSoC4\Library\Capsense_P4Library_GCCp.a(CapSense_SmartSense_SL_v3_0.o)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000     0x92ce
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000      0x379 .\CortexM0p\ARM_GCC_493\Debug\main.o
+ .debug_info    0x00000379       0xfe .\CortexM0p\ARM_GCC_493\Debug\cymetadata.o
+ .debug_info    0x00000477      0x38b .\CortexM0p\ARM_GCC_493\Debug\Cm0plusStart.o
+ .debug_info    0x00000802      0x163 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(cyfitter_cfg.o)
+ .debug_info    0x00000965      0xad9 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Control.o)
+ .debug_info    0x0000143e      0xd0c .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Processing.o)
+ .debug_info    0x0000214a      0xb6f .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Structure.o)
+ .debug_info    0x00002cb9      0x652 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Tuner.o)
+ .debug_info    0x0000330b      0xaf3 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Filter.o)
+ .debug_info    0x00003dfe      0xc3f .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Sensing.o)
+ .debug_info    0x00004a3d      0xf00 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_SensingCSD_LL.o)
+ .debug_info    0x0000593d      0x2a4 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Centroid_LL.o)
+ .debug_info    0x00005be1      0x19d .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led0.o)
+ .debug_info    0x00005d7e      0x19d .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led1.o)
+ .debug_info    0x00005f1b      0x19d .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led2.o)
+ .debug_info    0x000060b8      0x19d .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led3.o)
+ .debug_info    0x00006255      0x19d .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led4.o)
+ .debug_info    0x000063f2      0x19d .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(blue.o)
+ .debug_info    0x0000658f      0x20a .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(uart.o)
+ .debug_info    0x00006799      0x217 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(uart_SPI_UART.o)
+ .debug_info    0x000069b0      0x352 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(uart_UART.o)
+ .debug_info    0x00006d02      0x300 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_ISR.o)
+ .debug_info    0x00007002       0xaf .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyBootAsmGnu.o)
+ .debug_info    0x000070b1      0xb95 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLib.o)
+ .debug_info    0x00007c46      0x17b .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(cyPm.o)
+ .debug_info    0x00007dc1      0x43f .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLFClk.o)
+ .debug_info    0x00008200      0x7f3 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_INT.o)
+ .debug_info    0x000089f3      0x435 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyFlash.o)
+ .debug_info    0x00008e28      0x22e C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CapSense_P4_v3_0\PSoC4\Library\Capsense_P4Library_GCCp.a(CapSense_SmartSense_LL_v3_0.o)
+ .debug_info    0x00009056      0x278 C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CapSense_P4_v3_0\PSoC4\Library\Capsense_P4Library_GCCp.a(CapSense_SmartSense_SL_v3_0.o)
+
+.debug_abbrev   0x00000000     0x299e
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x124 .\CortexM0p\ARM_GCC_493\Debug\main.o
+ .debug_abbrev  0x00000124       0x5d .\CortexM0p\ARM_GCC_493\Debug\cymetadata.o
+ .debug_abbrev  0x00000181      0x1f7 .\CortexM0p\ARM_GCC_493\Debug\Cm0plusStart.o
+ .debug_abbrev  0x00000378       0xe2 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(cyfitter_cfg.o)
+ .debug_abbrev  0x0000045a      0x25c .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Control.o)
+ .debug_abbrev  0x000006b6      0x27b .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Processing.o)
+ .debug_abbrev  0x00000931      0x219 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Structure.o)
+ .debug_abbrev  0x00000b4a      0x17e .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Tuner.o)
+ .debug_abbrev  0x00000cc8      0x2bb .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Filter.o)
+ .debug_abbrev  0x00000f83      0x29d .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Sensing.o)
+ .debug_abbrev  0x00001220      0x253 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_SensingCSD_LL.o)
+ .debug_abbrev  0x00001473      0x11c .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Centroid_LL.o)
+ .debug_abbrev  0x0000158f       0xc8 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led0.o)
+ .debug_abbrev  0x00001657       0xc8 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led1.o)
+ .debug_abbrev  0x0000171f       0xc8 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led2.o)
+ .debug_abbrev  0x000017e7       0xc8 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led3.o)
+ .debug_abbrev  0x000018af       0xc8 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led4.o)
+ .debug_abbrev  0x00001977       0xc8 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(blue.o)
+ .debug_abbrev  0x00001a3f       0xd5 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(uart.o)
+ .debug_abbrev  0x00001b14      0x169 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(uart_SPI_UART.o)
+ .debug_abbrev  0x00001c7d      0x13b .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(uart_UART.o)
+ .debug_abbrev  0x00001db8      0x1b4 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_ISR.o)
+ .debug_abbrev  0x00001f6c       0x14 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyBootAsmGnu.o)
+ .debug_abbrev  0x00001f80      0x236 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLib.o)
+ .debug_abbrev  0x000021b6       0xc6 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(cyPm.o)
+ .debug_abbrev  0x0000227c      0x1b6 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLFClk.o)
+ .debug_abbrev  0x00002432      0x1cd .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_INT.o)
+ .debug_abbrev  0x000025ff      0x1dd .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyFlash.o)
+ .debug_abbrev  0x000027dc      0x112 C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CapSense_P4_v3_0\PSoC4\Library\Capsense_P4Library_GCCp.a(CapSense_SmartSense_LL_v3_0.o)
+ .debug_abbrev  0x000028ee       0xb0 C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CapSense_P4_v3_0\PSoC4\Library\Capsense_P4Library_GCCp.a(CapSense_SmartSense_SL_v3_0.o)
+
+.debug_line     0x00000000     0x2dec
+ *(.debug_line)
+ .debug_line    0x00000000      0x160 .\CortexM0p\ARM_GCC_493\Debug\main.o
+ .debug_line    0x00000160       0x53 .\CortexM0p\ARM_GCC_493\Debug\cymetadata.o
+ .debug_line    0x000001b3      0x25a .\CortexM0p\ARM_GCC_493\Debug\Cm0plusStart.o
+ .debug_line    0x0000040d       0xbf .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(cyfitter_cfg.o)
+ .debug_line    0x000004cc      0x264 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Control.o)
+ .debug_line    0x00000730      0x270 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Processing.o)
+ .debug_line    0x000009a0      0x211 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Structure.o)
+ .debug_line    0x00000bb1      0x131 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Tuner.o)
+ .debug_line    0x00000ce2      0x230 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Filter.o)
+ .debug_line    0x00000f12      0x2cc .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Sensing.o)
+ .debug_line    0x000011de      0x413 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_SensingCSD_LL.o)
+ .debug_line    0x000015f1      0x123 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Centroid_LL.o)
+ .debug_line    0x00001714       0xbe .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led0.o)
+ .debug_line    0x000017d2       0xbe .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led1.o)
+ .debug_line    0x00001890       0xbe .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led2.o)
+ .debug_line    0x0000194e       0xbe .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led3.o)
+ .debug_line    0x00001a0c       0xbe .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led4.o)
+ .debug_line    0x00001aca       0xbe .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(blue.o)
+ .debug_line    0x00001b88      0x121 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(uart.o)
+ .debug_line    0x00001ca9      0x133 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(uart_SPI_UART.o)
+ .debug_line    0x00001ddc      0x1b6 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(uart_UART.o)
+ .debug_line    0x00001f92      0x171 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_ISR.o)
+ .debug_line    0x00002103       0x6a .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyBootAsmGnu.o)
+ .debug_line    0x0000216d      0x49c .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLib.o)
+ .debug_line    0x00002609       0x9a .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(cyPm.o)
+ .debug_line    0x000026a3      0x286 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLFClk.o)
+ .debug_line    0x00002929      0x14a .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_INT.o)
+ .debug_line    0x00002a73      0x1e3 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyFlash.o)
+ .debug_line    0x00002c56       0xb2 C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CapSense_P4_v3_0\PSoC4\Library\Capsense_P4Library_GCCp.a(CapSense_SmartSense_LL_v3_0.o)
+ .debug_line    0x00002d08       0xe4 C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CapSense_P4_v3_0\PSoC4\Library\Capsense_P4Library_GCCp.a(CapSense_SmartSense_SL_v3_0.o)
+
+.debug_frame    0x00000000     0x1990
+ *(.debug_frame)
+ .debug_frame   0x00000000       0x2c .\CortexM0p\ARM_GCC_493\Debug\main.o
+ .debug_frame   0x0000002c       0xb0 .\CortexM0p\ARM_GCC_493\Debug\Cm0plusStart.o
+ .debug_frame   0x000000dc       0x74 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(cyfitter_cfg.o)
+ .debug_frame   0x00000150      0x144 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Control.o)
+ .debug_frame   0x00000294       0xf8 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Processing.o)
+ .debug_frame   0x0000038c       0xcc .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Structure.o)
+ .debug_frame   0x00000458       0x40 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Tuner.o)
+ .debug_frame   0x00000498      0x19c .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Filter.o)
+ .debug_frame   0x00000634      0x16c .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Sensing.o)
+ .debug_frame   0x000007a0      0x248 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_SensingCSD_LL.o)
+ .debug_frame   0x000009e8       0x60 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Centroid_LL.o)
+ .debug_frame   0x00000a48       0x70 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led0.o)
+ .debug_frame   0x00000ab8       0x70 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led1.o)
+ .debug_frame   0x00000b28       0x70 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led2.o)
+ .debug_frame   0x00000b98       0x70 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led3.o)
+ .debug_frame   0x00000c08       0x70 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led4.o)
+ .debug_frame   0x00000c78       0x70 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(blue.o)
+ .debug_frame   0x00000ce8       0xd8 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(uart.o)
+ .debug_frame   0x00000dc0       0xb0 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(uart_SPI_UART.o)
+ .debug_frame   0x00000e70      0x124 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(uart_UART.o)
+ .debug_frame   0x00000f94      0x110 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_ISR.o)
+ .debug_frame   0x000010a4      0x3f0 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLib.o)
+ .debug_frame   0x00001494       0x58 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(cyPm.o)
+ .debug_frame   0x000014ec      0x1dc .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLFClk.o)
+ .debug_frame   0x000016c8       0x64 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_INT.o)
+ .debug_frame   0x0000172c       0xa8 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyFlash.o)
+ .debug_frame   0x000017d4       0x50 C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CapSense_P4_v3_0\PSoC4\Library\Capsense_P4Library_GCCp.a(CapSense_SmartSense_LL_v3_0.o)
+ .debug_frame   0x00001824       0x70 C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CapSense_P4_v3_0\PSoC4\Library\Capsense_P4Library_GCCp.a(CapSense_SmartSense_SL_v3_0.o)
+ .debug_frame   0x00001894       0x20 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_udivsi3.o)
+ .debug_frame   0x000018b4       0x20 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_divsi3.o)
+ .debug_frame   0x000018d4       0x20 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-errno.o)
+ .debug_frame   0x000018f4       0x28 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-exit.o)
+ .debug_frame   0x0000191c       0x2c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-init.o)
+ .debug_frame   0x00001948       0x28 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-memcpy.o)
+ .debug_frame   0x00001970       0x20 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-memset.o)
+
+.debug_str      0x00000000     0x2e63
+ *(.debug_str)
+ .debug_str     0x00000000      0x2da .\CortexM0p\ARM_GCC_493\Debug\main.o
+                                0x313 (size before relaxing)
+ .debug_str     0x000002da       0x5b .\CortexM0p\ARM_GCC_493\Debug\cymetadata.o
+                                0x1f1 (size before relaxing)
+ .debug_str     0x00000335      0x16a .\CortexM0p\ARM_GCC_493\Debug\Cm0plusStart.o
+                                0x326 (size before relaxing)
+ .debug_str     0x0000049f       0x86 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(cyfitter_cfg.o)
+                                0x230 (size before relaxing)
+ .debug_str     0x00000525      0x788 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Control.o)
+                                0x9a7 (size before relaxing)
+ .debug_str     0x00000cad      0x260 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Processing.o)
+                                0x971 (size before relaxing)
+ .debug_str     0x00000f0d      0x265 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Structure.o)
+                                0x8ba (size before relaxing)
+ .debug_str     0x00001172      0x119 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Tuner.o)
+                                0x6ab (size before relaxing)
+ .debug_str     0x0000128b      0x208 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Filter.o)
+                                0x82f (size before relaxing)
+ .debug_str     0x00001493      0x399 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Sensing.o)
+                                0xa53 (size before relaxing)
+ .debug_str     0x0000182c      0x30c .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_SensingCSD_LL.o)
+                                0xafd (size before relaxing)
+ .debug_str     0x00001b38       0x98 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Centroid_LL.o)
+                                0x310 (size before relaxing)
+ .debug_str     0x00001bd0       0x92 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led0.o)
+                                0x252 (size before relaxing)
+ .debug_str     0x00001c62       0x77 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led1.o)
+                                0x252 (size before relaxing)
+ .debug_str     0x00001cd9       0x77 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led2.o)
+                                0x252 (size before relaxing)
+ .debug_str     0x00001d50       0x77 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led3.o)
+                                0x252 (size before relaxing)
+ .debug_str     0x00001dc7       0x77 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led4.o)
+                                0x252 (size before relaxing)
+ .debug_str     0x00001e3e       0x77 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(blue.o)
+                                0x252 (size before relaxing)
+ .debug_str     0x00001eb5       0xe9 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(uart.o)
+                                0x297 (size before relaxing)
+ .debug_str     0x00001f9e       0xd0 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(uart_SPI_UART.o)
+                                0x2e5 (size before relaxing)
+ .debug_str     0x0000206e      0x161 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(uart_UART.o)
+                                0x38e (size before relaxing)
+ .debug_str     0x000021cf      0x14d .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_ISR.o)
+                                0x363 (size before relaxing)
+ .debug_str     0x0000231c      0x489 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLib.o)
+                                0x6f3 (size before relaxing)
+ .debug_str     0x000027a5       0x61 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(cyPm.o)
+                                0x254 (size before relaxing)
+ .debug_str     0x00002806      0x2d2 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLFClk.o)
+                                0x4d1 (size before relaxing)
+ .debug_str     0x00002ad8       0xa0 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_INT.o)
+                                0x75b (size before relaxing)
+ .debug_str     0x00002b78      0x11f .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyFlash.o)
+                                0x339 (size before relaxing)
+ .debug_str     0x00002c97      0x158 C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CapSense_P4_v3_0\PSoC4\Library\Capsense_P4Library_GCCp.a(CapSense_SmartSense_LL_v3_0.o)
+                                0x2ad (size before relaxing)
+ .debug_str     0x00002def       0x74 C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CapSense_P4_v3_0\PSoC4\Library\Capsense_P4Library_GCCp.a(CapSense_SmartSense_SL_v3_0.o)
+                                0x33a (size before relaxing)
+
+.debug_loc      0x00000000     0x3eaa
+ *(.debug_loc)
+ .debug_loc     0x00000000       0x4a .\CortexM0p\ARM_GCC_493\Debug\main.o
+ .debug_loc     0x0000004a      0x14f .\CortexM0p\ARM_GCC_493\Debug\Cm0plusStart.o
+ .debug_loc     0x00000199       0x35 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(cyfitter_cfg.o)
+ .debug_loc     0x000001ce      0x3cc .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Control.o)
+ .debug_loc     0x0000059a      0x6c0 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Processing.o)
+ .debug_loc     0x00000c5a      0x463 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Structure.o)
+ .debug_loc     0x000010bd      0x13d .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Tuner.o)
+ .debug_loc     0x000011fa      0x873 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Filter.o)
+ .debug_loc     0x00001a6d      0x3df .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Sensing.o)
+ .debug_loc     0x00001e4c      0x80f .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_SensingCSD_LL.o)
+ .debug_loc     0x0000265b      0x1f1 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Centroid_LL.o)
+ .debug_loc     0x0000284c       0xa2 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led0.o)
+ .debug_loc     0x000028ee       0xa2 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led1.o)
+ .debug_loc     0x00002990       0xa2 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led2.o)
+ .debug_loc     0x00002a32       0xa2 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led3.o)
+ .debug_loc     0x00002ad4       0xa2 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led4.o)
+ .debug_loc     0x00002b76       0xa2 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(blue.o)
+ .debug_loc     0x00002c18       0x7e .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(uart.o)
+ .debug_loc     0x00002c96       0x96 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(uart_SPI_UART.o)
+ .debug_loc     0x00002d2c      0x1b2 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(uart_UART.o)
+ .debug_loc     0x00002ede       0x82 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_ISR.o)
+ .debug_loc     0x00002f60      0x5f6 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLib.o)
+ .debug_loc     0x00003556       0x47 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(cyPm.o)
+ .debug_loc     0x0000359d      0x323 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLFClk.o)
+ .debug_loc     0x000038c0       0x8b .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_INT.o)
+ .debug_loc     0x0000394b      0x1c8 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyFlash.o)
+ .debug_loc     0x00003b13      0x189 C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CapSense_P4_v3_0\PSoC4\Library\Capsense_P4Library_GCCp.a(CapSense_SmartSense_LL_v3_0.o)
+ .debug_loc     0x00003c9c      0x20e C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CapSense_P4_v3_0\PSoC4\Library\Capsense_P4Library_GCCp.a(CapSense_SmartSense_SL_v3_0.o)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_ranges   0x00000000      0x8d0
+ *(.debug_ranges)
+ .debug_ranges  0x00000000       0x10 .\CortexM0p\ARM_GCC_493\Debug\main.o
+ .debug_ranges  0x00000010       0x38 .\CortexM0p\ARM_GCC_493\Debug\Cm0plusStart.o
+ .debug_ranges  0x00000048       0x28 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(cyfitter_cfg.o)
+ .debug_ranges  0x00000070       0x68 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Control.o)
+ .debug_ranges  0x000000d8       0x40 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Processing.o)
+ .debug_ranges  0x00000118       0x48 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Structure.o)
+ .debug_ranges  0x00000160       0x18 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Tuner.o)
+ .debug_ranges  0x00000178       0x70 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Filter.o)
+ .debug_ranges  0x000001e8       0x78 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Sensing.o)
+ .debug_ranges  0x00000260       0xa0 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_SensingCSD_LL.o)
+ .debug_ranges  0x00000300       0x18 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Centroid_LL.o)
+ .debug_ranges  0x00000318       0x38 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led0.o)
+ .debug_ranges  0x00000350       0x38 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led1.o)
+ .debug_ranges  0x00000388       0x38 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led2.o)
+ .debug_ranges  0x000003c0       0x38 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led3.o)
+ .debug_ranges  0x000003f8       0x38 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led4.o)
+ .debug_ranges  0x00000430       0x38 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(blue.o)
+ .debug_ranges  0x00000468       0x48 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(uart.o)
+ .debug_ranges  0x000004b0       0x50 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(uart_SPI_UART.o)
+ .debug_ranges  0x00000500       0x78 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(uart_UART.o)
+ .debug_ranges  0x00000578       0x70 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_ISR.o)
+ .debug_ranges  0x000005e8      0x170 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLib.o)
+ .debug_ranges  0x00000758       0x20 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(cyPm.o)
+ .debug_ranges  0x00000778       0xc8 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLFClk.o)
+ .debug_ranges  0x00000840       0x20 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_INT.o)
+ .debug_ranges  0x00000860       0x38 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyFlash.o)
+ .debug_ranges  0x00000898       0x18 C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CapSense_P4_v3_0\PSoC4\Library\Capsense_P4Library_GCCp.a(CapSense_SmartSense_LL_v3_0.o)
+ .debug_ranges  0x000008b0       0x20 C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CapSense_P4_v3_0\PSoC4\Library\Capsense_P4Library_GCCp.a(CapSense_SmartSense_SL_v3_0.o)
+
+.comment        0x00000000       0x70
+ .comment       0x00000000       0x70 .\CortexM0p\ARM_GCC_493\Debug\main.o
+                                 0x71 (size before relaxing)
+ .comment       0x00000000       0x71 .\CortexM0p\ARM_GCC_493\Debug\cymetadata.o
+ .comment       0x00000000       0x71 .\CortexM0p\ARM_GCC_493\Debug\Cm0plusStart.o
+ .comment       0x00000000       0x71 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(cyfitter_cfg.o)
+ .comment       0x00000000       0x71 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Control.o)
+ .comment       0x00000000       0x71 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Processing.o)
+ .comment       0x00000000       0x71 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Structure.o)
+ .comment       0x00000000       0x71 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Tuner.o)
+ .comment       0x00000000       0x71 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Filter.o)
+ .comment       0x00000000       0x71 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Sensing.o)
+ .comment       0x00000000       0x71 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_SensingCSD_LL.o)
+ .comment       0x00000000       0x71 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Centroid_LL.o)
+ .comment       0x00000000       0x71 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led0.o)
+ .comment       0x00000000       0x71 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led1.o)
+ .comment       0x00000000       0x71 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led2.o)
+ .comment       0x00000000       0x71 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led3.o)
+ .comment       0x00000000       0x71 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led4.o)
+ .comment       0x00000000       0x71 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(blue.o)
+ .comment       0x00000000       0x71 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(uart.o)
+ .comment       0x00000000       0x71 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(uart_SPI_UART.o)
+ .comment       0x00000000       0x71 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(uart_UART.o)
+ .comment       0x00000000       0x71 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_ISR.o)
+ .comment       0x00000000       0x71 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLib.o)
+ .comment       0x00000000       0x71 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(cyPm.o)
+ .comment       0x00000000       0x71 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLFClk.o)
+ .comment       0x00000000       0x71 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_INT.o)
+ .comment       0x00000000       0x71 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyFlash.o)
+ .comment       0x00000000       0x71 C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CapSense_P4_v3_0\PSoC4\Library\Capsense_P4Library_GCCp.a(CapSense_SmartSense_LL_v3_0.o)
+ .comment       0x00000000       0x71 C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CapSense_P4_v3_0\PSoC4\Library\Capsense_P4Library_GCCp.a(CapSense_SmartSense_SL_v3_0.o)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.note.gnu.arm.ident
+ *(.note.gnu.arm.ident)
+
+.ARM.attributes
+                0x00000000       0x28
+ *(.ARM.attributes)
+ .ARM.attributes
+                0x00000000       0x1e c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crti.o
+ .ARM.attributes
+                0x0000001e       0x2c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtbegin.o
+ .ARM.attributes
+                0x0000004a       0x1b c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m/crt0.o
+ .ARM.attributes
+                0x00000065       0x32 .\CortexM0p\ARM_GCC_493\Debug\main.o
+ .ARM.attributes
+                0x00000097       0x32 .\CortexM0p\ARM_GCC_493\Debug\cymetadata.o
+ .ARM.attributes
+                0x000000c9       0x32 .\CortexM0p\ARM_GCC_493\Debug\Cm0plusStart.o
+ .ARM.attributes
+                0x000000fb       0x32 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(cyfitter_cfg.o)
+ .ARM.attributes
+                0x0000012d       0x32 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Control.o)
+ .ARM.attributes
+                0x0000015f       0x32 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Processing.o)
+ .ARM.attributes
+                0x00000191       0x32 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Structure.o)
+ .ARM.attributes
+                0x000001c3       0x32 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Tuner.o)
+ .ARM.attributes
+                0x000001f5       0x32 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Filter.o)
+ .ARM.attributes
+                0x00000227       0x32 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Sensing.o)
+ .ARM.attributes
+                0x00000259       0x32 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_SensingCSD_LL.o)
+ .ARM.attributes
+                0x0000028b       0x32 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_Centroid_LL.o)
+ .ARM.attributes
+                0x000002bd       0x32 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led0.o)
+ .ARM.attributes
+                0x000002ef       0x32 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led1.o)
+ .ARM.attributes
+                0x00000321       0x32 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led2.o)
+ .ARM.attributes
+                0x00000353       0x32 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led3.o)
+ .ARM.attributes
+                0x00000385       0x32 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(led4.o)
+ .ARM.attributes
+                0x000003b7       0x32 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(blue.o)
+ .ARM.attributes
+                0x000003e9       0x32 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(uart.o)
+ .ARM.attributes
+                0x0000041b       0x32 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(uart_SPI_UART.o)
+ .ARM.attributes
+                0x0000044d       0x32 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(uart_UART.o)
+ .ARM.attributes
+                0x0000047f       0x32 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_ISR.o)
+ .ARM.attributes
+                0x000004b1       0x22 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyBootAsmGnu.o)
+ .ARM.attributes
+                0x000004d3       0x32 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLib.o)
+ .ARM.attributes
+                0x00000505       0x32 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(cyPm.o)
+ .ARM.attributes
+                0x00000537       0x32 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyLFClk.o)
+ .ARM.attributes
+                0x00000569       0x32 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(capsense_INT.o)
+ .ARM.attributes
+                0x0000059b       0x32 .\CortexM0p\ARM_GCC_493\Debug\145capsenseled.a(CyFlash.o)
+ .ARM.attributes
+                0x000005cd       0x32 C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CapSense_P4_v3_0\PSoC4\Library\Capsense_P4Library_GCCp.a(CapSense_SmartSense_LL_v3_0.o)
+ .ARM.attributes
+                0x000005ff       0x32 C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CapSense_P4_v3_0\PSoC4\Library\Capsense_P4Library_GCCp.a(CapSense_SmartSense_SL_v3_0.o)
+ .ARM.attributes
+                0x00000631       0x1e c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_udivsi3.o)
+ .ARM.attributes
+                0x0000064f       0x1e c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_divsi3.o)
+ .ARM.attributes
+                0x0000066d       0x1e c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_dvmd_tls.o)
+ .ARM.attributes
+                0x0000068b       0x2c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-errno.o)
+ .ARM.attributes
+                0x000006b7       0x2c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-exit.o)
+ .ARM.attributes
+                0x000006e3       0x2c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-impure.o)
+ .ARM.attributes
+                0x0000070f       0x2c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-init.o)
+ .ARM.attributes
+                0x0000073b       0x2c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-memcpy.o)
+ .ARM.attributes
+                0x00000767       0x2c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-memset.o)
+ .ARM.attributes
+                0x00000793       0x2c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtend.o
+ .ARM.attributes
+                0x000007bf       0x1e c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crtn.o
+
+/DISCARD/
+ *(.note.GNU-stack)
+OUTPUT(.\CortexM0p\ARM_GCC_493\Debug\145capsenseled.elf elf32-littlearm)

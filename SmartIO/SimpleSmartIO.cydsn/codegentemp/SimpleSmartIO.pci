@@ -1,0 +1,11 @@
+# SimpleSmartIO
+# 2016-03-06 14:11:44Z
+
+# IO_2@[IOP=(3)][IoId=(2)] is reserved: SWDDebugEnabled
+dont_use_io iocell 3 2
+# IO_3@[IOP=(3)][IoId=(3)] is reserved: SWDDebugEnabled
+dont_use_io iocell 3 3
+set_location "ClockGenBlock" m0s8clockgenblockcell -1 -1 0
+set_io "\SmartIO:internalPin_o4(0)\" iocell 2 4
+set_io "BlueLED(0)" iocell 2 5
+set_location "\SmartIO:cy_m0s8_prgio\" p4prgiocell -1 -1 2

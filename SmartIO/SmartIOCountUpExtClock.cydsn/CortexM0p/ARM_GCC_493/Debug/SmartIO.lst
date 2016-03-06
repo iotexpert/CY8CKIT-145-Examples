@@ -1,0 +1,2725 @@
+ARM GAS  C:\Users\Alan\AppData\Local\Temp\ccfVlkpm.s 			page 1
+
+
+   1              		.cpu cortex-m0plus
+   2              		.fpu softvfp
+   3              		.eabi_attribute 20, 1
+   4              		.eabi_attribute 21, 1
+   5              		.eabi_attribute 23, 3
+   6              		.eabi_attribute 24, 1
+   7              		.eabi_attribute 25, 1
+   8              		.eabi_attribute 26, 1
+   9              		.eabi_attribute 30, 1
+  10              		.eabi_attribute 34, 0
+  11              		.eabi_attribute 18, 4
+  12              		.code	16
+  13              		.file	"SmartIO.c"
+  14              		.text
+  15              	.Ltext0:
+  16              		.cfi_sections	.debug_frame
+  17              		.section	.text.SmartIO_Init,"ax",%progbits
+  18              		.align	2
+  19              		.global	SmartIO_Init
+  20              		.code	16
+  21              		.thumb_func
+  22              		.type	SmartIO_Init, %function
+  23              	SmartIO_Init:
+  24              	.LFB0:
+  25              		.file 1 ".\\Generated_Source\\PSoC4\\SmartIO.c"
+   1:.\Generated_Source\PSoC4/SmartIO.c **** /*******************************************************************************
+   2:.\Generated_Source\PSoC4/SmartIO.c **** * \file SmartIO.c
+   3:.\Generated_Source\PSoC4/SmartIO.c **** * \version 1.0
+   4:.\Generated_Source\PSoC4/SmartIO.c **** *
+   5:.\Generated_Source\PSoC4/SmartIO.c **** * \brief
+   6:.\Generated_Source\PSoC4/SmartIO.c **** *  This file provides the  API for the SmartIO Component.
+   7:.\Generated_Source\PSoC4/SmartIO.c **** *
+   8:.\Generated_Source\PSoC4/SmartIO.c **** *******************************************************************************
+   9:.\Generated_Source\PSoC4/SmartIO.c **** * Copyright 2016, Cypress Semiconductor Corporation. All rights reserved.
+  10:.\Generated_Source\PSoC4/SmartIO.c **** * You may use this file only in accordance with the license, terms, conditions,
+  11:.\Generated_Source\PSoC4/SmartIO.c **** * disclaimers, and limitations in the end user license agreement accompanying
+  12:.\Generated_Source\PSoC4/SmartIO.c **** * the software package with which this file was provided.
+  13:.\Generated_Source\PSoC4/SmartIO.c **** *******************************************************************************/
+  14:.\Generated_Source\PSoC4/SmartIO.c **** 
+  15:.\Generated_Source\PSoC4/SmartIO.c **** #include "SmartIO.h"
+  16:.\Generated_Source\PSoC4/SmartIO.c **** 
+  17:.\Generated_Source\PSoC4/SmartIO.c **** /* Initialization global variable */
+  18:.\Generated_Source\PSoC4/SmartIO.c **** uint8 SmartIO_initVar = 0u;
+  19:.\Generated_Source\PSoC4/SmartIO.c **** 
+  20:.\Generated_Source\PSoC4/SmartIO.c **** /* Clock configuration */
+  21:.\Generated_Source\PSoC4/SmartIO.c **** static uint32 SmartIO_clkConfig = 0u;
+  22:.\Generated_Source\PSoC4/SmartIO.c **** 
+  23:.\Generated_Source\PSoC4/SmartIO.c **** 
+  24:.\Generated_Source\PSoC4/SmartIO.c **** /*******************************************************************************
+  25:.\Generated_Source\PSoC4/SmartIO.c **** * Function Name: SmartIO_Init
+  26:.\Generated_Source\PSoC4/SmartIO.c **** ****************************************************************************//**
+  27:.\Generated_Source\PSoC4/SmartIO.c **** *
+  28:.\Generated_Source\PSoC4/SmartIO.c **** * \brief Initializes the component as specified in the Configuration Dialog.
+  29:.\Generated_Source\PSoC4/SmartIO.c **** *
+  30:.\Generated_Source\PSoC4/SmartIO.c **** * This function can also be used to reinitialize the component to the settings 
+  31:.\Generated_Source\PSoC4/SmartIO.c **** * as specified in the Configuration dialog.
+  32:.\Generated_Source\PSoC4/SmartIO.c **** *
+ARM GAS  C:\Users\Alan\AppData\Local\Temp\ccfVlkpm.s 			page 2
+
+
+  33:.\Generated_Source\PSoC4/SmartIO.c **** * \funcusage
+  34:.\Generated_Source\PSoC4/SmartIO.c **** *  \snippet SmartIO_SUT.c usage_SmartIO_Init
+  35:.\Generated_Source\PSoC4/SmartIO.c **** *******************************************************************************/
+  36:.\Generated_Source\PSoC4/SmartIO.c **** void SmartIO_Init(void)
+  37:.\Generated_Source\PSoC4/SmartIO.c **** {
+  26              		.loc 1 37 0
+  27              		.cfi_startproc
+  38:.\Generated_Source\PSoC4/SmartIO.c ****     /* Must disable the block before configuring */
+  39:.\Generated_Source\PSoC4/SmartIO.c ****     SmartIO_Disable();
+  28              		.loc 1 39 0
+  29 0000 174A     		ldr	r2, .L2
+  30 0002 1368     		ldr	r3, [r2]
+  31 0004 5B00     		lsl	r3, r3, #1
+  32 0006 5B08     		lsr	r3, r3, #1
+  33 0008 1360     		str	r3, [r2]
+  40:.\Generated_Source\PSoC4/SmartIO.c ****     /* Save the clock configuration */
+  41:.\Generated_Source\PSoC4/SmartIO.c ****     SmartIO_clkConfig = SmartIO_INIT_CLOCK_SRC;
+  34              		.loc 1 41 0
+  35 000a 8021     		mov	r1, #128
+  36 000c 4900     		lsl	r1, r1, #1
+  37 000e 154B     		ldr	r3, .L2+4
+  38 0010 1960     		str	r1, [r3]
+  42:.\Generated_Source\PSoC4/SmartIO.c ****     /* General control */
+  43:.\Generated_Source\PSoC4/SmartIO.c ****     SmartIO_CTL = SmartIO_INIT_CTL_CONFIG;
+  39              		.loc 1 43 0
+  40 0012 0623     		mov	r3, #6
+  41 0014 FF33     		add	r3, r3, #255
+  42 0016 1360     		str	r3, [r2]
+  44:.\Generated_Source\PSoC4/SmartIO.c ****     /* Synchronization control */
+  45:.\Generated_Source\PSoC4/SmartIO.c ****     SmartIO_SYNC_CTL = SmartIO_INIT_SYNC_CONFIG;
+  43              		.loc 1 45 0
+  44 0018 0022     		mov	r2, #0
+  45 001a 134B     		ldr	r3, .L2+8
+  46 001c 1A60     		str	r2, [r3]
+  46:.\Generated_Source\PSoC4/SmartIO.c ****     /* LUT input selection */
+  47:.\Generated_Source\PSoC4/SmartIO.c ****     SmartIO_LUT_CONGIG_BASE.lutSel[SmartIO_LUT0] = SmartIO_INIT_LUT0_SEL_CONFIG;
+  47              		.loc 1 47 0
+  48 001e 134B     		ldr	r3, .L2+12
+  49 0020 1349     		ldr	r1, .L2+16
+  50 0022 1960     		str	r1, [r3]
+  48:.\Generated_Source\PSoC4/SmartIO.c ****     SmartIO_LUT_CONGIG_BASE.lutSel[SmartIO_LUT1] = SmartIO_INIT_LUT1_SEL_CONFIG;
+  51              		.loc 1 48 0
+  52 0024 5960     		str	r1, [r3, #4]
+  49:.\Generated_Source\PSoC4/SmartIO.c ****     SmartIO_LUT_CONGIG_BASE.lutSel[SmartIO_LUT2] = SmartIO_INIT_LUT2_SEL_CONFIG;
+  53              		.loc 1 49 0
+  54 0026 9960     		str	r1, [r3, #8]
+  50:.\Generated_Source\PSoC4/SmartIO.c ****     SmartIO_LUT_CONGIG_BASE.lutSel[SmartIO_LUT3] = SmartIO_INIT_LUT3_SEL_CONFIG;
+  55              		.loc 1 50 0
+  56 0028 1248     		ldr	r0, .L2+20
+  57 002a D860     		str	r0, [r3, #12]
+  51:.\Generated_Source\PSoC4/SmartIO.c ****     SmartIO_LUT_CONGIG_BASE.lutSel[SmartIO_LUT4] = SmartIO_INIT_LUT4_SEL_CONFIG;
+  58              		.loc 1 51 0
+  59 002c 1961     		str	r1, [r3, #16]
+  52:.\Generated_Source\PSoC4/SmartIO.c ****     SmartIO_LUT_CONGIG_BASE.lutSel[SmartIO_LUT5] = SmartIO_INIT_LUT5_SEL_CONFIG;
+  60              		.loc 1 52 0
+  61 002e 1249     		ldr	r1, .L2+24
+  62 0030 5961     		str	r1, [r3, #20]
+ARM GAS  C:\Users\Alan\AppData\Local\Temp\ccfVlkpm.s 			page 3
+
+
+  53:.\Generated_Source\PSoC4/SmartIO.c ****     SmartIO_LUT_CONGIG_BASE.lutSel[SmartIO_LUT6] = SmartIO_INIT_LUT6_SEL_CONFIG;
+  63              		.loc 1 53 0
+  64 0032 9861     		str	r0, [r3, #24]
+  54:.\Generated_Source\PSoC4/SmartIO.c ****     SmartIO_LUT_CONGIG_BASE.lutSel[SmartIO_LUT7] = SmartIO_INIT_LUT7_SEL_CONFIG;
+  65              		.loc 1 54 0
+  66 0034 D861     		str	r0, [r3, #28]
+  55:.\Generated_Source\PSoC4/SmartIO.c ****     /* LUT control */
+  56:.\Generated_Source\PSoC4/SmartIO.c ****     SmartIO_LUT_CONGIG_BASE.lutCtl[SmartIO_LUT0] = SmartIO_INIT_LUT0_CTL_CONFIG;
+  67              		.loc 1 56 0
+  68 0036 1A62     		str	r2, [r3, #32]
+  57:.\Generated_Source\PSoC4/SmartIO.c ****     SmartIO_LUT_CONGIG_BASE.lutCtl[SmartIO_LUT1] = SmartIO_INIT_LUT1_CTL_CONFIG;
+  69              		.loc 1 57 0
+  70 0038 5A62     		str	r2, [r3, #36]
+  58:.\Generated_Source\PSoC4/SmartIO.c ****     SmartIO_LUT_CONGIG_BASE.lutCtl[SmartIO_LUT2] = SmartIO_INIT_LUT2_CTL_CONFIG;
+  71              		.loc 1 58 0
+  72 003a 9E21     		mov	r1, #158
+  73 003c 8900     		lsl	r1, r1, #2
+  74 003e 9962     		str	r1, [r3, #40]
+  59:.\Generated_Source\PSoC4/SmartIO.c ****     SmartIO_LUT_CONGIG_BASE.lutCtl[SmartIO_LUT3] = SmartIO_INIT_LUT3_CTL_CONFIG;
+  75              		.loc 1 59 0
+  76 0040 0E48     		ldr	r0, .L2+28
+  77 0042 D862     		str	r0, [r3, #44]
+  60:.\Generated_Source\PSoC4/SmartIO.c ****     SmartIO_LUT_CONGIG_BASE.lutCtl[SmartIO_LUT4] = SmartIO_INIT_LUT4_CTL_CONFIG;
+  78              		.loc 1 60 0
+  79 0044 1863     		str	r0, [r3, #48]
+  61:.\Generated_Source\PSoC4/SmartIO.c ****     SmartIO_LUT_CONGIG_BASE.lutCtl[SmartIO_LUT5] = SmartIO_INIT_LUT5_CTL_CONFIG;
+  80              		.loc 1 61 0
+  81 0046 E738     		sub	r0, r0, #231
+  82 0048 FF38     		sub	r0, r0, #255
+  83 004a 5863     		str	r0, [r3, #52]
+  62:.\Generated_Source\PSoC4/SmartIO.c ****     SmartIO_LUT_CONGIG_BASE.lutCtl[SmartIO_LUT6] = SmartIO_INIT_LUT6_CTL_CONFIG;
+  84              		.loc 1 62 0
+  85 004c 9963     		str	r1, [r3, #56]
+  63:.\Generated_Source\PSoC4/SmartIO.c ****     SmartIO_LUT_CONGIG_BASE.lutCtl[SmartIO_LUT7] = SmartIO_INIT_LUT7_CTL_CONFIG;
+  86              		.loc 1 63 0
+  87 004e 0C49     		ldr	r1, .L2+32
+  88 0050 D963     		str	r1, [r3, #60]
+  64:.\Generated_Source\PSoC4/SmartIO.c ****     /* Turn off the DU */
+  65:.\Generated_Source\PSoC4/SmartIO.c ****     SmartIO_DU_SEL = SmartIO_REG_ZEROS;
+  89              		.loc 1 65 0
+  90 0052 0C4B     		ldr	r3, .L2+36
+  91 0054 1A60     		str	r2, [r3]
+  66:.\Generated_Source\PSoC4/SmartIO.c ****     SmartIO_DU_CTL = SmartIO_REG_ZEROS;
+  92              		.loc 1 66 0
+  93 0056 0C4B     		ldr	r3, .L2+40
+  94 0058 1A60     		str	r2, [r3]
+  67:.\Generated_Source\PSoC4/SmartIO.c ****     SmartIO_DATA = SmartIO_REG_ZEROS;
+  95              		.loc 1 67 0
+  96 005a 0C4B     		ldr	r3, .L2+44
+  97 005c 1A60     		str	r2, [r3]
+  68:.\Generated_Source\PSoC4/SmartIO.c **** }
+  98              		.loc 1 68 0
+  99              		@ sp needed
+ 100 005e 7047     		bx	lr
+ 101              	.L3:
+ 102              		.align	2
+ 103              	.L2:
+ARM GAS  C:\Users\Alan\AppData\Local\Temp\ccfVlkpm.s 			page 4
+
+
+ 104 0060 00000540 		.word	1074069504
+ 105 0064 00000000 		.word	.LANCHOR0
+ 106 0068 10000540 		.word	1074069520
+ 107 006c 20000540 		.word	1074069536
+ 108 0070 11111100 		.word	1118481
+ 109 0074 07030600 		.word	393991
+ 110 0078 08080800 		.word	526344
+ 111 007c 66020000 		.word	614
+ 112 0080 55020000 		.word	597
+ 113 0084 C0000540 		.word	1074069696
+ 114 0088 C4000540 		.word	1074069700
+ 115 008c F0000540 		.word	1074069744
+ 116              		.cfi_endproc
+ 117              	.LFE0:
+ 118              		.size	SmartIO_Init, .-SmartIO_Init
+ 119              		.section	.text.SmartIO_Start,"ax",%progbits
+ 120              		.align	2
+ 121              		.global	SmartIO_Start
+ 122              		.code	16
+ 123              		.thumb_func
+ 124              		.type	SmartIO_Start, %function
+ 125              	SmartIO_Start:
+ 126              	.LFB1:
+  69:.\Generated_Source\PSoC4/SmartIO.c **** 
+  70:.\Generated_Source\PSoC4/SmartIO.c **** 
+  71:.\Generated_Source\PSoC4/SmartIO.c **** /*******************************************************************************
+  72:.\Generated_Source\PSoC4/SmartIO.c **** * Function Name: SmartIO_Start
+  73:.\Generated_Source\PSoC4/SmartIO.c **** ****************************************************************************//**
+  74:.\Generated_Source\PSoC4/SmartIO.c **** *
+  75:.\Generated_Source\PSoC4/SmartIO.c **** * \brief Invokes SmartIO_Init() and SmartIO_Enable().
+  76:.\Generated_Source\PSoC4/SmartIO.c **** *  
+  77:.\Generated_Source\PSoC4/SmartIO.c **** * After this function call, the component is initialized to specified values
+  78:.\Generated_Source\PSoC4/SmartIO.c **** * in the Configuration dialog and is then enabled.
+  79:.\Generated_Source\PSoC4/SmartIO.c **** *
+  80:.\Generated_Source\PSoC4/SmartIO.c **** * If calling this function after calling SmartIO_Stop(), the fabric
+  81:.\Generated_Source\PSoC4/SmartIO.c **** * will set the clock configuration as specified before calling Stop().
+  82:.\Generated_Source\PSoC4/SmartIO.c **** *
+  83:.\Generated_Source\PSoC4/SmartIO.c **** * \globalvars
+  84:.\Generated_Source\PSoC4/SmartIO.c **** *  SmartIO_initVar - used to check initial configuration, modified
+  85:.\Generated_Source\PSoC4/SmartIO.c **** *  on first function call.
+  86:.\Generated_Source\PSoC4/SmartIO.c **** *
+  87:.\Generated_Source\PSoC4/SmartIO.c **** * \funcusage
+  88:.\Generated_Source\PSoC4/SmartIO.c **** *  \snippet SmartIO_SUT.c usage_SmartIO_Start
+  89:.\Generated_Source\PSoC4/SmartIO.c **** *******************************************************************************/
+  90:.\Generated_Source\PSoC4/SmartIO.c **** void SmartIO_Start(void)
+  91:.\Generated_Source\PSoC4/SmartIO.c **** {
+ 127              		.loc 1 91 0
+ 128              		.cfi_startproc
+ 129 0000 08B5     		push	{r3, lr}
+ 130              		.cfi_def_cfa_offset 8
+ 131              		.cfi_offset 3, -8
+ 132              		.cfi_offset 14, -4
+  92:.\Generated_Source\PSoC4/SmartIO.c ****     uint32 regVal;
+  93:.\Generated_Source\PSoC4/SmartIO.c ****     
+  94:.\Generated_Source\PSoC4/SmartIO.c ****     if (0u == SmartIO_initVar)
+ 133              		.loc 1 94 0
+ 134 0002 0E4B     		ldr	r3, .L7
+ARM GAS  C:\Users\Alan\AppData\Local\Temp\ccfVlkpm.s 			page 5
+
+
+ 135 0004 1B79     		ldrb	r3, [r3, #4]
+ 136 0006 002B     		cmp	r3, #0
+ 137 0008 05D1     		bne	.L5
+  95:.\Generated_Source\PSoC4/SmartIO.c ****     {
+  96:.\Generated_Source\PSoC4/SmartIO.c ****         SmartIO_Init();
+ 138              		.loc 1 96 0
+ 139 000a FFF7FEFF 		bl	SmartIO_Init
+ 140              	.LVL0:
+  97:.\Generated_Source\PSoC4/SmartIO.c ****         SmartIO_initVar = 1u; /* Component was initialized */
+ 141              		.loc 1 97 0
+ 142 000e 0122     		mov	r2, #1
+ 143 0010 0A4B     		ldr	r3, .L7
+ 144 0012 1A71     		strb	r2, [r3, #4]
+ 145 0014 0BE0     		b	.L6
+ 146              	.L5:
+  98:.\Generated_Source\PSoC4/SmartIO.c ****     }
+  99:.\Generated_Source\PSoC4/SmartIO.c ****     else
+ 100:.\Generated_Source\PSoC4/SmartIO.c ****     {
+ 101:.\Generated_Source\PSoC4/SmartIO.c ****         /* Restore the component settings if Stop() was called */
+ 102:.\Generated_Source\PSoC4/SmartIO.c ****         if ((SmartIO_CTL & SmartIO_FABRIC_MASK) == 0u)
+ 147              		.loc 1 102 0
+ 148 0016 0A4B     		ldr	r3, .L7+4
+ 149 0018 1B68     		ldr	r3, [r3]
+ 150 001a 002B     		cmp	r3, #0
+ 151 001c 07DB     		blt	.L6
+ 103:.\Generated_Source\PSoC4/SmartIO.c ****         {
+ 104:.\Generated_Source\PSoC4/SmartIO.c ****             /* Clear the pipeline bit and clear the clock field */            
+ 105:.\Generated_Source\PSoC4/SmartIO.c ****             regVal = SmartIO_CTL & SmartIO_PIPELINE_DISABLE & SmartIO_CLOCK_CLEAR;
+ 152              		.loc 1 105 0
+ 153 001e 0849     		ldr	r1, .L7+4
+ 154 0020 0A68     		ldr	r2, [r1]
+ 155 0022 084B     		ldr	r3, .L7+8
+ 156 0024 1340     		and	r3, r2
+ 157              	.LVL1:
+ 106:.\Generated_Source\PSoC4/SmartIO.c ****             /* Restore the clock settings */
+ 107:.\Generated_Source\PSoC4/SmartIO.c ****             SmartIO_CTL = regVal | SmartIO_clkConfig;
+ 158              		.loc 1 107 0
+ 159 0026 054A     		ldr	r2, .L7
+ 160 0028 1268     		ldr	r2, [r2]
+ 161 002a 1343     		orr	r3, r2
+ 162              	.LVL2:
+ 163 002c 0B60     		str	r3, [r1]
+ 164              	.L6:
+ 108:.\Generated_Source\PSoC4/SmartIO.c ****         }
+ 109:.\Generated_Source\PSoC4/SmartIO.c ****     }
+ 110:.\Generated_Source\PSoC4/SmartIO.c ****     SmartIO_Enable();
+ 165              		.loc 1 110 0
+ 166 002e 044A     		ldr	r2, .L7+4
+ 167 0030 1368     		ldr	r3, [r2]
+ 168 0032 8021     		mov	r1, #128
+ 169 0034 0906     		lsl	r1, r1, #24
+ 170 0036 0B43     		orr	r3, r1
+ 171 0038 1360     		str	r3, [r2]
+ 111:.\Generated_Source\PSoC4/SmartIO.c **** }
+ 172              		.loc 1 111 0
+ 173              		@ sp needed
+ 174 003a 08BD     		pop	{r3, pc}
+ARM GAS  C:\Users\Alan\AppData\Local\Temp\ccfVlkpm.s 			page 6
+
+
+ 175              	.L8:
+ 176              		.align	2
+ 177              	.L7:
+ 178 003c 00000000 		.word	.LANCHOR0
+ 179 0040 00000540 		.word	1074069504
+ 180 0044 FFE0FFFD 		.word	-33562369
+ 181              		.cfi_endproc
+ 182              	.LFE1:
+ 183              		.size	SmartIO_Start, .-SmartIO_Start
+ 184              		.section	.text.SmartIO_Stop,"ax",%progbits
+ 185              		.align	2
+ 186              		.global	SmartIO_Stop
+ 187              		.code	16
+ 188              		.thumb_func
+ 189              		.type	SmartIO_Stop, %function
+ 190              	SmartIO_Stop:
+ 191              	.LFB2:
+ 112:.\Generated_Source\PSoC4/SmartIO.c **** 
+ 113:.\Generated_Source\PSoC4/SmartIO.c **** 
+ 114:.\Generated_Source\PSoC4/SmartIO.c **** /*******************************************************************************
+ 115:.\Generated_Source\PSoC4/SmartIO.c **** * Function Name: SmartIO_Stop
+ 116:.\Generated_Source\PSoC4/SmartIO.c **** ****************************************************************************//**
+ 117:.\Generated_Source\PSoC4/SmartIO.c **** *
+ 118:.\Generated_Source\PSoC4/SmartIO.c **** * \brief The routing fabric is bypassed and the block is powered down.
+ 119:.\Generated_Source\PSoC4/SmartIO.c **** *
+ 120:.\Generated_Source\PSoC4/SmartIO.c **** * This function saves the clock configuration before powering down. Calling
+ 121:.\Generated_Source\PSoC4/SmartIO.c **** * Start() will enable the block and restore the clock setting.
+ 122:.\Generated_Source\PSoC4/SmartIO.c **** * 
+ 123:.\Generated_Source\PSoC4/SmartIO.c **** * \globalvars
+ 124:.\Generated_Source\PSoC4/SmartIO.c **** *  SmartIO_clkConfig - used to save the clock configuration.
+ 125:.\Generated_Source\PSoC4/SmartIO.c **** *
+ 126:.\Generated_Source\PSoC4/SmartIO.c **** * \funcusage
+ 127:.\Generated_Source\PSoC4/SmartIO.c **** *  \snippet SmartIO_SUT.c usage_SmartIO_Stop
+ 128:.\Generated_Source\PSoC4/SmartIO.c **** *******************************************************************************/
+ 129:.\Generated_Source\PSoC4/SmartIO.c **** void SmartIO_Stop(void)
+ 130:.\Generated_Source\PSoC4/SmartIO.c **** {
+ 192              		.loc 1 130 0
+ 193              		.cfi_startproc
+ 131:.\Generated_Source\PSoC4/SmartIO.c ****     uint32 regVal;
+ 132:.\Generated_Source\PSoC4/SmartIO.c ****     
+ 133:.\Generated_Source\PSoC4/SmartIO.c ****     /* Disable the block */
+ 134:.\Generated_Source\PSoC4/SmartIO.c ****     SmartIO_Disable();
+ 194              		.loc 1 134 0
+ 195 0000 084B     		ldr	r3, .L10
+ 196 0002 1A68     		ldr	r2, [r3]
+ 197 0004 5200     		lsl	r2, r2, #1
+ 198 0006 5208     		lsr	r2, r2, #1
+ 199 0008 1A60     		str	r2, [r3]
+ 135:.\Generated_Source\PSoC4/SmartIO.c ****     /* Save the clock setting */
+ 136:.\Generated_Source\PSoC4/SmartIO.c ****     SmartIO_clkConfig = SmartIO_CTL & SmartIO_CLOCK_MASK;
+ 200              		.loc 1 136 0
+ 201 000a 1968     		ldr	r1, [r3]
+ 202 000c F822     		mov	r2, #248
+ 203 000e 5201     		lsl	r2, r2, #5
+ 204 0010 0A40     		and	r2, r1
+ 205 0012 0549     		ldr	r1, .L10+4
+ 206 0014 0A60     		str	r2, [r1]
+ARM GAS  C:\Users\Alan\AppData\Local\Temp\ccfVlkpm.s 			page 7
+
+
+ 137:.\Generated_Source\PSoC4/SmartIO.c ****     /* Clear the clock source */
+ 138:.\Generated_Source\PSoC4/SmartIO.c ****     regVal = SmartIO_CTL & SmartIO_CLOCK_CLEAR;
+ 207              		.loc 1 138 0
+ 208 0016 1968     		ldr	r1, [r3]
+ 209 0018 044A     		ldr	r2, .L10+8
+ 210 001a 0A40     		and	r2, r1
+ 211              	.LVL3:
+ 139:.\Generated_Source\PSoC4/SmartIO.c ****     /* Enable the pipeline and set the clock source to const zero */
+ 140:.\Generated_Source\PSoC4/SmartIO.c ****     SmartIO_CTL = regVal | SmartIO_PIPELINE_ENABLE | SmartIO_CLOCK_CONST_ZERO;
+ 212              		.loc 1 140 0
+ 213 001c 0449     		ldr	r1, .L10+12
+ 214 001e 0A43     		orr	r2, r1
+ 215              	.LVL4:
+ 216 0020 1A60     		str	r2, [r3]
+ 141:.\Generated_Source\PSoC4/SmartIO.c **** }
+ 217              		.loc 1 141 0
+ 218              		@ sp needed
+ 219 0022 7047     		bx	lr
+ 220              	.L11:
+ 221              		.align	2
+ 222              	.L10:
+ 223 0024 00000540 		.word	1074069504
+ 224 0028 00000000 		.word	.LANCHOR0
+ 225 002c FFE0FFFF 		.word	-7937
+ 226 0030 00140002 		.word	33559552
+ 227              		.cfi_endproc
+ 228              	.LFE2:
+ 229              		.size	SmartIO_Stop, .-SmartIO_Stop
+ 230              		.section	.text.SmartIO_SetBypass,"ax",%progbits
+ 231              		.align	2
+ 232              		.global	SmartIO_SetBypass
+ 233              		.code	16
+ 234              		.thumb_func
+ 235              		.type	SmartIO_SetBypass, %function
+ 236              	SmartIO_SetBypass:
+ 237              	.LFB3:
+ 142:.\Generated_Source\PSoC4/SmartIO.c **** 
+ 143:.\Generated_Source\PSoC4/SmartIO.c **** 
+ 144:.\Generated_Source\PSoC4/SmartIO.c **** /*******************************************************************************
+ 145:.\Generated_Source\PSoC4/SmartIO.c **** * Function Name: SmartIO_SetBypass
+ 146:.\Generated_Source\PSoC4/SmartIO.c **** ****************************************************************************//**
+ 147:.\Generated_Source\PSoC4/SmartIO.c **** *
+ 148:.\Generated_Source\PSoC4/SmartIO.c **** * \brief Bypasses channels on a bit by bit basis. 
+ 149:.\Generated_Source\PSoC4/SmartIO.c **** *
+ 150:.\Generated_Source\PSoC4/SmartIO.c **** * Bypassed channels behave as if the SmartIO component was not present for 
+ 151:.\Generated_Source\PSoC4/SmartIO.c **** * those particular channels. 
+ 152:.\Generated_Source\PSoC4/SmartIO.c **** *  
+ 153:.\Generated_Source\PSoC4/SmartIO.c **** * <b>Note</b> This function impacts all channels on the port. It will write
+ 154:.\Generated_Source\PSoC4/SmartIO.c **** * over the bypass configuration of all the channels. 
+ 155:.\Generated_Source\PSoC4/SmartIO.c **** *
+ 156:.\Generated_Source\PSoC4/SmartIO.c **** * \param portChannel
+ 157:.\Generated_Source\PSoC4/SmartIO.c **** *  The channel location to be bypassed on the port. If the bit value is 0, 
+ 158:.\Generated_Source\PSoC4/SmartIO.c **** *  the channel is not bypassed; if the bit value is 1, the channel is bypassed.
+ 159:.\Generated_Source\PSoC4/SmartIO.c **** *  Valid options are documented in \ref channelConst. These should be ORed
+ 160:.\Generated_Source\PSoC4/SmartIO.c **** *  to configure multiple bypass channels.
+ 161:.\Generated_Source\PSoC4/SmartIO.c **** * 
+ 162:.\Generated_Source\PSoC4/SmartIO.c **** * \sideeffect
+ARM GAS  C:\Users\Alan\AppData\Local\Temp\ccfVlkpm.s 			page 8
+
+
+ 163:.\Generated_Source\PSoC4/SmartIO.c **** *  This function disables the block for reconfiguration. During this time,
+ 164:.\Generated_Source\PSoC4/SmartIO.c **** *  all signals on the port will be bypassed. All peripheral and gpio signals
+ 165:.\Generated_Source\PSoC4/SmartIO.c **** *  must be stopped or properly handled to account for the bypass state.
+ 166:.\Generated_Source\PSoC4/SmartIO.c **** *
+ 167:.\Generated_Source\PSoC4/SmartIO.c **** * \funcusage
+ 168:.\Generated_Source\PSoC4/SmartIO.c **** *  \snippet SmartIO_SUT.c usage_SmartIO_SetBypass
+ 169:.\Generated_Source\PSoC4/SmartIO.c **** *******************************************************************************/
+ 170:.\Generated_Source\PSoC4/SmartIO.c **** void SmartIO_SetBypass(uint32 portChannel)
+ 171:.\Generated_Source\PSoC4/SmartIO.c **** {   
+ 238              		.loc 1 171 0
+ 239              		.cfi_startproc
+ 240              	.LVL5:
+ 172:.\Generated_Source\PSoC4/SmartIO.c ****     uint32 regVal;
+ 173:.\Generated_Source\PSoC4/SmartIO.c ****     
+ 174:.\Generated_Source\PSoC4/SmartIO.c ****     /* Must disable the block before configuring */
+ 175:.\Generated_Source\PSoC4/SmartIO.c ****     SmartIO_Disable();
+ 241              		.loc 1 175 0
+ 242 0000 084B     		ldr	r3, .L13
+ 243 0002 1A68     		ldr	r2, [r3]
+ 244 0004 5200     		lsl	r2, r2, #1
+ 245 0006 5208     		lsr	r2, r2, #1
+ 246 0008 1A60     		str	r2, [r3]
+ 176:.\Generated_Source\PSoC4/SmartIO.c ****     /* Configure the bypass settings of the SmartIO pins */
+ 177:.\Generated_Source\PSoC4/SmartIO.c ****     regVal = SmartIO_CTL & SmartIO_BYPASS_CLEAR;
+ 247              		.loc 1 177 0
+ 248 000a 1A68     		ldr	r2, [r3]
+ 249 000c FF21     		mov	r1, #255
+ 250 000e 8A43     		bic	r2, r1
+ 251              	.LVL6:
+ 178:.\Generated_Source\PSoC4/SmartIO.c ****     SmartIO_CTL = regVal | (((uint32)(portChannel << CYFLD_PRGIO_PRT_BYPASS__OFFSET))
+ 179:.\Generated_Source\PSoC4/SmartIO.c ****                                     & SmartIO_BYPASS_MASK);
+ 252              		.loc 1 179 0
+ 253 0010 0840     		and	r0, r1
+ 254              	.LVL7:
+ 178:.\Generated_Source\PSoC4/SmartIO.c ****     SmartIO_CTL = regVal | (((uint32)(portChannel << CYFLD_PRGIO_PRT_BYPASS__OFFSET))
+ 255              		.loc 1 178 0
+ 256 0012 1043     		orr	r0, r2
+ 257 0014 1860     		str	r0, [r3]
+ 180:.\Generated_Source\PSoC4/SmartIO.c ****     /* Re-enable the block */
+ 181:.\Generated_Source\PSoC4/SmartIO.c ****     SmartIO_Enable();
+ 258              		.loc 1 181 0
+ 259 0016 1A68     		ldr	r2, [r3]
+ 260              	.LVL8:
+ 261 0018 8021     		mov	r1, #128
+ 262 001a 0906     		lsl	r1, r1, #24
+ 263 001c 0A43     		orr	r2, r1
+ 264 001e 1A60     		str	r2, [r3]
+ 182:.\Generated_Source\PSoC4/SmartIO.c **** }
+ 265              		.loc 1 182 0
+ 266              		@ sp needed
+ 267 0020 7047     		bx	lr
+ 268              	.L14:
+ 269 0022 C046     		.align	2
+ 270              	.L13:
+ 271 0024 00000540 		.word	1074069504
+ 272              		.cfi_endproc
+ 273              	.LFE3:
+ARM GAS  C:\Users\Alan\AppData\Local\Temp\ccfVlkpm.s 			page 9
+
+
+ 274              		.size	SmartIO_SetBypass, .-SmartIO_SetBypass
+ 275              		.section	.text.SmartIO_ClockSelect,"ax",%progbits
+ 276              		.align	2
+ 277              		.global	SmartIO_ClockSelect
+ 278              		.code	16
+ 279              		.thumb_func
+ 280              		.type	SmartIO_ClockSelect, %function
+ 281              	SmartIO_ClockSelect:
+ 282              	.LFB4:
+ 183:.\Generated_Source\PSoC4/SmartIO.c **** 
+ 184:.\Generated_Source\PSoC4/SmartIO.c **** 
+ 185:.\Generated_Source\PSoC4/SmartIO.c **** /*******************************************************************************
+ 186:.\Generated_Source\PSoC4/SmartIO.c **** * Function Name: SmartIO_ClockSelect
+ 187:.\Generated_Source\PSoC4/SmartIO.c **** ****************************************************************************//**
+ 188:.\Generated_Source\PSoC4/SmartIO.c **** *
+ 189:.\Generated_Source\PSoC4/SmartIO.c **** * \brief Selects the component clock source.
+ 190:.\Generated_Source\PSoC4/SmartIO.c **** *
+ 191:.\Generated_Source\PSoC4/SmartIO.c **** * The clock selection impacts the reset behavior of the component and low power
+ 192:.\Generated_Source\PSoC4/SmartIO.c **** * operation. Refer to the Functional Description section of the component
+ 193:.\Generated_Source\PSoC4/SmartIO.c **** * datasheet for more information.
+ 194:.\Generated_Source\PSoC4/SmartIO.c **** *
+ 195:.\Generated_Source\PSoC4/SmartIO.c **** * \param clockSrc
+ 196:.\Generated_Source\PSoC4/SmartIO.c **** *  The component clock source. Valid options are documented in \ref clockConst.
+ 197:.\Generated_Source\PSoC4/SmartIO.c **** * 
+ 198:.\Generated_Source\PSoC4/SmartIO.c **** * \sideeffect
+ 199:.\Generated_Source\PSoC4/SmartIO.c **** *  This function disables the block for reconfiguration. During this time,
+ 200:.\Generated_Source\PSoC4/SmartIO.c **** *  all signals on the port will be bypassed. All peripheral and gpio signals
+ 201:.\Generated_Source\PSoC4/SmartIO.c **** *  must be stopped or properly handled to account for the bypass state.
+ 202:.\Generated_Source\PSoC4/SmartIO.c **** *
+ 203:.\Generated_Source\PSoC4/SmartIO.c **** * \funcusage
+ 204:.\Generated_Source\PSoC4/SmartIO.c **** *  \snippet SmartIO_SUT.c usage_SmartIO_ClockSelect
+ 205:.\Generated_Source\PSoC4/SmartIO.c **** *******************************************************************************/
+ 206:.\Generated_Source\PSoC4/SmartIO.c **** void SmartIO_ClockSelect(uint32 clockSrc)
+ 207:.\Generated_Source\PSoC4/SmartIO.c **** {
+ 283              		.loc 1 207 0
+ 284              		.cfi_startproc
+ 285              	.LVL9:
+ 208:.\Generated_Source\PSoC4/SmartIO.c ****     uint32 regVal;
+ 209:.\Generated_Source\PSoC4/SmartIO.c ****     
+ 210:.\Generated_Source\PSoC4/SmartIO.c ****     /* Must disable the block before configuring */
+ 211:.\Generated_Source\PSoC4/SmartIO.c ****     SmartIO_Disable();
+ 286              		.loc 1 211 0
+ 287 0000 094B     		ldr	r3, .L16
+ 288 0002 1A68     		ldr	r2, [r3]
+ 289 0004 5200     		lsl	r2, r2, #1
+ 290 0006 5208     		lsr	r2, r2, #1
+ 291 0008 1A60     		str	r2, [r3]
+ 212:.\Generated_Source\PSoC4/SmartIO.c ****     /* Configure the clock source */
+ 213:.\Generated_Source\PSoC4/SmartIO.c ****     regVal = SmartIO_CTL & SmartIO_CLOCK_CLEAR;
+ 292              		.loc 1 213 0
+ 293 000a 1968     		ldr	r1, [r3]
+ 294 000c 074A     		ldr	r2, .L16+4
+ 295 000e 0A40     		and	r2, r1
+ 296              	.LVL10:
+ 214:.\Generated_Source\PSoC4/SmartIO.c ****     SmartIO_CTL = regVal | (((uint32)(clockSrc << CYFLD_PRGIO_PRT_CLOCK_SRC__OFFSET) 
+ 297              		.loc 1 214 0
+ 298 0010 0002     		lsl	r0, r0, #8
+ARM GAS  C:\Users\Alan\AppData\Local\Temp\ccfVlkpm.s 			page 10
+
+
+ 299              	.LVL11:
+ 215:.\Generated_Source\PSoC4/SmartIO.c ****                                     & SmartIO_CLOCK_MASK));
+ 300              		.loc 1 215 0
+ 301 0012 F821     		mov	r1, #248
+ 302 0014 4901     		lsl	r1, r1, #5
+ 303 0016 0840     		and	r0, r1
+ 214:.\Generated_Source\PSoC4/SmartIO.c ****     SmartIO_CTL = regVal | (((uint32)(clockSrc << CYFLD_PRGIO_PRT_CLOCK_SRC__OFFSET) 
+ 304              		.loc 1 214 0
+ 305 0018 1043     		orr	r0, r2
+ 306 001a 1860     		str	r0, [r3]
+ 216:.\Generated_Source\PSoC4/SmartIO.c ****     /* Re-enable the block */
+ 217:.\Generated_Source\PSoC4/SmartIO.c ****     SmartIO_Enable();
+ 307              		.loc 1 217 0
+ 308 001c 1A68     		ldr	r2, [r3]
+ 309              	.LVL12:
+ 310 001e 8021     		mov	r1, #128
+ 311 0020 0906     		lsl	r1, r1, #24
+ 312 0022 0A43     		orr	r2, r1
+ 313 0024 1A60     		str	r2, [r3]
+ 218:.\Generated_Source\PSoC4/SmartIO.c **** }
+ 314              		.loc 1 218 0
+ 315              		@ sp needed
+ 316 0026 7047     		bx	lr
+ 317              	.L17:
+ 318              		.align	2
+ 319              	.L16:
+ 320 0028 00000540 		.word	1074069504
+ 321 002c FFE0FFFF 		.word	-7937
+ 322              		.cfi_endproc
+ 323              	.LFE4:
+ 324              		.size	SmartIO_ClockSelect, .-SmartIO_ClockSelect
+ 325              		.section	.text.SmartIO_HoldOverride,"ax",%progbits
+ 326              		.align	2
+ 327              		.global	SmartIO_HoldOverride
+ 328              		.code	16
+ 329              		.thumb_func
+ 330              		.type	SmartIO_HoldOverride, %function
+ 331              	SmartIO_HoldOverride:
+ 332              	.LFB5:
+ 219:.\Generated_Source\PSoC4/SmartIO.c **** 
+ 220:.\Generated_Source\PSoC4/SmartIO.c **** 
+ 221:.\Generated_Source\PSoC4/SmartIO.c **** /*******************************************************************************
+ 222:.\Generated_Source\PSoC4/SmartIO.c **** * Function Name: SmartIO_HoldOverride
+ 223:.\Generated_Source\PSoC4/SmartIO.c **** ****************************************************************************//**
+ 224:.\Generated_Source\PSoC4/SmartIO.c **** *
+ 225:.\Generated_Source\PSoC4/SmartIO.c **** * \brief Controls the port's chip hibernate mode override. 
+ 226:.\Generated_Source\PSoC4/SmartIO.c **** *
+ 227:.\Generated_Source\PSoC4/SmartIO.c **** * This function should be used when the block is desired to be operational
+ 228:.\Generated_Source\PSoC4/SmartIO.c **** * during chip deep-sleep or hibernate mode. The override functionality allows 
+ 229:.\Generated_Source\PSoC4/SmartIO.c **** * the port with SmartIO component to be operational during these modes. When
+ 230:.\Generated_Source\PSoC4/SmartIO.c **** * in chip active/sleep modes, the hold override functionality should be disabled.
+ 231:.\Generated_Source\PSoC4/SmartIO.c **** *
+ 232:.\Generated_Source\PSoC4/SmartIO.c **** * \param ovCtrl
+ 233:.\Generated_Source\PSoC4/SmartIO.c **** *  Hold override control. Valid options are documented in \ref hldOvrConst.
+ 234:.\Generated_Source\PSoC4/SmartIO.c **** * 
+ 235:.\Generated_Source\PSoC4/SmartIO.c **** * \sideeffect
+ 236:.\Generated_Source\PSoC4/SmartIO.c **** *  This function disables the block for reconfiguration. During this time,
+ARM GAS  C:\Users\Alan\AppData\Local\Temp\ccfVlkpm.s 			page 11
+
+
+ 237:.\Generated_Source\PSoC4/SmartIO.c **** *  all signals on the port will be bypassed. All peripheral and gpio signals
+ 238:.\Generated_Source\PSoC4/SmartIO.c **** *  must be stopped or properly handled to account for the bypass state.
+ 239:.\Generated_Source\PSoC4/SmartIO.c **** *
+ 240:.\Generated_Source\PSoC4/SmartIO.c **** * \funcusage
+ 241:.\Generated_Source\PSoC4/SmartIO.c **** *  \snippet SmartIO_SUT.c usage_SmartIO_HoldOverride
+ 242:.\Generated_Source\PSoC4/SmartIO.c **** *******************************************************************************/
+ 243:.\Generated_Source\PSoC4/SmartIO.c **** void SmartIO_HoldOverride(uint32 ovCtrl)
+ 244:.\Generated_Source\PSoC4/SmartIO.c **** {
+ 333              		.loc 1 244 0
+ 334              		.cfi_startproc
+ 335              	.LVL13:
+ 245:.\Generated_Source\PSoC4/SmartIO.c ****     /* Must disable the block before configuring */
+ 246:.\Generated_Source\PSoC4/SmartIO.c ****     SmartIO_Disable();
+ 336              		.loc 1 246 0
+ 337 0000 0C4A     		ldr	r2, .L21
+ 338 0002 1368     		ldr	r3, [r2]
+ 339 0004 5B00     		lsl	r3, r3, #1
+ 340 0006 5B08     		lsr	r3, r3, #1
+ 341 0008 1360     		str	r3, [r2]
+ 247:.\Generated_Source\PSoC4/SmartIO.c ****     /* Set hold override mode */
+ 248:.\Generated_Source\PSoC4/SmartIO.c ****     if (ovCtrl == SmartIO_OVCTRL_ENABLE)
+ 342              		.loc 1 248 0
+ 343 000a 0128     		cmp	r0, #1
+ 344 000c 05D1     		bne	.L19
+ 249:.\Generated_Source\PSoC4/SmartIO.c ****     {
+ 250:.\Generated_Source\PSoC4/SmartIO.c ****         SmartIO_CTL |= SmartIO_HLD_OVR_SMARTIO;
+ 345              		.loc 1 250 0
+ 346 000e 1368     		ldr	r3, [r2]
+ 347 0010 8021     		mov	r1, #128
+ 348 0012 4904     		lsl	r1, r1, #17
+ 349 0014 0B43     		orr	r3, r1
+ 350 0016 1360     		str	r3, [r2]
+ 351 0018 04E0     		b	.L20
+ 352              	.L19:
+ 251:.\Generated_Source\PSoC4/SmartIO.c ****     }    
+ 252:.\Generated_Source\PSoC4/SmartIO.c ****     else
+ 253:.\Generated_Source\PSoC4/SmartIO.c ****     {
+ 254:.\Generated_Source\PSoC4/SmartIO.c ****         SmartIO_CTL &= SmartIO_HLD_OVR_HSIOM;
+ 353              		.loc 1 254 0
+ 354 001a 064A     		ldr	r2, .L21
+ 355 001c 1168     		ldr	r1, [r2]
+ 356 001e 064B     		ldr	r3, .L21+4
+ 357 0020 0B40     		and	r3, r1
+ 358 0022 1360     		str	r3, [r2]
+ 359              	.L20:
+ 255:.\Generated_Source\PSoC4/SmartIO.c ****     }
+ 256:.\Generated_Source\PSoC4/SmartIO.c ****     /* Re-enable the block */
+ 257:.\Generated_Source\PSoC4/SmartIO.c ****     SmartIO_Enable();
+ 360              		.loc 1 257 0
+ 361 0024 034A     		ldr	r2, .L21
+ 362 0026 1368     		ldr	r3, [r2]
+ 363 0028 8021     		mov	r1, #128
+ 364 002a 0906     		lsl	r1, r1, #24
+ 365 002c 0B43     		orr	r3, r1
+ 366 002e 1360     		str	r3, [r2]
+ 258:.\Generated_Source\PSoC4/SmartIO.c **** }
+ 367              		.loc 1 258 0
+ARM GAS  C:\Users\Alan\AppData\Local\Temp\ccfVlkpm.s 			page 12
+
+
+ 368              		@ sp needed
+ 369 0030 7047     		bx	lr
+ 370              	.L22:
+ 371 0032 C046     		.align	2
+ 372              	.L21:
+ 373 0034 00000540 		.word	1074069504
+ 374 0038 FFFFFFFE 		.word	-16777217
+ 375              		.cfi_endproc
+ 376              	.LFE5:
+ 377              		.size	SmartIO_HoldOverride, .-SmartIO_HoldOverride
+ 378              		.section	.text.SmartIO_IoSyncMode,"ax",%progbits
+ 379              		.align	2
+ 380              		.global	SmartIO_IoSyncMode
+ 381              		.code	16
+ 382              		.thumb_func
+ 383              		.type	SmartIO_IoSyncMode, %function
+ 384              	SmartIO_IoSyncMode:
+ 385              	.LFB6:
+ 259:.\Generated_Source\PSoC4/SmartIO.c **** 
+ 260:.\Generated_Source\PSoC4/SmartIO.c **** 
+ 261:.\Generated_Source\PSoC4/SmartIO.c **** /*******************************************************************************
+ 262:.\Generated_Source\PSoC4/SmartIO.c **** * Function Name: SmartIO_IoSyncMode
+ 263:.\Generated_Source\PSoC4/SmartIO.c **** ****************************************************************************//**
+ 264:.\Generated_Source\PSoC4/SmartIO.c **** *
+ 265:.\Generated_Source\PSoC4/SmartIO.c **** * \brief Controls synchronization of signals coming from I/O Pin. 
+ 266:.\Generated_Source\PSoC4/SmartIO.c **** *
+ 267:.\Generated_Source\PSoC4/SmartIO.c **** * The synchronization is performed using the component clock. Synchronization 
+ 268:.\Generated_Source\PSoC4/SmartIO.c **** * should not be used if the component is configured to operate in asynchronous
+ 269:.\Generated_Source\PSoC4/SmartIO.c **** * mode.
+ 270:.\Generated_Source\PSoC4/SmartIO.c **** *
+ 271:.\Generated_Source\PSoC4/SmartIO.c **** * <b>Note</b> This function impacts all gpio terminals on the port. It will 
+ 272:.\Generated_Source\PSoC4/SmartIO.c **** * write over the synchronization configuration of all the gpio terminals. 
+ 273:.\Generated_Source\PSoC4/SmartIO.c **** *
+ 274:.\Generated_Source\PSoC4/SmartIO.c **** * \param portTerm
+ 275:.\Generated_Source\PSoC4/SmartIO.c **** *  The terminal location on the port. If the bit value is 0, the terminal is
+ 276:.\Generated_Source\PSoC4/SmartIO.c **** *  not synchronized; if the bit value is 1, the terminal is synchronized.
+ 277:.\Generated_Source\PSoC4/SmartIO.c **** *  Valid options are documented in \ref termConst. These should be ORed to 
+ 278:.\Generated_Source\PSoC4/SmartIO.c **** *  configure multiple terminals.
+ 279:.\Generated_Source\PSoC4/SmartIO.c **** * 
+ 280:.\Generated_Source\PSoC4/SmartIO.c **** * \sideeffect
+ 281:.\Generated_Source\PSoC4/SmartIO.c **** *  This function disables the block for reconfiguration. During this time,
+ 282:.\Generated_Source\PSoC4/SmartIO.c **** *  all signals on the port will be bypassed. All peripheral and gpio signals
+ 283:.\Generated_Source\PSoC4/SmartIO.c **** *  must be stopped or properly handled to account for the bypass state.
+ 284:.\Generated_Source\PSoC4/SmartIO.c **** *
+ 285:.\Generated_Source\PSoC4/SmartIO.c **** * \funcusage
+ 286:.\Generated_Source\PSoC4/SmartIO.c **** *  \snippet SmartIO_SUT.c usage_SmartIO_IoSyncMode
+ 287:.\Generated_Source\PSoC4/SmartIO.c **** *******************************************************************************/
+ 288:.\Generated_Source\PSoC4/SmartIO.c **** void SmartIO_IoSyncMode(uint32 portTerm)
+ 289:.\Generated_Source\PSoC4/SmartIO.c **** {
+ 386              		.loc 1 289 0
+ 387              		.cfi_startproc
+ 388              	.LVL14:
+ 389 0000 10B5     		push	{r4, lr}
+ 390              		.cfi_def_cfa_offset 8
+ 391              		.cfi_offset 4, -8
+ 392              		.cfi_offset 14, -4
+ 290:.\Generated_Source\PSoC4/SmartIO.c ****     uint32 regVal;
+ARM GAS  C:\Users\Alan\AppData\Local\Temp\ccfVlkpm.s 			page 13
+
+
+ 291:.\Generated_Source\PSoC4/SmartIO.c ****     
+ 292:.\Generated_Source\PSoC4/SmartIO.c ****     /* Must disable the block before configuring */
+ 293:.\Generated_Source\PSoC4/SmartIO.c ****     SmartIO_Disable();
+ 393              		.loc 1 293 0
+ 394 0002 094A     		ldr	r2, .L24
+ 395 0004 1368     		ldr	r3, [r2]
+ 396 0006 5B00     		lsl	r3, r3, #1
+ 397 0008 5B08     		lsr	r3, r3, #1
+ 398 000a 1360     		str	r3, [r2]
+ 294:.\Generated_Source\PSoC4/SmartIO.c ****     /* Configure the IO synchronization */
+ 295:.\Generated_Source\PSoC4/SmartIO.c ****     regVal = SmartIO_SYNC_CTL & SmartIO_IO_SYNC_CLEAR;
+ 399              		.loc 1 295 0
+ 400 000c 0749     		ldr	r1, .L24+4
+ 401 000e 0B68     		ldr	r3, [r1]
+ 402 0010 FF24     		mov	r4, #255
+ 403 0012 A343     		bic	r3, r4
+ 404              	.LVL15:
+ 296:.\Generated_Source\PSoC4/SmartIO.c ****     SmartIO_SYNC_CTL = regVal | (((uint32)(portTerm << CYFLD_PRGIO_PRT_IO_SYNC_EN__OFFSET))
+ 297:.\Generated_Source\PSoC4/SmartIO.c ****                                          & SmartIO_IO_SYNC_MASK);
+ 405              		.loc 1 297 0
+ 406 0014 2040     		and	r0, r4
+ 407              	.LVL16:
+ 296:.\Generated_Source\PSoC4/SmartIO.c ****     SmartIO_SYNC_CTL = regVal | (((uint32)(portTerm << CYFLD_PRGIO_PRT_IO_SYNC_EN__OFFSET))
+ 408              		.loc 1 296 0
+ 409 0016 1843     		orr	r0, r3
+ 410 0018 0860     		str	r0, [r1]
+ 298:.\Generated_Source\PSoC4/SmartIO.c ****     /* Re-enable the block */
+ 299:.\Generated_Source\PSoC4/SmartIO.c ****     SmartIO_Enable();
+ 411              		.loc 1 299 0
+ 412 001a 1368     		ldr	r3, [r2]
+ 413              	.LVL17:
+ 414 001c 8021     		mov	r1, #128
+ 415 001e 0906     		lsl	r1, r1, #24
+ 416 0020 0B43     		orr	r3, r1
+ 417 0022 1360     		str	r3, [r2]
+ 300:.\Generated_Source\PSoC4/SmartIO.c **** }
+ 418              		.loc 1 300 0
+ 419              		@ sp needed
+ 420 0024 10BD     		pop	{r4, pc}
+ 421              	.L25:
+ 422 0026 C046     		.align	2
+ 423              	.L24:
+ 424 0028 00000540 		.word	1074069504
+ 425 002c 10000540 		.word	1074069520
+ 426              		.cfi_endproc
+ 427              	.LFE6:
+ 428              		.size	SmartIO_IoSyncMode, .-SmartIO_IoSyncMode
+ 429              		.section	.text.SmartIO_ChipSyncMode,"ax",%progbits
+ 430              		.align	2
+ 431              		.global	SmartIO_ChipSyncMode
+ 432              		.code	16
+ 433              		.thumb_func
+ 434              		.type	SmartIO_ChipSyncMode, %function
+ 435              	SmartIO_ChipSyncMode:
+ 436              	.LFB7:
+ 301:.\Generated_Source\PSoC4/SmartIO.c **** 
+ 302:.\Generated_Source\PSoC4/SmartIO.c **** 
+ARM GAS  C:\Users\Alan\AppData\Local\Temp\ccfVlkpm.s 			page 14
+
+
+ 303:.\Generated_Source\PSoC4/SmartIO.c **** /*******************************************************************************
+ 304:.\Generated_Source\PSoC4/SmartIO.c **** * Function Name: SmartIO_ChipSyncMode
+ 305:.\Generated_Source\PSoC4/SmartIO.c **** ****************************************************************************//**
+ 306:.\Generated_Source\PSoC4/SmartIO.c **** *
+ 307:.\Generated_Source\PSoC4/SmartIO.c **** * \brief Controls synchronization of signals coming from chip to the component. 
+ 308:.\Generated_Source\PSoC4/SmartIO.c **** *
+ 309:.\Generated_Source\PSoC4/SmartIO.c **** * The synchronization is performed using the component clock. Synchronization 
+ 310:.\Generated_Source\PSoC4/SmartIO.c **** * should not be used if the component is configured to operate in asynchronous
+ 311:.\Generated_Source\PSoC4/SmartIO.c **** * mode.
+ 312:.\Generated_Source\PSoC4/SmartIO.c **** *
+ 313:.\Generated_Source\PSoC4/SmartIO.c **** * <b>Note</b> This function impacts all data terminals on the port. It will 
+ 314:.\Generated_Source\PSoC4/SmartIO.c **** * write over the synchronization configuration of all the data terminals. 
+ 315:.\Generated_Source\PSoC4/SmartIO.c **** *
+ 316:.\Generated_Source\PSoC4/SmartIO.c **** * \param portTerm
+ 317:.\Generated_Source\PSoC4/SmartIO.c **** *  The terminal location on the port. If the bit value is 0, the terminal is
+ 318:.\Generated_Source\PSoC4/SmartIO.c **** *  not synchronized; if the bit value is 1, the terminal is synchronized.
+ 319:.\Generated_Source\PSoC4/SmartIO.c **** *  Valid options are documented in \ref termConst. These should be ORed to 
+ 320:.\Generated_Source\PSoC4/SmartIO.c **** *  configure multiple terminals.
+ 321:.\Generated_Source\PSoC4/SmartIO.c **** * 
+ 322:.\Generated_Source\PSoC4/SmartIO.c **** * \sideeffect
+ 323:.\Generated_Source\PSoC4/SmartIO.c **** *  This function disables the block for reconfiguration. During this time,
+ 324:.\Generated_Source\PSoC4/SmartIO.c **** *  all signals on the port will be bypassed. All peripheral and gpio signals
+ 325:.\Generated_Source\PSoC4/SmartIO.c **** *  must be stopped or properly handled to account for the bypass state.
+ 326:.\Generated_Source\PSoC4/SmartIO.c **** *
+ 327:.\Generated_Source\PSoC4/SmartIO.c **** * \funcusage
+ 328:.\Generated_Source\PSoC4/SmartIO.c **** *  \snippet SmartIO_SUT.c usage_SmartIO_ChipSyncMode
+ 329:.\Generated_Source\PSoC4/SmartIO.c **** *******************************************************************************/
+ 330:.\Generated_Source\PSoC4/SmartIO.c **** void SmartIO_ChipSyncMode(uint32 portTerm)
+ 331:.\Generated_Source\PSoC4/SmartIO.c **** {
+ 437              		.loc 1 331 0
+ 438              		.cfi_startproc
+ 439              	.LVL18:
+ 440 0000 10B5     		push	{r4, lr}
+ 441              		.cfi_def_cfa_offset 8
+ 442              		.cfi_offset 4, -8
+ 443              		.cfi_offset 14, -4
+ 332:.\Generated_Source\PSoC4/SmartIO.c ****     uint32 regVal;
+ 333:.\Generated_Source\PSoC4/SmartIO.c ****     
+ 334:.\Generated_Source\PSoC4/SmartIO.c ****     /* Must disable the block before configuring */
+ 335:.\Generated_Source\PSoC4/SmartIO.c ****     SmartIO_Disable();
+ 444              		.loc 1 335 0
+ 445 0002 094A     		ldr	r2, .L27
+ 446 0004 1368     		ldr	r3, [r2]
+ 447 0006 5B00     		lsl	r3, r3, #1
+ 448 0008 5B08     		lsr	r3, r3, #1
+ 449 000a 1360     		str	r3, [r2]
+ 336:.\Generated_Source\PSoC4/SmartIO.c ****     /* Configure the Chip data synchronization */
+ 337:.\Generated_Source\PSoC4/SmartIO.c ****     regVal = SmartIO_SYNC_CTL & SmartIO_DATA_SYNC_CLEAR;
+ 450              		.loc 1 337 0
+ 451 000c 0749     		ldr	r1, .L27+4
+ 452 000e 0C68     		ldr	r4, [r1]
+ 453 0010 074B     		ldr	r3, .L27+8
+ 454 0012 2340     		and	r3, r4
+ 455              	.LVL19:
+ 338:.\Generated_Source\PSoC4/SmartIO.c ****     SmartIO_SYNC_CTL = regVal | (((uint32)(portTerm << CYFLD_PRGIO_PRT_CHIP_SYNC_EN__OFFSET))
+ 339:.\Generated_Source\PSoC4/SmartIO.c ****                                         & SmartIO_DATA_SYNC_MASK);
+ 456              		.loc 1 339 0
+ARM GAS  C:\Users\Alan\AppData\Local\Temp\ccfVlkpm.s 			page 15
+
+
+ 457 0014 0006     		lsl	r0, r0, #24
+ 458              	.LVL20:
+ 459 0016 000C     		lsr	r0, r0, #16
+ 338:.\Generated_Source\PSoC4/SmartIO.c ****     SmartIO_SYNC_CTL = regVal | (((uint32)(portTerm << CYFLD_PRGIO_PRT_CHIP_SYNC_EN__OFFSET))
+ 460              		.loc 1 338 0
+ 461 0018 1843     		orr	r0, r3
+ 462 001a 0860     		str	r0, [r1]
+ 340:.\Generated_Source\PSoC4/SmartIO.c ****     /* Re-enable the block */
+ 341:.\Generated_Source\PSoC4/SmartIO.c ****     SmartIO_Enable();
+ 463              		.loc 1 341 0
+ 464 001c 1368     		ldr	r3, [r2]
+ 465              	.LVL21:
+ 466 001e 8021     		mov	r1, #128
+ 467 0020 0906     		lsl	r1, r1, #24
+ 468 0022 0B43     		orr	r3, r1
+ 469 0024 1360     		str	r3, [r2]
+ 342:.\Generated_Source\PSoC4/SmartIO.c **** }
+ 470              		.loc 1 342 0
+ 471              		@ sp needed
+ 472              	.LVL22:
+ 473 0026 10BD     		pop	{r4, pc}
+ 474              	.L28:
+ 475              		.align	2
+ 476              	.L27:
+ 477 0028 00000540 		.word	1074069504
+ 478 002c 10000540 		.word	1074069520
+ 479 0030 FF00FFFF 		.word	-65281
+ 480              		.cfi_endproc
+ 481              	.LFE7:
+ 482              		.size	SmartIO_ChipSyncMode, .-SmartIO_ChipSyncMode
+ 483              		.section	.text.SmartIO_LUT_SelectInputs,"ax",%progbits
+ 484              		.align	2
+ 485              		.global	SmartIO_LUT_SelectInputs
+ 486              		.code	16
+ 487              		.thumb_func
+ 488              		.type	SmartIO_LUT_SelectInputs, %function
+ 489              	SmartIO_LUT_SelectInputs:
+ 490              	.LFB8:
+ 343:.\Generated_Source\PSoC4/SmartIO.c **** 
+ 344:.\Generated_Source\PSoC4/SmartIO.c **** 
+ 345:.\Generated_Source\PSoC4/SmartIO.c **** /*******************************************************************************
+ 346:.\Generated_Source\PSoC4/SmartIO.c **** * Function Name: SmartIO_LUT_SelectInputs
+ 347:.\Generated_Source\PSoC4/SmartIO.c **** ****************************************************************************//**
+ 348:.\Generated_Source\PSoC4/SmartIO.c **** *
+ 349:.\Generated_Source\PSoC4/SmartIO.c **** * \brief This function is used to select individual inputs to the specified LUT. 
+ 350:.\Generated_Source\PSoC4/SmartIO.c **** *
+ 351:.\Generated_Source\PSoC4/SmartIO.c **** * This function can be used to configure multiple LUTs with the same input
+ 352:.\Generated_Source\PSoC4/SmartIO.c **** * configuration.
+ 353:.\Generated_Source\PSoC4/SmartIO.c **** * 
+ 354:.\Generated_Source\PSoC4/SmartIO.c **** * <b>Note</b> The selections are different for the upper and lower nibbles.
+ 355:.\Generated_Source\PSoC4/SmartIO.c **** * See the LUT input parameters and Functional Description section in the
+ 356:.\Generated_Source\PSoC4/SmartIO.c **** * component datasheet for more information.
+ 357:.\Generated_Source\PSoC4/SmartIO.c **** *
+ 358:.\Generated_Source\PSoC4/SmartIO.c **** * \param lutNum
+ 359:.\Generated_Source\PSoC4/SmartIO.c **** *  LUT number. Valid options are documented in \ref lutNumConst.
+ 360:.\Generated_Source\PSoC4/SmartIO.c **** *
+ 361:.\Generated_Source\PSoC4/SmartIO.c **** * \param inputNum
+ARM GAS  C:\Users\Alan\AppData\Local\Temp\ccfVlkpm.s 			page 16
+
+
+ 362:.\Generated_Source\PSoC4/SmartIO.c **** *  The input number (input0, input1, input2). Valid options are documented 
+ 363:.\Generated_Source\PSoC4/SmartIO.c **** *  in \ref inputNumConst. Note that LUT input0 does not accept LUT0 output as
+ 364:.\Generated_Source\PSoC4/SmartIO.c **** *  an input.
+ 365:.\Generated_Source\PSoC4/SmartIO.c **** *
+ 366:.\Generated_Source\PSoC4/SmartIO.c **** * \param inputSrc
+ 367:.\Generated_Source\PSoC4/SmartIO.c **** *  The source of the LUT input. Valid options are documented in
+ 368:.\Generated_Source\PSoC4/SmartIO.c **** *  \ref inputSrcConst.
+ 369:.\Generated_Source\PSoC4/SmartIO.c **** *
+ 370:.\Generated_Source\PSoC4/SmartIO.c **** * \return 
+ 371:.\Generated_Source\PSoC4/SmartIO.c **** *  Status of the LUT input selection.
+ 372:.\Generated_Source\PSoC4/SmartIO.c **** *   Status          | Description
+ 373:.\Generated_Source\PSoC4/SmartIO.c **** *   ----------------|--------------------
+ 374:.\Generated_Source\PSoC4/SmartIO.c **** *   CYRET_SUCCESS   | Write successful
+ 375:.\Generated_Source\PSoC4/SmartIO.c **** *   CYRET_BAD_PARAM | Invalid parameter
+ 376:.\Generated_Source\PSoC4/SmartIO.c **** * 
+ 377:.\Generated_Source\PSoC4/SmartIO.c **** * \sideeffect
+ 378:.\Generated_Source\PSoC4/SmartIO.c **** *  This function disables the block for reconfiguration. During this time,
+ 379:.\Generated_Source\PSoC4/SmartIO.c **** *  all signals on the port will be bypassed. All peripheral and gpio signals
+ 380:.\Generated_Source\PSoC4/SmartIO.c **** *  must be stopped or properly handled to account for the bypass state.
+ 381:.\Generated_Source\PSoC4/SmartIO.c **** *
+ 382:.\Generated_Source\PSoC4/SmartIO.c **** * \funcusage
+ 383:.\Generated_Source\PSoC4/SmartIO.c **** *  \snippet SmartIO_SUT.c usage_SmartIO_LUT_SelectInputs
+ 384:.\Generated_Source\PSoC4/SmartIO.c **** *******************************************************************************/
+ 385:.\Generated_Source\PSoC4/SmartIO.c **** cystatus SmartIO_LUT_SelectInputs(uint32 lutNum, uint32 inputNum, uint32 inputSrc)
+ 386:.\Generated_Source\PSoC4/SmartIO.c **** {
+ 491              		.loc 1 386 0
+ 492              		.cfi_startproc
+ 493              	.LVL23:
+ 494 0000 30B5     		push	{r4, r5, lr}
+ 495              		.cfi_def_cfa_offset 12
+ 496              		.cfi_offset 4, -12
+ 497              		.cfi_offset 5, -8
+ 498              		.cfi_offset 14, -4
+ 499              	.LVL24:
+ 387:.\Generated_Source\PSoC4/SmartIO.c ****     cystatus callStatus = CYRET_SUCCESS;
+ 388:.\Generated_Source\PSoC4/SmartIO.c ****     uint32 sel;
+ 389:.\Generated_Source\PSoC4/SmartIO.c ****     
+ 390:.\Generated_Source\PSoC4/SmartIO.c ****     sel = SmartIO_LUT_CONGIG_BASE.lutSel[lutNum];
+ 500              		.loc 1 390 0
+ 501 0002 8400     		lsl	r4, r0, #2
+ 502 0004 254B     		ldr	r3, .L39
+ 503 0006 E458     		ldr	r4, [r4, r3]
+ 504              	.LVL25:
+ 391:.\Generated_Source\PSoC4/SmartIO.c ****     /* Must disable the block before configuring */
+ 392:.\Generated_Source\PSoC4/SmartIO.c ****     SmartIO_Disable();
+ 505              		.loc 1 392 0
+ 506 0008 254D     		ldr	r5, .L39+4
+ 507 000a 2B68     		ldr	r3, [r5]
+ 508 000c 5B00     		lsl	r3, r3, #1
+ 509 000e 5B08     		lsr	r3, r3, #1
+ 510 0010 2B60     		str	r3, [r5]
+ 393:.\Generated_Source\PSoC4/SmartIO.c **** 
+ 394:.\Generated_Source\PSoC4/SmartIO.c ****     if(inputSrc == SmartIO_SRC_LUT0)
+ 511              		.loc 1 394 0
+ 512 0012 002A     		cmp	r2, #0
+ 513 0014 3FD0     		beq	.L37
+ 395:.\Generated_Source\PSoC4/SmartIO.c ****     {
+ARM GAS  C:\Users\Alan\AppData\Local\Temp\ccfVlkpm.s 			page 17
+
+
+ 396:.\Generated_Source\PSoC4/SmartIO.c ****         /* LUT input0 does not support LUT0 as an input */
+ 397:.\Generated_Source\PSoC4/SmartIO.c ****         callStatus = CYRET_BAD_PARAM;
+ 398:.\Generated_Source\PSoC4/SmartIO.c ****     }
+ 399:.\Generated_Source\PSoC4/SmartIO.c ****     else
+ 400:.\Generated_Source\PSoC4/SmartIO.c ****     {
+ 401:.\Generated_Source\PSoC4/SmartIO.c ****         switch(inputNum)
+ 514              		.loc 1 401 0
+ 515 0016 0229     		cmp	r1, #2
+ 516 0018 0ED0     		beq	.L32
+ 517 001a 02D8     		bhi	.L33
+ 518 001c 0129     		cmp	r1, #1
+ 519 001e 05D0     		beq	.L34
+ 520 0020 2EE0     		b	.L38
+ 521              	.L33:
+ 522 0022 0429     		cmp	r1, #4
+ 523 0024 11D0     		beq	.L35
+ 524 0026 0729     		cmp	r1, #7
+ 525 0028 18D0     		beq	.L36
+ 526 002a 29E0     		b	.L38
+ 527              	.L34:
+ 402:.\Generated_Source\PSoC4/SmartIO.c ****         {
+ 403:.\Generated_Source\PSoC4/SmartIO.c ****             case SmartIO_LUT_INPUT0:
+ 404:.\Generated_Source\PSoC4/SmartIO.c ****                 sel = (sel & SmartIO_LUT_TR0_CLEAR) 
+ 528              		.loc 1 404 0
+ 529 002c 0F23     		mov	r3, #15
+ 530 002e 9C43     		bic	r4, r3
+ 531              	.LVL26:
+ 405:.\Generated_Source\PSoC4/SmartIO.c ****                         | ((uint32)(inputSrc << CYFLD_PRGIO_PRT_LUT_TR0_SEL__OFFSET) & SmartIO_LUT_
+ 532              		.loc 1 405 0
+ 533 0030 1A40     		and	r2, r3
+ 534              	.LVL27:
+ 404:.\Generated_Source\PSoC4/SmartIO.c ****                         | ((uint32)(inputSrc << CYFLD_PRGIO_PRT_LUT_TR0_SEL__OFFSET) & SmartIO_LUT_
+ 535              		.loc 1 404 0
+ 536 0032 1443     		orr	r4, r2
+ 537              	.LVL28:
+ 387:.\Generated_Source\PSoC4/SmartIO.c ****     uint32 sel;
+ 538              		.loc 1 387 0
+ 539 0034 0022     		mov	r2, #0
+ 406:.\Generated_Source\PSoC4/SmartIO.c ****                 break;
+ 540              		.loc 1 406 0
+ 541 0036 24E0     		b	.L31
+ 542              	.LVL29:
+ 543              	.L32:
+ 407:.\Generated_Source\PSoC4/SmartIO.c ****             case SmartIO_LUT_INPUT1:
+ 408:.\Generated_Source\PSoC4/SmartIO.c ****                 sel = (sel & SmartIO_LUT_TR1_CLEAR) 
+ 544              		.loc 1 408 0
+ 545 0038 1A4B     		ldr	r3, .L39+8
+ 546 003a 1C40     		and	r4, r3
+ 547              	.LVL30:
+ 409:.\Generated_Source\PSoC4/SmartIO.c ****                         | ((uint32)(inputSrc << CYFLD_PRGIO_PRT_LUT_TR1_SEL__OFFSET) & SmartIO_LUT_
+ 548              		.loc 1 409 0
+ 549 003c 1202     		lsl	r2, r2, #8
+ 550              	.LVL31:
+ 551 003e F023     		mov	r3, #240
+ 552 0040 1B01     		lsl	r3, r3, #4
+ 553 0042 1A40     		and	r2, r3
+ 408:.\Generated_Source\PSoC4/SmartIO.c ****                         | ((uint32)(inputSrc << CYFLD_PRGIO_PRT_LUT_TR1_SEL__OFFSET) & SmartIO_LUT_
+ARM GAS  C:\Users\Alan\AppData\Local\Temp\ccfVlkpm.s 			page 18
+
+
+ 554              		.loc 1 408 0
+ 555 0044 1443     		orr	r4, r2
+ 556              	.LVL32:
+ 387:.\Generated_Source\PSoC4/SmartIO.c ****     uint32 sel;
+ 557              		.loc 1 387 0
+ 558 0046 0022     		mov	r2, #0
+ 410:.\Generated_Source\PSoC4/SmartIO.c ****                 break;
+ 559              		.loc 1 410 0
+ 560 0048 1BE0     		b	.L31
+ 561              	.LVL33:
+ 562              	.L35:
+ 411:.\Generated_Source\PSoC4/SmartIO.c ****             case SmartIO_LUT_INPUT2:
+ 412:.\Generated_Source\PSoC4/SmartIO.c ****                 sel = (sel & SmartIO_LUT_TR2_CLEAR)
+ 563              		.loc 1 412 0
+ 564 004a 174B     		ldr	r3, .L39+12
+ 565 004c 1C40     		and	r4, r3
+ 566              	.LVL34:
+ 413:.\Generated_Source\PSoC4/SmartIO.c ****                         | ((uint32)(inputSrc << CYFLD_PRGIO_PRT_LUT_TR2_SEL__OFFSET) & SmartIO_LUT_
+ 567              		.loc 1 413 0
+ 568 004e 1204     		lsl	r2, r2, #16
+ 569              	.LVL35:
+ 570 0050 F023     		mov	r3, #240
+ 571 0052 1B03     		lsl	r3, r3, #12
+ 572 0054 1A40     		and	r2, r3
+ 412:.\Generated_Source\PSoC4/SmartIO.c ****                         | ((uint32)(inputSrc << CYFLD_PRGIO_PRT_LUT_TR2_SEL__OFFSET) & SmartIO_LUT_
+ 573              		.loc 1 412 0
+ 574 0056 1443     		orr	r4, r2
+ 575              	.LVL36:
+ 387:.\Generated_Source\PSoC4/SmartIO.c ****     uint32 sel;
+ 576              		.loc 1 387 0
+ 577 0058 0022     		mov	r2, #0
+ 414:.\Generated_Source\PSoC4/SmartIO.c ****                 break;
+ 578              		.loc 1 414 0
+ 579 005a 12E0     		b	.L31
+ 580              	.LVL37:
+ 581              	.L36:
+ 415:.\Generated_Source\PSoC4/SmartIO.c ****             case SmartIO_LUT_INPUT_ALL:
+ 416:.\Generated_Source\PSoC4/SmartIO.c ****                 sel = (sel & SmartIO_LUT_TR_CLEAR_ALL) 
+ 582              		.loc 1 416 0
+ 583 005c 134B     		ldr	r3, .L39+16
+ 584 005e 1C40     		and	r4, r3
+ 585              	.LVL38:
+ 417:.\Generated_Source\PSoC4/SmartIO.c ****                         | ((uint32)(inputSrc << CYFLD_PRGIO_PRT_LUT_TR0_SEL__OFFSET) & SmartIO_LUT_
+ 586              		.loc 1 417 0
+ 587 0060 0F23     		mov	r3, #15
+ 588 0062 1340     		and	r3, r2
+ 589 0064 1C43     		orr	r4, r3
+ 418:.\Generated_Source\PSoC4/SmartIO.c ****                         | ((uint32)(inputSrc << CYFLD_PRGIO_PRT_LUT_TR1_SEL__OFFSET) & SmartIO_LUT_
+ 590              		.loc 1 418 0
+ 591 0066 1302     		lsl	r3, r2, #8
+ 592 0068 F021     		mov	r1, #240
+ 593              	.LVL39:
+ 594 006a 0901     		lsl	r1, r1, #4
+ 595 006c 0B40     		and	r3, r1
+ 596 006e 2343     		orr	r3, r4
+ 419:.\Generated_Source\PSoC4/SmartIO.c ****                         | ((uint32)(inputSrc << CYFLD_PRGIO_PRT_LUT_TR2_SEL__OFFSET) & SmartIO_LUT_
+ 597              		.loc 1 419 0
+ARM GAS  C:\Users\Alan\AppData\Local\Temp\ccfVlkpm.s 			page 19
+
+
+ 598 0070 1204     		lsl	r2, r2, #16
+ 599              	.LVL40:
+ 600 0072 F024     		mov	r4, #240
+ 601 0074 2403     		lsl	r4, r4, #12
+ 602 0076 2240     		and	r2, r4
+ 416:.\Generated_Source\PSoC4/SmartIO.c ****                         | ((uint32)(inputSrc << CYFLD_PRGIO_PRT_LUT_TR0_SEL__OFFSET) & SmartIO_LUT_
+ 603              		.loc 1 416 0
+ 604 0078 1343     		orr	r3, r2
+ 605 007a 1C1C     		mov	r4, r3
+ 606              	.LVL41:
+ 387:.\Generated_Source\PSoC4/SmartIO.c ****     uint32 sel;
+ 607              		.loc 1 387 0
+ 608 007c 0022     		mov	r2, #0
+ 420:.\Generated_Source\PSoC4/SmartIO.c ****                 break;
+ 609              		.loc 1 420 0
+ 610 007e 00E0     		b	.L31
+ 611              	.LVL42:
+ 612              	.L38:
+ 421:.\Generated_Source\PSoC4/SmartIO.c ****             default: 
+ 422:.\Generated_Source\PSoC4/SmartIO.c ****                 callStatus = CYRET_BAD_PARAM;
+ 613              		.loc 1 422 0
+ 614 0080 0122     		mov	r2, #1
+ 615              	.LVL43:
+ 616              	.L31:
+ 423:.\Generated_Source\PSoC4/SmartIO.c ****                 break;
+ 424:.\Generated_Source\PSoC4/SmartIO.c ****         }
+ 425:.\Generated_Source\PSoC4/SmartIO.c ****         SmartIO_LUT_CONGIG_BASE.lutSel[lutNum] = sel;
+ 617              		.loc 1 425 0
+ 618 0082 8300     		lsl	r3, r0, #2
+ 619 0084 0549     		ldr	r1, .L39
+ 620 0086 5C50     		str	r4, [r3, r1]
+ 426:.\Generated_Source\PSoC4/SmartIO.c ****         
+ 427:.\Generated_Source\PSoC4/SmartIO.c ****         /* Re-enable the block */
+ 428:.\Generated_Source\PSoC4/SmartIO.c ****         SmartIO_Enable();
+ 621              		.loc 1 428 0
+ 622 0088 0549     		ldr	r1, .L39+4
+ 623 008a 0B68     		ldr	r3, [r1]
+ 624 008c 8020     		mov	r0, #128
+ 625              	.LVL44:
+ 626 008e 0006     		lsl	r0, r0, #24
+ 627 0090 0343     		orr	r3, r0
+ 628 0092 0B60     		str	r3, [r1]
+ 629 0094 00E0     		b	.L30
+ 630              	.LVL45:
+ 631              	.L37:
+ 397:.\Generated_Source\PSoC4/SmartIO.c ****     }
+ 632              		.loc 1 397 0
+ 633 0096 0122     		mov	r2, #1
+ 634              	.LVL46:
+ 635              	.L30:
+ 429:.\Generated_Source\PSoC4/SmartIO.c ****     }    
+ 430:.\Generated_Source\PSoC4/SmartIO.c ****     return callStatus;
+ 431:.\Generated_Source\PSoC4/SmartIO.c **** }
+ 636              		.loc 1 431 0
+ 637 0098 101C     		mov	r0, r2
+ 638              		@ sp needed
+ 639              	.LVL47:
+ARM GAS  C:\Users\Alan\AppData\Local\Temp\ccfVlkpm.s 			page 20
+
+
+ 640 009a 30BD     		pop	{r4, r5, pc}
+ 641              	.L40:
+ 642              		.align	2
+ 643              	.L39:
+ 644 009c 20000540 		.word	1074069536
+ 645 00a0 00000540 		.word	1074069504
+ 646 00a4 FFF0FFFF 		.word	-3841
+ 647 00a8 FFFFF0FF 		.word	-983041
+ 648 00ac F0F0F0FF 		.word	-986896
+ 649              		.cfi_endproc
+ 650              	.LFE8:
+ 651              		.size	SmartIO_LUT_SelectInputs, .-SmartIO_LUT_SelectInputs
+ 652              		.section	.text.SmartIO_LUT_ConfigureMode,"ax",%progbits
+ 653              		.align	2
+ 654              		.global	SmartIO_LUT_ConfigureMode
+ 655              		.code	16
+ 656              		.thumb_func
+ 657              		.type	SmartIO_LUT_ConfigureMode, %function
+ 658              	SmartIO_LUT_ConfigureMode:
+ 659              	.LFB9:
+ 432:.\Generated_Source\PSoC4/SmartIO.c **** 
+ 433:.\Generated_Source\PSoC4/SmartIO.c **** 
+ 434:.\Generated_Source\PSoC4/SmartIO.c **** /*******************************************************************************
+ 435:.\Generated_Source\PSoC4/SmartIO.c **** * Function Name: SmartIO_LUT_ConfigureMode
+ 436:.\Generated_Source\PSoC4/SmartIO.c **** ****************************************************************************//**
+ 437:.\Generated_Source\PSoC4/SmartIO.c **** *
+ 438:.\Generated_Source\PSoC4/SmartIO.c **** * \brief This function sets the logical function of the selected LUT (based on 
+ 439:.\Generated_Source\PSoC4/SmartIO.c **** *  the 3 inputs) and specifies its operating mode. 
+ 440:.\Generated_Source\PSoC4/SmartIO.c **** *
+ 441:.\Generated_Source\PSoC4/SmartIO.c **** *  This function can be used to configure multiple LUTs with the same 
+ 442:.\Generated_Source\PSoC4/SmartIO.c **** *  configuration. The LUT mapping (truth table) is defined as follows.
+ 443:.\Generated_Source\PSoC4/SmartIO.c **** *
+ 444:.\Generated_Source\PSoC4/SmartIO.c **** *   input2 | input1 | input0 | Mapping bit
+ 445:.\Generated_Source\PSoC4/SmartIO.c **** *   -------| ------ | ------ | -----------
+ 446:.\Generated_Source\PSoC4/SmartIO.c **** *     0    |   0    |   0    |    bit0
+ 447:.\Generated_Source\PSoC4/SmartIO.c **** *     0    |   0    |   1    |    bit1
+ 448:.\Generated_Source\PSoC4/SmartIO.c **** *     0    |   1    |   0    |    bit2
+ 449:.\Generated_Source\PSoC4/SmartIO.c **** *     0    |   1    |   1    |    bit3
+ 450:.\Generated_Source\PSoC4/SmartIO.c **** *     1    |   0    |   0    |    bit4
+ 451:.\Generated_Source\PSoC4/SmartIO.c **** *     1    |   0    |   1    |    bit5
+ 452:.\Generated_Source\PSoC4/SmartIO.c **** *     1    |   1    |   0    |    bit6
+ 453:.\Generated_Source\PSoC4/SmartIO.c **** *     1    |   1    |   1    |    bit7
+ 454:.\Generated_Source\PSoC4/SmartIO.c **** *
+ 455:.\Generated_Source\PSoC4/SmartIO.c **** * \param lutNum
+ 456:.\Generated_Source\PSoC4/SmartIO.c **** *  LUT number. Valid options are documented in \ref lutNumConst.
+ 457:.\Generated_Source\PSoC4/SmartIO.c **** *
+ 458:.\Generated_Source\PSoC4/SmartIO.c **** * \param mapping
+ 459:.\Generated_Source\PSoC4/SmartIO.c **** *  This is the LUT truth table. Bit0 corresponds to the LUT output when the 
+ 460:.\Generated_Source\PSoC4/SmartIO.c **** *  input value is (in2=0, in1=0, in0=0). Bit7 corresponds to the LUT output 
+ 461:.\Generated_Source\PSoC4/SmartIO.c **** *  when the input value is (in2=1, in1=1, in0=1).
+ 462:.\Generated_Source\PSoC4/SmartIO.c **** *
+ 463:.\Generated_Source\PSoC4/SmartIO.c **** * \param mode
+ 464:.\Generated_Source\PSoC4/SmartIO.c **** *  The LUT mode. Valid options are documented in \ref lutNumConst.
+ 465:.\Generated_Source\PSoC4/SmartIO.c **** * 
+ 466:.\Generated_Source\PSoC4/SmartIO.c **** * \sideeffect
+ 467:.\Generated_Source\PSoC4/SmartIO.c **** *  This function disables the block for reconfiguration. During this time,
+ 468:.\Generated_Source\PSoC4/SmartIO.c **** *  all signals on the port will be bypassed. All peripheral and gpio signals
+ARM GAS  C:\Users\Alan\AppData\Local\Temp\ccfVlkpm.s 			page 21
+
+
+ 469:.\Generated_Source\PSoC4/SmartIO.c **** *  must be stopped or properly handled to account for the bypass state.
+ 470:.\Generated_Source\PSoC4/SmartIO.c **** *
+ 471:.\Generated_Source\PSoC4/SmartIO.c **** * \funcusage
+ 472:.\Generated_Source\PSoC4/SmartIO.c **** *  \snippet SmartIO_SUT.c usage_SmartIO_LUT_ConfigureMode
+ 473:.\Generated_Source\PSoC4/SmartIO.c **** *******************************************************************************/
+ 474:.\Generated_Source\PSoC4/SmartIO.c **** void SmartIO_LUT_ConfigureMode(uint32 lutNum, uint32 mapping, uint32 mode)
+ 475:.\Generated_Source\PSoC4/SmartIO.c **** {
+ 660              		.loc 1 475 0
+ 661              		.cfi_startproc
+ 662              	.LVL48:
+ 663 0000 F0B5     		push	{r4, r5, r6, r7, lr}
+ 664              		.cfi_def_cfa_offset 20
+ 665              		.cfi_offset 4, -20
+ 666              		.cfi_offset 5, -16
+ 667              		.cfi_offset 6, -12
+ 668              		.cfi_offset 7, -8
+ 669              		.cfi_offset 14, -4
+ 670 0002 0E1C     		mov	r6, r1
+ 476:.\Generated_Source\PSoC4/SmartIO.c ****     uint32 ctl;
+ 477:.\Generated_Source\PSoC4/SmartIO.c ****     
+ 478:.\Generated_Source\PSoC4/SmartIO.c ****     ctl = SmartIO_LUT_CONGIG_BASE.lutCtl[lutNum] & SmartIO_LUT_CTL_CLEAR;
+ 671              		.loc 1 478 0
+ 672 0004 0D4F     		ldr	r7, .L42
+ 673 0006 0830     		add	r0, r0, #8
+ 674              	.LVL49:
+ 675 0008 8000     		lsl	r0, r0, #2
+ 676              	.LVL50:
+ 677 000a C159     		ldr	r1, [r0, r7]
+ 678              	.LVL51:
+ 679 000c 890A     		lsr	r1, r1, #10
+ 680 000e 8C02     		lsl	r4, r1, #10
+ 681              	.LVL52:
+ 479:.\Generated_Source\PSoC4/SmartIO.c ****     /* Must disable the block before configuring */
+ 480:.\Generated_Source\PSoC4/SmartIO.c ****     SmartIO_Disable();
+ 682              		.loc 1 480 0
+ 683 0010 0B4D     		ldr	r5, .L42+4
+ 684 0012 2B68     		ldr	r3, [r5]
+ 685 0014 5B00     		lsl	r3, r3, #1
+ 686 0016 5B08     		lsr	r3, r3, #1
+ 687 0018 2B60     		str	r3, [r5]
+ 481:.\Generated_Source\PSoC4/SmartIO.c ****     SmartIO_LUT_CONGIG_BASE.lutCtl[lutNum] = ctl 
+ 482:.\Generated_Source\PSoC4/SmartIO.c ****                                             | (((uint32)((mapping << CYFLD_PRGIO_PRT_LUT__OFFSET)
+ 688              		.loc 1 482 0
+ 689 001a FF21     		mov	r1, #255
+ 690 001c 0E40     		and	r6, r1
+ 691              	.LVL53:
+ 483:.\Generated_Source\PSoC4/SmartIO.c ****                                             & SmartIO_LUT_MAP_MASK))
+ 484:.\Generated_Source\PSoC4/SmartIO.c ****                                             | ((uint32)(((uint32)mode << CYFLD_PRGIO_PRT_LUT_OPC__O
+ 692              		.loc 1 484 0
+ 693 001e 1202     		lsl	r2, r2, #8
+ 694              	.LVL54:
+ 695 0020 C023     		mov	r3, #192
+ 696 0022 9B00     		lsl	r3, r3, #2
+ 697 0024 1A40     		and	r2, r3
+ 698 0026 311C     		mov	r1, r6
+ 699 0028 1143     		orr	r1, r2
+ 482:.\Generated_Source\PSoC4/SmartIO.c ****                                             & SmartIO_LUT_MAP_MASK))
+ARM GAS  C:\Users\Alan\AppData\Local\Temp\ccfVlkpm.s 			page 22
+
+
+ 700              		.loc 1 482 0
+ 701 002a 2143     		orr	r1, r4
+ 481:.\Generated_Source\PSoC4/SmartIO.c ****     SmartIO_LUT_CONGIG_BASE.lutCtl[lutNum] = ctl 
+ 702              		.loc 1 481 0
+ 703 002c C151     		str	r1, [r0, r7]
+ 485:.\Generated_Source\PSoC4/SmartIO.c ****                                             & SmartIO_LUT_OPC_MASK)));
+ 486:.\Generated_Source\PSoC4/SmartIO.c ****     /* Re-enable the block */
+ 487:.\Generated_Source\PSoC4/SmartIO.c ****     SmartIO_Enable();
+ 704              		.loc 1 487 0
+ 705 002e 2B68     		ldr	r3, [r5]
+ 706 0030 8022     		mov	r2, #128
+ 707 0032 1206     		lsl	r2, r2, #24
+ 708 0034 1343     		orr	r3, r2
+ 709 0036 2B60     		str	r3, [r5]
+ 488:.\Generated_Source\PSoC4/SmartIO.c **** }
+ 710              		.loc 1 488 0
+ 711              		@ sp needed
+ 712              	.LVL55:
+ 713 0038 F0BD     		pop	{r4, r5, r6, r7, pc}
+ 714              	.L43:
+ 715 003a C046     		.align	2
+ 716              	.L42:
+ 717 003c 20000540 		.word	1074069536
+ 718 0040 00000540 		.word	1074069504
+ 719              		.cfi_endproc
+ 720              	.LFE9:
+ 721              		.size	SmartIO_LUT_ConfigureMode, .-SmartIO_LUT_ConfigureMode
+ 722              		.global	SmartIO_initVar
+ 723              		.bss
+ 724              		.align	2
+ 725              		.set	.LANCHOR0,. + 0
+ 726              		.type	SmartIO_clkConfig, %object
+ 727              		.size	SmartIO_clkConfig, 4
+ 728              	SmartIO_clkConfig:
+ 729 0000 00000000 		.space	4
+ 730              		.type	SmartIO_initVar, %object
+ 731              		.size	SmartIO_initVar, 1
+ 732              	SmartIO_initVar:
+ 733 0004 00       		.space	1
+ 734 0005 000000   		.text
+ 735              	.Letext0:
+ 736              		.file 2 "Generated_Source\\PSoC4/cytypes.h"
+ 737              		.file 3 ".\\Generated_Source\\PSoC4\\SmartIO.h"
+ 738              		.section	.debug_info,"",%progbits
+ 739              	.Ldebug_info0:
+ 740 0000 36030000 		.4byte	0x336
+ 741 0004 0400     		.2byte	0x4
+ 742 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 743 000a 04       		.byte	0x4
+ 744 000b 01       		.uleb128 0x1
+ 745 000c 93000000 		.4byte	.LASF40
+ 746 0010 01       		.byte	0x1
+ 747 0011 AE010000 		.4byte	.LASF41
+ 748 0015 00000000 		.4byte	.LASF42
+ 749 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 750 001d 00000000 		.4byte	0
+ 751 0021 00000000 		.4byte	.Ldebug_line0
+ARM GAS  C:\Users\Alan\AppData\Local\Temp\ccfVlkpm.s 			page 23
+
+
+ 752 0025 02       		.uleb128 0x2
+ 753 0026 01       		.byte	0x1
+ 754 0027 06       		.byte	0x6
+ 755 0028 25020000 		.4byte	.LASF0
+ 756 002c 02       		.uleb128 0x2
+ 757 002d 01       		.byte	0x1
+ 758 002e 08       		.byte	0x8
+ 759 002f 17020000 		.4byte	.LASF1
+ 760 0033 02       		.uleb128 0x2
+ 761 0034 02       		.byte	0x2
+ 762 0035 05       		.byte	0x5
+ 763 0036 66000000 		.4byte	.LASF2
+ 764 003a 02       		.uleb128 0x2
+ 765 003b 02       		.byte	0x2
+ 766 003c 07       		.byte	0x7
+ 767 003d 6F020000 		.4byte	.LASF3
+ 768 0041 02       		.uleb128 0x2
+ 769 0042 04       		.byte	0x4
+ 770 0043 05       		.byte	0x5
+ 771 0044 D1010000 		.4byte	.LASF4
+ 772 0048 02       		.uleb128 0x2
+ 773 0049 04       		.byte	0x4
+ 774 004a 07       		.byte	0x7
+ 775 004b D6020000 		.4byte	.LASF5
+ 776 004f 02       		.uleb128 0x2
+ 777 0050 08       		.byte	0x8
+ 778 0051 05       		.byte	0x5
+ 779 0052 A0010000 		.4byte	.LASF6
+ 780 0056 02       		.uleb128 0x2
+ 781 0057 08       		.byte	0x8
+ 782 0058 07       		.byte	0x7
+ 783 0059 31020000 		.4byte	.LASF7
+ 784 005d 03       		.uleb128 0x3
+ 785 005e 04       		.byte	0x4
+ 786 005f 05       		.byte	0x5
+ 787 0060 696E7400 		.ascii	"int\000"
+ 788 0064 02       		.uleb128 0x2
+ 789 0065 04       		.byte	0x4
+ 790 0066 07       		.byte	0x7
+ 791 0067 5C020000 		.4byte	.LASF8
+ 792 006b 04       		.uleb128 0x4
+ 793 006c 6A010000 		.4byte	.LASF9
+ 794 0070 02       		.byte	0x2
+ 795 0071 9801     		.2byte	0x198
+ 796 0073 2C000000 		.4byte	0x2c
+ 797 0077 04       		.uleb128 0x4
+ 798 0078 BD020000 		.4byte	.LASF10
+ 799 007c 02       		.byte	0x2
+ 800 007d 9A01     		.2byte	0x19a
+ 801 007f 48000000 		.4byte	0x48
+ 802 0083 02       		.uleb128 0x2
+ 803 0084 04       		.byte	0x4
+ 804 0085 04       		.byte	0x4
+ 805 0086 9A010000 		.4byte	.LASF11
+ 806 008a 02       		.uleb128 0x2
+ 807 008b 08       		.byte	0x8
+ 808 008c 04       		.byte	0x4
+ARM GAS  C:\Users\Alan\AppData\Local\Temp\ccfVlkpm.s 			page 24
+
+
+ 809 008d E8020000 		.4byte	.LASF12
+ 810 0091 02       		.uleb128 0x2
+ 811 0092 01       		.byte	0x1
+ 812 0093 08       		.byte	0x8
+ 813 0094 9C020000 		.4byte	.LASF13
+ 814 0098 04       		.uleb128 0x4
+ 815 0099 A1020000 		.4byte	.LASF14
+ 816 009d 02       		.byte	0x2
+ 817 009e 3A02     		.2byte	0x23a
+ 818 00a0 48000000 		.4byte	0x48
+ 819 00a4 04       		.uleb128 0x4
+ 820 00a5 69020000 		.4byte	.LASF15
+ 821 00a9 02       		.byte	0x2
+ 822 00aa 4402     		.2byte	0x244
+ 823 00ac B0000000 		.4byte	0xb0
+ 824 00b0 05       		.uleb128 0x5
+ 825 00b1 77000000 		.4byte	0x77
+ 826 00b5 06       		.uleb128 0x6
+ 827 00b6 40       		.byte	0x40
+ 828 00b7 03       		.byte	0x3
+ 829 00b8 C8       		.byte	0xc8
+ 830 00b9 D6000000 		.4byte	0xd6
+ 831 00bd 07       		.uleb128 0x7
+ 832 00be 1E030000 		.4byte	.LASF16
+ 833 00c2 03       		.byte	0x3
+ 834 00c3 CA       		.byte	0xca
+ 835 00c4 D6000000 		.4byte	0xd6
+ 836 00c8 00       		.byte	0
+ 837 00c9 07       		.uleb128 0x7
+ 838 00ca 02030000 		.4byte	.LASF17
+ 839 00ce 03       		.byte	0x3
+ 840 00cf CB       		.byte	0xcb
+ 841 00d0 D6000000 		.4byte	0xd6
+ 842 00d4 20       		.byte	0x20
+ 843 00d5 00       		.byte	0
+ 844 00d6 08       		.uleb128 0x8
+ 845 00d7 77000000 		.4byte	0x77
+ 846 00db E6000000 		.4byte	0xe6
+ 847 00df 09       		.uleb128 0x9
+ 848 00e0 E6000000 		.4byte	0xe6
+ 849 00e4 07       		.byte	0x7
+ 850 00e5 00       		.byte	0
+ 851 00e6 02       		.uleb128 0x2
+ 852 00e7 04       		.byte	0x4
+ 853 00e8 07       		.byte	0x7
+ 854 00e9 8A000000 		.4byte	.LASF18
+ 855 00ed 0A       		.uleb128 0xa
+ 856 00ee 70000000 		.4byte	.LASF19
+ 857 00f2 03       		.byte	0x3
+ 858 00f3 CC       		.byte	0xcc
+ 859 00f4 B5000000 		.4byte	0xb5
+ 860 00f8 0B       		.uleb128 0xb
+ 861 00f9 8D010000 		.4byte	.LASF43
+ 862 00fd 01       		.byte	0x1
+ 863 00fe 24       		.byte	0x24
+ 864 00ff 00000000 		.4byte	.LFB0
+ 865 0103 90000000 		.4byte	.LFE0-.LFB0
+ARM GAS  C:\Users\Alan\AppData\Local\Temp\ccfVlkpm.s 			page 25
+
+
+ 866 0107 01       		.uleb128 0x1
+ 867 0108 9C       		.byte	0x9c
+ 868 0109 0C       		.uleb128 0xc
+ 869 010a 53010000 		.4byte	.LASF20
+ 870 010e 01       		.byte	0x1
+ 871 010f 5A       		.byte	0x5a
+ 872 0110 00000000 		.4byte	.LFB1
+ 873 0114 48000000 		.4byte	.LFE1-.LFB1
+ 874 0118 01       		.uleb128 0x1
+ 875 0119 9C       		.byte	0x9c
+ 876 011a 37010000 		.4byte	0x137
+ 877 011e 0D       		.uleb128 0xd
+ 878 011f EB010000 		.4byte	.LASF22
+ 879 0123 01       		.byte	0x1
+ 880 0124 5C       		.byte	0x5c
+ 881 0125 77000000 		.4byte	0x77
+ 882 0129 00000000 		.4byte	.LLST0
+ 883 012d 0E       		.uleb128 0xe
+ 884 012e 0E000000 		.4byte	.LVL0
+ 885 0132 F8000000 		.4byte	0xf8
+ 886 0136 00       		.byte	0
+ 887 0137 0C       		.uleb128 0xc
+ 888 0138 59000000 		.4byte	.LASF21
+ 889 013c 01       		.byte	0x1
+ 890 013d 81       		.byte	0x81
+ 891 013e 00000000 		.4byte	.LFB2
+ 892 0142 34000000 		.4byte	.LFE2-.LFB2
+ 893 0146 01       		.uleb128 0x1
+ 894 0147 9C       		.byte	0x9c
+ 895 0148 5C010000 		.4byte	0x15c
+ 896 014c 0D       		.uleb128 0xd
+ 897 014d EB010000 		.4byte	.LASF22
+ 898 0151 01       		.byte	0x1
+ 899 0152 83       		.byte	0x83
+ 900 0153 77000000 		.4byte	0x77
+ 901 0157 13000000 		.4byte	.LLST1
+ 902 015b 00       		.byte	0
+ 903 015c 0C       		.uleb128 0xc
+ 904 015d 70010000 		.4byte	.LASF23
+ 905 0161 01       		.byte	0x1
+ 906 0162 AA       		.byte	0xaa
+ 907 0163 00000000 		.4byte	.LFB3
+ 908 0167 28000000 		.4byte	.LFE3-.LFB3
+ 909 016b 01       		.uleb128 0x1
+ 910 016c 9C       		.byte	0x9c
+ 911 016d 90010000 		.4byte	0x190
+ 912 0171 0F       		.uleb128 0xf
+ 913 0172 B1020000 		.4byte	.LASF25
+ 914 0176 01       		.byte	0x1
+ 915 0177 AA       		.byte	0xaa
+ 916 0178 77000000 		.4byte	0x77
+ 917 017c 26000000 		.4byte	.LLST2
+ 918 0180 0D       		.uleb128 0xd
+ 919 0181 EB010000 		.4byte	.LASF22
+ 920 0185 01       		.byte	0x1
+ 921 0186 AC       		.byte	0xac
+ 922 0187 77000000 		.4byte	0x77
+ARM GAS  C:\Users\Alan\AppData\Local\Temp\ccfVlkpm.s 			page 26
+
+
+ 923 018b 47000000 		.4byte	.LLST3
+ 924 018f 00       		.byte	0
+ 925 0190 0C       		.uleb128 0xc
+ 926 0191 48020000 		.4byte	.LASF24
+ 927 0195 01       		.byte	0x1
+ 928 0196 CE       		.byte	0xce
+ 929 0197 00000000 		.4byte	.LFB4
+ 930 019b 30000000 		.4byte	.LFE4-.LFB4
+ 931 019f 01       		.uleb128 0x1
+ 932 01a0 9C       		.byte	0x9c
+ 933 01a1 C4010000 		.4byte	0x1c4
+ 934 01a5 0F       		.uleb128 0xf
+ 935 01a6 31010000 		.4byte	.LASF26
+ 936 01aa 01       		.byte	0x1
+ 937 01ab CE       		.byte	0xce
+ 938 01ac 77000000 		.4byte	0x77
+ 939 01b0 5A000000 		.4byte	.LLST4
+ 940 01b4 0D       		.uleb128 0xd
+ 941 01b5 EB010000 		.4byte	.LASF22
+ 942 01b9 01       		.byte	0x1
+ 943 01ba D0       		.byte	0xd0
+ 944 01bb 77000000 		.4byte	0x77
+ 945 01bf 7B000000 		.4byte	.LLST5
+ 946 01c3 00       		.byte	0
+ 947 01c4 0C       		.uleb128 0xc
+ 948 01c5 09030000 		.4byte	.LASF27
+ 949 01c9 01       		.byte	0x1
+ 950 01ca F3       		.byte	0xf3
+ 951 01cb 00000000 		.4byte	.LFB5
+ 952 01cf 3C000000 		.4byte	.LFE5-.LFB5
+ 953 01d3 01       		.uleb128 0x1
+ 954 01d4 9C       		.byte	0x9c
+ 955 01d5 E7010000 		.4byte	0x1e7
+ 956 01d9 10       		.uleb128 0x10
+ 957 01da 2A010000 		.4byte	.LASF28
+ 958 01de 01       		.byte	0x1
+ 959 01df F3       		.byte	0xf3
+ 960 01e0 77000000 		.4byte	0x77
+ 961 01e4 01       		.uleb128 0x1
+ 962 01e5 50       		.byte	0x50
+ 963 01e6 00       		.byte	0
+ 964 01e7 11       		.uleb128 0x11
+ 965 01e8 EF020000 		.4byte	.LASF29
+ 966 01ec 01       		.byte	0x1
+ 967 01ed 2001     		.2byte	0x120
+ 968 01ef 00000000 		.4byte	.LFB6
+ 969 01f3 30000000 		.4byte	.LFE6-.LFB6
+ 970 01f7 01       		.uleb128 0x1
+ 971 01f8 9C       		.byte	0x9c
+ 972 01f9 1E020000 		.4byte	0x21e
+ 973 01fd 12       		.uleb128 0x12
+ 974 01fe 61010000 		.4byte	.LASF30
+ 975 0202 01       		.byte	0x1
+ 976 0203 2001     		.2byte	0x120
+ 977 0205 77000000 		.4byte	0x77
+ 978 0209 8E000000 		.4byte	.LLST6
+ 979 020d 13       		.uleb128 0x13
+ARM GAS  C:\Users\Alan\AppData\Local\Temp\ccfVlkpm.s 			page 27
+
+
+ 980 020e EB010000 		.4byte	.LASF22
+ 981 0212 01       		.byte	0x1
+ 982 0213 2201     		.2byte	0x122
+ 983 0215 77000000 		.4byte	0x77
+ 984 0219 AF000000 		.4byte	.LLST7
+ 985 021d 00       		.byte	0
+ 986 021e 11       		.uleb128 0x11
+ 987 021f 02020000 		.4byte	.LASF31
+ 988 0223 01       		.byte	0x1
+ 989 0224 4A01     		.2byte	0x14a
+ 990 0226 00000000 		.4byte	.LFB7
+ 991 022a 34000000 		.4byte	.LFE7-.LFB7
+ 992 022e 01       		.uleb128 0x1
+ 993 022f 9C       		.byte	0x9c
+ 994 0230 55020000 		.4byte	0x255
+ 995 0234 12       		.uleb128 0x12
+ 996 0235 61010000 		.4byte	.LASF30
+ 997 0239 01       		.byte	0x1
+ 998 023a 4A01     		.2byte	0x14a
+ 999 023c 77000000 		.4byte	0x77
+ 1000 0240 C2000000 		.4byte	.LLST8
+ 1001 0244 13       		.uleb128 0x13
+ 1002 0245 EB010000 		.4byte	.LASF22
+ 1003 0249 01       		.byte	0x1
+ 1004 024a 4C01     		.2byte	0x14c
+ 1005 024c 77000000 		.4byte	0x77
+ 1006 0250 E3000000 		.4byte	.LLST9
+ 1007 0254 00       		.byte	0
+ 1008 0255 14       		.uleb128 0x14
+ 1009 0256 3A010000 		.4byte	.LASF44
+ 1010 025a 01       		.byte	0x1
+ 1011 025b 8101     		.2byte	0x181
+ 1012 025d 98000000 		.4byte	0x98
+ 1013 0261 00000000 		.4byte	.LFB8
+ 1014 0265 B0000000 		.4byte	.LFE8-.LFB8
+ 1015 0269 01       		.uleb128 0x1
+ 1016 026a 9C       		.byte	0x9c
+ 1017 026b C0020000 		.4byte	0x2c0
+ 1018 026f 12       		.uleb128 0x12
+ 1019 0270 AA020000 		.4byte	.LASF32
+ 1020 0274 01       		.byte	0x1
+ 1021 0275 8101     		.2byte	0x181
+ 1022 0277 77000000 		.4byte	0x77
+ 1023 027b 08010000 		.4byte	.LLST10
+ 1024 027f 12       		.uleb128 0x12
+ 1025 0280 DA010000 		.4byte	.LASF33
+ 1026 0284 01       		.byte	0x1
+ 1027 0285 8101     		.2byte	0x181
+ 1028 0287 77000000 		.4byte	0x77
+ 1029 028b 42010000 		.4byte	.LLST11
+ 1030 028f 12       		.uleb128 0x12
+ 1031 0290 25030000 		.4byte	.LASF34
+ 1032 0294 01       		.byte	0x1
+ 1033 0295 8101     		.2byte	0x181
+ 1034 0297 77000000 		.4byte	0x77
+ 1035 029b 95010000 		.4byte	.LLST12
+ 1036 029f 13       		.uleb128 0x13
+ARM GAS  C:\Users\Alan\AppData\Local\Temp\ccfVlkpm.s 			page 28
+
+
+ 1037 02a0 82010000 		.4byte	.LASF35
+ 1038 02a4 01       		.byte	0x1
+ 1039 02a5 8301     		.2byte	0x183
+ 1040 02a7 98000000 		.4byte	0x98
+ 1041 02ab 33020000 		.4byte	.LLST13
+ 1042 02af 15       		.uleb128 0x15
+ 1043 02b0 73656C00 		.ascii	"sel\000"
+ 1044 02b4 01       		.byte	0x1
+ 1045 02b5 8401     		.2byte	0x184
+ 1046 02b7 77000000 		.4byte	0x77
+ 1047 02bb 69020000 		.4byte	.LLST14
+ 1048 02bf 00       		.byte	0
+ 1049 02c0 11       		.uleb128 0x11
+ 1050 02c1 82020000 		.4byte	.LASF36
+ 1051 02c5 01       		.byte	0x1
+ 1052 02c6 DA01     		.2byte	0x1da
+ 1053 02c8 00000000 		.4byte	.LFB9
+ 1054 02cc 44000000 		.4byte	.LFE9-.LFB9
+ 1055 02d0 01       		.uleb128 0x1
+ 1056 02d1 9C       		.byte	0x9c
+ 1057 02d2 17030000 		.4byte	0x317
+ 1058 02d6 12       		.uleb128 0x12
+ 1059 02d7 AA020000 		.4byte	.LASF32
+ 1060 02db 01       		.byte	0x1
+ 1061 02dc DA01     		.2byte	0x1da
+ 1062 02de 77000000 		.4byte	0x77
+ 1063 02e2 B3020000 		.4byte	.LLST15
+ 1064 02e6 12       		.uleb128 0x12
+ 1065 02e7 E3010000 		.4byte	.LASF37
+ 1066 02eb 01       		.byte	0x1
+ 1067 02ec DA01     		.2byte	0x1da
+ 1068 02ee 77000000 		.4byte	0x77
+ 1069 02f2 E1020000 		.4byte	.LLST16
+ 1070 02f6 12       		.uleb128 0x12
+ 1071 02f7 25010000 		.4byte	.LASF38
+ 1072 02fb 01       		.byte	0x1
+ 1073 02fc DA01     		.2byte	0x1da
+ 1074 02fe 77000000 		.4byte	0x77
+ 1075 0302 0D030000 		.4byte	.LLST17
+ 1076 0306 15       		.uleb128 0x15
+ 1077 0307 63746C00 		.ascii	"ctl\000"
+ 1078 030b 01       		.byte	0x1
+ 1079 030c DC01     		.2byte	0x1dc
+ 1080 030e 77000000 		.4byte	0x77
+ 1081 0312 2E030000 		.4byte	.LLST18
+ 1082 0316 00       		.byte	0
+ 1083 0317 16       		.uleb128 0x16
+ 1084 0318 C4020000 		.4byte	.LASF39
+ 1085 031c 01       		.byte	0x1
+ 1086 031d 15       		.byte	0x15
+ 1087 031e 77000000 		.4byte	0x77
+ 1088 0322 05       		.uleb128 0x5
+ 1089 0323 03       		.byte	0x3
+ 1090 0324 00000000 		.4byte	SmartIO_clkConfig
+ 1091 0328 17       		.uleb128 0x17
+ 1092 0329 F2010000 		.4byte	.LASF45
+ 1093 032d 01       		.byte	0x1
+ARM GAS  C:\Users\Alan\AppData\Local\Temp\ccfVlkpm.s 			page 29
+
+
+ 1094 032e 12       		.byte	0x12
+ 1095 032f 6B000000 		.4byte	0x6b
+ 1096 0333 05       		.uleb128 0x5
+ 1097 0334 03       		.byte	0x3
+ 1098 0335 00000000 		.4byte	SmartIO_initVar
+ 1099 0339 00       		.byte	0
+ 1100              		.section	.debug_abbrev,"",%progbits
+ 1101              	.Ldebug_abbrev0:
+ 1102 0000 01       		.uleb128 0x1
+ 1103 0001 11       		.uleb128 0x11
+ 1104 0002 01       		.byte	0x1
+ 1105 0003 25       		.uleb128 0x25
+ 1106 0004 0E       		.uleb128 0xe
+ 1107 0005 13       		.uleb128 0x13
+ 1108 0006 0B       		.uleb128 0xb
+ 1109 0007 03       		.uleb128 0x3
+ 1110 0008 0E       		.uleb128 0xe
+ 1111 0009 1B       		.uleb128 0x1b
+ 1112 000a 0E       		.uleb128 0xe
+ 1113 000b 55       		.uleb128 0x55
+ 1114 000c 17       		.uleb128 0x17
+ 1115 000d 11       		.uleb128 0x11
+ 1116 000e 01       		.uleb128 0x1
+ 1117 000f 10       		.uleb128 0x10
+ 1118 0010 17       		.uleb128 0x17
+ 1119 0011 00       		.byte	0
+ 1120 0012 00       		.byte	0
+ 1121 0013 02       		.uleb128 0x2
+ 1122 0014 24       		.uleb128 0x24
+ 1123 0015 00       		.byte	0
+ 1124 0016 0B       		.uleb128 0xb
+ 1125 0017 0B       		.uleb128 0xb
+ 1126 0018 3E       		.uleb128 0x3e
+ 1127 0019 0B       		.uleb128 0xb
+ 1128 001a 03       		.uleb128 0x3
+ 1129 001b 0E       		.uleb128 0xe
+ 1130 001c 00       		.byte	0
+ 1131 001d 00       		.byte	0
+ 1132 001e 03       		.uleb128 0x3
+ 1133 001f 24       		.uleb128 0x24
+ 1134 0020 00       		.byte	0
+ 1135 0021 0B       		.uleb128 0xb
+ 1136 0022 0B       		.uleb128 0xb
+ 1137 0023 3E       		.uleb128 0x3e
+ 1138 0024 0B       		.uleb128 0xb
+ 1139 0025 03       		.uleb128 0x3
+ 1140 0026 08       		.uleb128 0x8
+ 1141 0027 00       		.byte	0
+ 1142 0028 00       		.byte	0
+ 1143 0029 04       		.uleb128 0x4
+ 1144 002a 16       		.uleb128 0x16
+ 1145 002b 00       		.byte	0
+ 1146 002c 03       		.uleb128 0x3
+ 1147 002d 0E       		.uleb128 0xe
+ 1148 002e 3A       		.uleb128 0x3a
+ 1149 002f 0B       		.uleb128 0xb
+ 1150 0030 3B       		.uleb128 0x3b
+ARM GAS  C:\Users\Alan\AppData\Local\Temp\ccfVlkpm.s 			page 30
+
+
+ 1151 0031 05       		.uleb128 0x5
+ 1152 0032 49       		.uleb128 0x49
+ 1153 0033 13       		.uleb128 0x13
+ 1154 0034 00       		.byte	0
+ 1155 0035 00       		.byte	0
+ 1156 0036 05       		.uleb128 0x5
+ 1157 0037 35       		.uleb128 0x35
+ 1158 0038 00       		.byte	0
+ 1159 0039 49       		.uleb128 0x49
+ 1160 003a 13       		.uleb128 0x13
+ 1161 003b 00       		.byte	0
+ 1162 003c 00       		.byte	0
+ 1163 003d 06       		.uleb128 0x6
+ 1164 003e 13       		.uleb128 0x13
+ 1165 003f 01       		.byte	0x1
+ 1166 0040 0B       		.uleb128 0xb
+ 1167 0041 0B       		.uleb128 0xb
+ 1168 0042 3A       		.uleb128 0x3a
+ 1169 0043 0B       		.uleb128 0xb
+ 1170 0044 3B       		.uleb128 0x3b
+ 1171 0045 0B       		.uleb128 0xb
+ 1172 0046 01       		.uleb128 0x1
+ 1173 0047 13       		.uleb128 0x13
+ 1174 0048 00       		.byte	0
+ 1175 0049 00       		.byte	0
+ 1176 004a 07       		.uleb128 0x7
+ 1177 004b 0D       		.uleb128 0xd
+ 1178 004c 00       		.byte	0
+ 1179 004d 03       		.uleb128 0x3
+ 1180 004e 0E       		.uleb128 0xe
+ 1181 004f 3A       		.uleb128 0x3a
+ 1182 0050 0B       		.uleb128 0xb
+ 1183 0051 3B       		.uleb128 0x3b
+ 1184 0052 0B       		.uleb128 0xb
+ 1185 0053 49       		.uleb128 0x49
+ 1186 0054 13       		.uleb128 0x13
+ 1187 0055 38       		.uleb128 0x38
+ 1188 0056 0B       		.uleb128 0xb
+ 1189 0057 00       		.byte	0
+ 1190 0058 00       		.byte	0
+ 1191 0059 08       		.uleb128 0x8
+ 1192 005a 01       		.uleb128 0x1
+ 1193 005b 01       		.byte	0x1
+ 1194 005c 49       		.uleb128 0x49
+ 1195 005d 13       		.uleb128 0x13
+ 1196 005e 01       		.uleb128 0x1
+ 1197 005f 13       		.uleb128 0x13
+ 1198 0060 00       		.byte	0
+ 1199 0061 00       		.byte	0
+ 1200 0062 09       		.uleb128 0x9
+ 1201 0063 21       		.uleb128 0x21
+ 1202 0064 00       		.byte	0
+ 1203 0065 49       		.uleb128 0x49
+ 1204 0066 13       		.uleb128 0x13
+ 1205 0067 2F       		.uleb128 0x2f
+ 1206 0068 0B       		.uleb128 0xb
+ 1207 0069 00       		.byte	0
+ARM GAS  C:\Users\Alan\AppData\Local\Temp\ccfVlkpm.s 			page 31
+
+
+ 1208 006a 00       		.byte	0
+ 1209 006b 0A       		.uleb128 0xa
+ 1210 006c 16       		.uleb128 0x16
+ 1211 006d 00       		.byte	0
+ 1212 006e 03       		.uleb128 0x3
+ 1213 006f 0E       		.uleb128 0xe
+ 1214 0070 3A       		.uleb128 0x3a
+ 1215 0071 0B       		.uleb128 0xb
+ 1216 0072 3B       		.uleb128 0x3b
+ 1217 0073 0B       		.uleb128 0xb
+ 1218 0074 49       		.uleb128 0x49
+ 1219 0075 13       		.uleb128 0x13
+ 1220 0076 00       		.byte	0
+ 1221 0077 00       		.byte	0
+ 1222 0078 0B       		.uleb128 0xb
+ 1223 0079 2E       		.uleb128 0x2e
+ 1224 007a 00       		.byte	0
+ 1225 007b 3F       		.uleb128 0x3f
+ 1226 007c 19       		.uleb128 0x19
+ 1227 007d 03       		.uleb128 0x3
+ 1228 007e 0E       		.uleb128 0xe
+ 1229 007f 3A       		.uleb128 0x3a
+ 1230 0080 0B       		.uleb128 0xb
+ 1231 0081 3B       		.uleb128 0x3b
+ 1232 0082 0B       		.uleb128 0xb
+ 1233 0083 27       		.uleb128 0x27
+ 1234 0084 19       		.uleb128 0x19
+ 1235 0085 11       		.uleb128 0x11
+ 1236 0086 01       		.uleb128 0x1
+ 1237 0087 12       		.uleb128 0x12
+ 1238 0088 06       		.uleb128 0x6
+ 1239 0089 40       		.uleb128 0x40
+ 1240 008a 18       		.uleb128 0x18
+ 1241 008b 9742     		.uleb128 0x2117
+ 1242 008d 19       		.uleb128 0x19
+ 1243 008e 00       		.byte	0
+ 1244 008f 00       		.byte	0
+ 1245 0090 0C       		.uleb128 0xc
+ 1246 0091 2E       		.uleb128 0x2e
+ 1247 0092 01       		.byte	0x1
+ 1248 0093 3F       		.uleb128 0x3f
+ 1249 0094 19       		.uleb128 0x19
+ 1250 0095 03       		.uleb128 0x3
+ 1251 0096 0E       		.uleb128 0xe
+ 1252 0097 3A       		.uleb128 0x3a
+ 1253 0098 0B       		.uleb128 0xb
+ 1254 0099 3B       		.uleb128 0x3b
+ 1255 009a 0B       		.uleb128 0xb
+ 1256 009b 27       		.uleb128 0x27
+ 1257 009c 19       		.uleb128 0x19
+ 1258 009d 11       		.uleb128 0x11
+ 1259 009e 01       		.uleb128 0x1
+ 1260 009f 12       		.uleb128 0x12
+ 1261 00a0 06       		.uleb128 0x6
+ 1262 00a1 40       		.uleb128 0x40
+ 1263 00a2 18       		.uleb128 0x18
+ 1264 00a3 9742     		.uleb128 0x2117
+ARM GAS  C:\Users\Alan\AppData\Local\Temp\ccfVlkpm.s 			page 32
+
+
+ 1265 00a5 19       		.uleb128 0x19
+ 1266 00a6 01       		.uleb128 0x1
+ 1267 00a7 13       		.uleb128 0x13
+ 1268 00a8 00       		.byte	0
+ 1269 00a9 00       		.byte	0
+ 1270 00aa 0D       		.uleb128 0xd
+ 1271 00ab 34       		.uleb128 0x34
+ 1272 00ac 00       		.byte	0
+ 1273 00ad 03       		.uleb128 0x3
+ 1274 00ae 0E       		.uleb128 0xe
+ 1275 00af 3A       		.uleb128 0x3a
+ 1276 00b0 0B       		.uleb128 0xb
+ 1277 00b1 3B       		.uleb128 0x3b
+ 1278 00b2 0B       		.uleb128 0xb
+ 1279 00b3 49       		.uleb128 0x49
+ 1280 00b4 13       		.uleb128 0x13
+ 1281 00b5 02       		.uleb128 0x2
+ 1282 00b6 17       		.uleb128 0x17
+ 1283 00b7 00       		.byte	0
+ 1284 00b8 00       		.byte	0
+ 1285 00b9 0E       		.uleb128 0xe
+ 1286 00ba 898201   		.uleb128 0x4109
+ 1287 00bd 00       		.byte	0
+ 1288 00be 11       		.uleb128 0x11
+ 1289 00bf 01       		.uleb128 0x1
+ 1290 00c0 31       		.uleb128 0x31
+ 1291 00c1 13       		.uleb128 0x13
+ 1292 00c2 00       		.byte	0
+ 1293 00c3 00       		.byte	0
+ 1294 00c4 0F       		.uleb128 0xf
+ 1295 00c5 05       		.uleb128 0x5
+ 1296 00c6 00       		.byte	0
+ 1297 00c7 03       		.uleb128 0x3
+ 1298 00c8 0E       		.uleb128 0xe
+ 1299 00c9 3A       		.uleb128 0x3a
+ 1300 00ca 0B       		.uleb128 0xb
+ 1301 00cb 3B       		.uleb128 0x3b
+ 1302 00cc 0B       		.uleb128 0xb
+ 1303 00cd 49       		.uleb128 0x49
+ 1304 00ce 13       		.uleb128 0x13
+ 1305 00cf 02       		.uleb128 0x2
+ 1306 00d0 17       		.uleb128 0x17
+ 1307 00d1 00       		.byte	0
+ 1308 00d2 00       		.byte	0
+ 1309 00d3 10       		.uleb128 0x10
+ 1310 00d4 05       		.uleb128 0x5
+ 1311 00d5 00       		.byte	0
+ 1312 00d6 03       		.uleb128 0x3
+ 1313 00d7 0E       		.uleb128 0xe
+ 1314 00d8 3A       		.uleb128 0x3a
+ 1315 00d9 0B       		.uleb128 0xb
+ 1316 00da 3B       		.uleb128 0x3b
+ 1317 00db 0B       		.uleb128 0xb
+ 1318 00dc 49       		.uleb128 0x49
+ 1319 00dd 13       		.uleb128 0x13
+ 1320 00de 02       		.uleb128 0x2
+ 1321 00df 18       		.uleb128 0x18
+ARM GAS  C:\Users\Alan\AppData\Local\Temp\ccfVlkpm.s 			page 33
+
+
+ 1322 00e0 00       		.byte	0
+ 1323 00e1 00       		.byte	0
+ 1324 00e2 11       		.uleb128 0x11
+ 1325 00e3 2E       		.uleb128 0x2e
+ 1326 00e4 01       		.byte	0x1
+ 1327 00e5 3F       		.uleb128 0x3f
+ 1328 00e6 19       		.uleb128 0x19
+ 1329 00e7 03       		.uleb128 0x3
+ 1330 00e8 0E       		.uleb128 0xe
+ 1331 00e9 3A       		.uleb128 0x3a
+ 1332 00ea 0B       		.uleb128 0xb
+ 1333 00eb 3B       		.uleb128 0x3b
+ 1334 00ec 05       		.uleb128 0x5
+ 1335 00ed 27       		.uleb128 0x27
+ 1336 00ee 19       		.uleb128 0x19
+ 1337 00ef 11       		.uleb128 0x11
+ 1338 00f0 01       		.uleb128 0x1
+ 1339 00f1 12       		.uleb128 0x12
+ 1340 00f2 06       		.uleb128 0x6
+ 1341 00f3 40       		.uleb128 0x40
+ 1342 00f4 18       		.uleb128 0x18
+ 1343 00f5 9742     		.uleb128 0x2117
+ 1344 00f7 19       		.uleb128 0x19
+ 1345 00f8 01       		.uleb128 0x1
+ 1346 00f9 13       		.uleb128 0x13
+ 1347 00fa 00       		.byte	0
+ 1348 00fb 00       		.byte	0
+ 1349 00fc 12       		.uleb128 0x12
+ 1350 00fd 05       		.uleb128 0x5
+ 1351 00fe 00       		.byte	0
+ 1352 00ff 03       		.uleb128 0x3
+ 1353 0100 0E       		.uleb128 0xe
+ 1354 0101 3A       		.uleb128 0x3a
+ 1355 0102 0B       		.uleb128 0xb
+ 1356 0103 3B       		.uleb128 0x3b
+ 1357 0104 05       		.uleb128 0x5
+ 1358 0105 49       		.uleb128 0x49
+ 1359 0106 13       		.uleb128 0x13
+ 1360 0107 02       		.uleb128 0x2
+ 1361 0108 17       		.uleb128 0x17
+ 1362 0109 00       		.byte	0
+ 1363 010a 00       		.byte	0
+ 1364 010b 13       		.uleb128 0x13
+ 1365 010c 34       		.uleb128 0x34
+ 1366 010d 00       		.byte	0
+ 1367 010e 03       		.uleb128 0x3
+ 1368 010f 0E       		.uleb128 0xe
+ 1369 0110 3A       		.uleb128 0x3a
+ 1370 0111 0B       		.uleb128 0xb
+ 1371 0112 3B       		.uleb128 0x3b
+ 1372 0113 05       		.uleb128 0x5
+ 1373 0114 49       		.uleb128 0x49
+ 1374 0115 13       		.uleb128 0x13
+ 1375 0116 02       		.uleb128 0x2
+ 1376 0117 17       		.uleb128 0x17
+ 1377 0118 00       		.byte	0
+ 1378 0119 00       		.byte	0
+ARM GAS  C:\Users\Alan\AppData\Local\Temp\ccfVlkpm.s 			page 34
+
+
+ 1379 011a 14       		.uleb128 0x14
+ 1380 011b 2E       		.uleb128 0x2e
+ 1381 011c 01       		.byte	0x1
+ 1382 011d 3F       		.uleb128 0x3f
+ 1383 011e 19       		.uleb128 0x19
+ 1384 011f 03       		.uleb128 0x3
+ 1385 0120 0E       		.uleb128 0xe
+ 1386 0121 3A       		.uleb128 0x3a
+ 1387 0122 0B       		.uleb128 0xb
+ 1388 0123 3B       		.uleb128 0x3b
+ 1389 0124 05       		.uleb128 0x5
+ 1390 0125 27       		.uleb128 0x27
+ 1391 0126 19       		.uleb128 0x19
+ 1392 0127 49       		.uleb128 0x49
+ 1393 0128 13       		.uleb128 0x13
+ 1394 0129 11       		.uleb128 0x11
+ 1395 012a 01       		.uleb128 0x1
+ 1396 012b 12       		.uleb128 0x12
+ 1397 012c 06       		.uleb128 0x6
+ 1398 012d 40       		.uleb128 0x40
+ 1399 012e 18       		.uleb128 0x18
+ 1400 012f 9742     		.uleb128 0x2117
+ 1401 0131 19       		.uleb128 0x19
+ 1402 0132 01       		.uleb128 0x1
+ 1403 0133 13       		.uleb128 0x13
+ 1404 0134 00       		.byte	0
+ 1405 0135 00       		.byte	0
+ 1406 0136 15       		.uleb128 0x15
+ 1407 0137 34       		.uleb128 0x34
+ 1408 0138 00       		.byte	0
+ 1409 0139 03       		.uleb128 0x3
+ 1410 013a 08       		.uleb128 0x8
+ 1411 013b 3A       		.uleb128 0x3a
+ 1412 013c 0B       		.uleb128 0xb
+ 1413 013d 3B       		.uleb128 0x3b
+ 1414 013e 05       		.uleb128 0x5
+ 1415 013f 49       		.uleb128 0x49
+ 1416 0140 13       		.uleb128 0x13
+ 1417 0141 02       		.uleb128 0x2
+ 1418 0142 17       		.uleb128 0x17
+ 1419 0143 00       		.byte	0
+ 1420 0144 00       		.byte	0
+ 1421 0145 16       		.uleb128 0x16
+ 1422 0146 34       		.uleb128 0x34
+ 1423 0147 00       		.byte	0
+ 1424 0148 03       		.uleb128 0x3
+ 1425 0149 0E       		.uleb128 0xe
+ 1426 014a 3A       		.uleb128 0x3a
+ 1427 014b 0B       		.uleb128 0xb
+ 1428 014c 3B       		.uleb128 0x3b
+ 1429 014d 0B       		.uleb128 0xb
+ 1430 014e 49       		.uleb128 0x49
+ 1431 014f 13       		.uleb128 0x13
+ 1432 0150 02       		.uleb128 0x2
+ 1433 0151 18       		.uleb128 0x18
+ 1434 0152 00       		.byte	0
+ 1435 0153 00       		.byte	0
+ARM GAS  C:\Users\Alan\AppData\Local\Temp\ccfVlkpm.s 			page 35
+
+
+ 1436 0154 17       		.uleb128 0x17
+ 1437 0155 34       		.uleb128 0x34
+ 1438 0156 00       		.byte	0
+ 1439 0157 03       		.uleb128 0x3
+ 1440 0158 0E       		.uleb128 0xe
+ 1441 0159 3A       		.uleb128 0x3a
+ 1442 015a 0B       		.uleb128 0xb
+ 1443 015b 3B       		.uleb128 0x3b
+ 1444 015c 0B       		.uleb128 0xb
+ 1445 015d 49       		.uleb128 0x49
+ 1446 015e 13       		.uleb128 0x13
+ 1447 015f 3F       		.uleb128 0x3f
+ 1448 0160 19       		.uleb128 0x19
+ 1449 0161 02       		.uleb128 0x2
+ 1450 0162 18       		.uleb128 0x18
+ 1451 0163 00       		.byte	0
+ 1452 0164 00       		.byte	0
+ 1453 0165 00       		.byte	0
+ 1454              		.section	.debug_loc,"",%progbits
+ 1455              	.Ldebug_loc0:
+ 1456              	.LLST0:
+ 1457 0000 26000000 		.4byte	.LVL1
+ 1458 0004 2C000000 		.4byte	.LVL2
+ 1459 0008 0100     		.2byte	0x1
+ 1460 000a 53       		.byte	0x53
+ 1461 000b 00000000 		.4byte	0
+ 1462 000f 00000000 		.4byte	0
+ 1463              	.LLST1:
+ 1464 0013 1C000000 		.4byte	.LVL3
+ 1465 0017 20000000 		.4byte	.LVL4
+ 1466 001b 0100     		.2byte	0x1
+ 1467 001d 52       		.byte	0x52
+ 1468 001e 00000000 		.4byte	0
+ 1469 0022 00000000 		.4byte	0
+ 1470              	.LLST2:
+ 1471 0026 00000000 		.4byte	.LVL5
+ 1472 002a 12000000 		.4byte	.LVL7
+ 1473 002e 0100     		.2byte	0x1
+ 1474 0030 50       		.byte	0x50
+ 1475 0031 12000000 		.4byte	.LVL7
+ 1476 0035 28000000 		.4byte	.LFE3
+ 1477 0039 0400     		.2byte	0x4
+ 1478 003b F3       		.byte	0xf3
+ 1479 003c 01       		.uleb128 0x1
+ 1480 003d 50       		.byte	0x50
+ 1481 003e 9F       		.byte	0x9f
+ 1482 003f 00000000 		.4byte	0
+ 1483 0043 00000000 		.4byte	0
+ 1484              	.LLST3:
+ 1485 0047 10000000 		.4byte	.LVL6
+ 1486 004b 18000000 		.4byte	.LVL8
+ 1487 004f 0100     		.2byte	0x1
+ 1488 0051 52       		.byte	0x52
+ 1489 0052 00000000 		.4byte	0
+ 1490 0056 00000000 		.4byte	0
+ 1491              	.LLST4:
+ 1492 005a 00000000 		.4byte	.LVL9
+ARM GAS  C:\Users\Alan\AppData\Local\Temp\ccfVlkpm.s 			page 36
+
+
+ 1493 005e 12000000 		.4byte	.LVL11
+ 1494 0062 0100     		.2byte	0x1
+ 1495 0064 50       		.byte	0x50
+ 1496 0065 12000000 		.4byte	.LVL11
+ 1497 0069 30000000 		.4byte	.LFE4
+ 1498 006d 0400     		.2byte	0x4
+ 1499 006f F3       		.byte	0xf3
+ 1500 0070 01       		.uleb128 0x1
+ 1501 0071 50       		.byte	0x50
+ 1502 0072 9F       		.byte	0x9f
+ 1503 0073 00000000 		.4byte	0
+ 1504 0077 00000000 		.4byte	0
+ 1505              	.LLST5:
+ 1506 007b 10000000 		.4byte	.LVL10
+ 1507 007f 1E000000 		.4byte	.LVL12
+ 1508 0083 0100     		.2byte	0x1
+ 1509 0085 52       		.byte	0x52
+ 1510 0086 00000000 		.4byte	0
+ 1511 008a 00000000 		.4byte	0
+ 1512              	.LLST6:
+ 1513 008e 00000000 		.4byte	.LVL14
+ 1514 0092 16000000 		.4byte	.LVL16
+ 1515 0096 0100     		.2byte	0x1
+ 1516 0098 50       		.byte	0x50
+ 1517 0099 16000000 		.4byte	.LVL16
+ 1518 009d 30000000 		.4byte	.LFE6
+ 1519 00a1 0400     		.2byte	0x4
+ 1520 00a3 F3       		.byte	0xf3
+ 1521 00a4 01       		.uleb128 0x1
+ 1522 00a5 50       		.byte	0x50
+ 1523 00a6 9F       		.byte	0x9f
+ 1524 00a7 00000000 		.4byte	0
+ 1525 00ab 00000000 		.4byte	0
+ 1526              	.LLST7:
+ 1527 00af 14000000 		.4byte	.LVL15
+ 1528 00b3 1C000000 		.4byte	.LVL17
+ 1529 00b7 0100     		.2byte	0x1
+ 1530 00b9 53       		.byte	0x53
+ 1531 00ba 00000000 		.4byte	0
+ 1532 00be 00000000 		.4byte	0
+ 1533              	.LLST8:
+ 1534 00c2 00000000 		.4byte	.LVL18
+ 1535 00c6 16000000 		.4byte	.LVL20
+ 1536 00ca 0100     		.2byte	0x1
+ 1537 00cc 50       		.byte	0x50
+ 1538 00cd 16000000 		.4byte	.LVL20
+ 1539 00d1 34000000 		.4byte	.LFE7
+ 1540 00d5 0400     		.2byte	0x4
+ 1541 00d7 F3       		.byte	0xf3
+ 1542 00d8 01       		.uleb128 0x1
+ 1543 00d9 50       		.byte	0x50
+ 1544 00da 9F       		.byte	0x9f
+ 1545 00db 00000000 		.4byte	0
+ 1546 00df 00000000 		.4byte	0
+ 1547              	.LLST9:
+ 1548 00e3 14000000 		.4byte	.LVL19
+ 1549 00e7 1E000000 		.4byte	.LVL21
+ARM GAS  C:\Users\Alan\AppData\Local\Temp\ccfVlkpm.s 			page 37
+
+
+ 1550 00eb 0100     		.2byte	0x1
+ 1551 00ed 53       		.byte	0x53
+ 1552 00ee 1E000000 		.4byte	.LVL21
+ 1553 00f2 26000000 		.4byte	.LVL22
+ 1554 00f6 0800     		.2byte	0x8
+ 1555 00f8 74       		.byte	0x74
+ 1556 00f9 00       		.sleb128 0
+ 1557 00fa 11       		.byte	0x11
+ 1558 00fb FF817C   		.sleb128 -65281
+ 1559 00fe 1A       		.byte	0x1a
+ 1560 00ff 9F       		.byte	0x9f
+ 1561 0100 00000000 		.4byte	0
+ 1562 0104 00000000 		.4byte	0
+ 1563              	.LLST10:
+ 1564 0108 00000000 		.4byte	.LVL23
+ 1565 010c 8E000000 		.4byte	.LVL44
+ 1566 0110 0100     		.2byte	0x1
+ 1567 0112 50       		.byte	0x50
+ 1568 0113 8E000000 		.4byte	.LVL44
+ 1569 0117 96000000 		.4byte	.LVL45
+ 1570 011b 0400     		.2byte	0x4
+ 1571 011d F3       		.byte	0xf3
+ 1572 011e 01       		.uleb128 0x1
+ 1573 011f 50       		.byte	0x50
+ 1574 0120 9F       		.byte	0x9f
+ 1575 0121 96000000 		.4byte	.LVL45
+ 1576 0125 98000000 		.4byte	.LVL46
+ 1577 0129 0100     		.2byte	0x1
+ 1578 012b 50       		.byte	0x50
+ 1579 012c 98000000 		.4byte	.LVL46
+ 1580 0130 B0000000 		.4byte	.LFE8
+ 1581 0134 0400     		.2byte	0x4
+ 1582 0136 F3       		.byte	0xf3
+ 1583 0137 01       		.uleb128 0x1
+ 1584 0138 50       		.byte	0x50
+ 1585 0139 9F       		.byte	0x9f
+ 1586 013a 00000000 		.4byte	0
+ 1587 013e 00000000 		.4byte	0
+ 1588              	.LLST11:
+ 1589 0142 00000000 		.4byte	.LVL23
+ 1590 0146 6A000000 		.4byte	.LVL39
+ 1591 014a 0100     		.2byte	0x1
+ 1592 014c 51       		.byte	0x51
+ 1593 014d 6A000000 		.4byte	.LVL39
+ 1594 0151 80000000 		.4byte	.LVL42
+ 1595 0155 0400     		.2byte	0x4
+ 1596 0157 F3       		.byte	0xf3
+ 1597 0158 01       		.uleb128 0x1
+ 1598 0159 51       		.byte	0x51
+ 1599 015a 9F       		.byte	0x9f
+ 1600 015b 80000000 		.4byte	.LVL42
+ 1601 015f 82000000 		.4byte	.LVL43
+ 1602 0163 0100     		.2byte	0x1
+ 1603 0165 51       		.byte	0x51
+ 1604 0166 82000000 		.4byte	.LVL43
+ 1605 016a 96000000 		.4byte	.LVL45
+ 1606 016e 0400     		.2byte	0x4
+ARM GAS  C:\Users\Alan\AppData\Local\Temp\ccfVlkpm.s 			page 38
+
+
+ 1607 0170 F3       		.byte	0xf3
+ 1608 0171 01       		.uleb128 0x1
+ 1609 0172 51       		.byte	0x51
+ 1610 0173 9F       		.byte	0x9f
+ 1611 0174 96000000 		.4byte	.LVL45
+ 1612 0178 98000000 		.4byte	.LVL46
+ 1613 017c 0100     		.2byte	0x1
+ 1614 017e 51       		.byte	0x51
+ 1615 017f 98000000 		.4byte	.LVL46
+ 1616 0183 B0000000 		.4byte	.LFE8
+ 1617 0187 0400     		.2byte	0x4
+ 1618 0189 F3       		.byte	0xf3
+ 1619 018a 01       		.uleb128 0x1
+ 1620 018b 51       		.byte	0x51
+ 1621 018c 9F       		.byte	0x9f
+ 1622 018d 00000000 		.4byte	0
+ 1623 0191 00000000 		.4byte	0
+ 1624              	.LLST12:
+ 1625 0195 00000000 		.4byte	.LVL23
+ 1626 0199 32000000 		.4byte	.LVL27
+ 1627 019d 0100     		.2byte	0x1
+ 1628 019f 52       		.byte	0x52
+ 1629 01a0 32000000 		.4byte	.LVL27
+ 1630 01a4 38000000 		.4byte	.LVL29
+ 1631 01a8 0400     		.2byte	0x4
+ 1632 01aa F3       		.byte	0xf3
+ 1633 01ab 01       		.uleb128 0x1
+ 1634 01ac 52       		.byte	0x52
+ 1635 01ad 9F       		.byte	0x9f
+ 1636 01ae 38000000 		.4byte	.LVL29
+ 1637 01b2 3E000000 		.4byte	.LVL31
+ 1638 01b6 0100     		.2byte	0x1
+ 1639 01b8 52       		.byte	0x52
+ 1640 01b9 3E000000 		.4byte	.LVL31
+ 1641 01bd 4A000000 		.4byte	.LVL33
+ 1642 01c1 0400     		.2byte	0x4
+ 1643 01c3 F3       		.byte	0xf3
+ 1644 01c4 01       		.uleb128 0x1
+ 1645 01c5 52       		.byte	0x52
+ 1646 01c6 9F       		.byte	0x9f
+ 1647 01c7 4A000000 		.4byte	.LVL33
+ 1648 01cb 50000000 		.4byte	.LVL35
+ 1649 01cf 0100     		.2byte	0x1
+ 1650 01d1 52       		.byte	0x52
+ 1651 01d2 50000000 		.4byte	.LVL35
+ 1652 01d6 5C000000 		.4byte	.LVL37
+ 1653 01da 0400     		.2byte	0x4
+ 1654 01dc F3       		.byte	0xf3
+ 1655 01dd 01       		.uleb128 0x1
+ 1656 01de 52       		.byte	0x52
+ 1657 01df 9F       		.byte	0x9f
+ 1658 01e0 5C000000 		.4byte	.LVL37
+ 1659 01e4 72000000 		.4byte	.LVL40
+ 1660 01e8 0100     		.2byte	0x1
+ 1661 01ea 52       		.byte	0x52
+ 1662 01eb 72000000 		.4byte	.LVL40
+ 1663 01ef 80000000 		.4byte	.LVL42
+ARM GAS  C:\Users\Alan\AppData\Local\Temp\ccfVlkpm.s 			page 39
+
+
+ 1664 01f3 0400     		.2byte	0x4
+ 1665 01f5 F3       		.byte	0xf3
+ 1666 01f6 01       		.uleb128 0x1
+ 1667 01f7 52       		.byte	0x52
+ 1668 01f8 9F       		.byte	0x9f
+ 1669 01f9 80000000 		.4byte	.LVL42
+ 1670 01fd 82000000 		.4byte	.LVL43
+ 1671 0201 0100     		.2byte	0x1
+ 1672 0203 52       		.byte	0x52
+ 1673 0204 82000000 		.4byte	.LVL43
+ 1674 0208 96000000 		.4byte	.LVL45
+ 1675 020c 0400     		.2byte	0x4
+ 1676 020e F3       		.byte	0xf3
+ 1677 020f 01       		.uleb128 0x1
+ 1678 0210 52       		.byte	0x52
+ 1679 0211 9F       		.byte	0x9f
+ 1680 0212 96000000 		.4byte	.LVL45
+ 1681 0216 98000000 		.4byte	.LVL46
+ 1682 021a 0100     		.2byte	0x1
+ 1683 021c 52       		.byte	0x52
+ 1684 021d 98000000 		.4byte	.LVL46
+ 1685 0221 B0000000 		.4byte	.LFE8
+ 1686 0225 0400     		.2byte	0x4
+ 1687 0227 F3       		.byte	0xf3
+ 1688 0228 01       		.uleb128 0x1
+ 1689 0229 52       		.byte	0x52
+ 1690 022a 9F       		.byte	0x9f
+ 1691 022b 00000000 		.4byte	0
+ 1692 022f 00000000 		.4byte	0
+ 1693              	.LLST13:
+ 1694 0233 02000000 		.4byte	.LVL24
+ 1695 0237 82000000 		.4byte	.LVL43
+ 1696 023b 0200     		.2byte	0x2
+ 1697 023d 30       		.byte	0x30
+ 1698 023e 9F       		.byte	0x9f
+ 1699 023f 82000000 		.4byte	.LVL43
+ 1700 0243 96000000 		.4byte	.LVL45
+ 1701 0247 0100     		.2byte	0x1
+ 1702 0249 52       		.byte	0x52
+ 1703 024a 96000000 		.4byte	.LVL45
+ 1704 024e 98000000 		.4byte	.LVL46
+ 1705 0252 0200     		.2byte	0x2
+ 1706 0254 30       		.byte	0x30
+ 1707 0255 9F       		.byte	0x9f
+ 1708 0256 98000000 		.4byte	.LVL46
+ 1709 025a B0000000 		.4byte	.LFE8
+ 1710 025e 0100     		.2byte	0x1
+ 1711 0260 52       		.byte	0x52
+ 1712 0261 00000000 		.4byte	0
+ 1713 0265 00000000 		.4byte	0
+ 1714              	.LLST14:
+ 1715 0269 08000000 		.4byte	.LVL25
+ 1716 026d 30000000 		.4byte	.LVL26
+ 1717 0271 0100     		.2byte	0x1
+ 1718 0273 54       		.byte	0x54
+ 1719 0274 34000000 		.4byte	.LVL28
+ 1720 0278 3C000000 		.4byte	.LVL30
+ARM GAS  C:\Users\Alan\AppData\Local\Temp\ccfVlkpm.s 			page 40
+
+
+ 1721 027c 0100     		.2byte	0x1
+ 1722 027e 54       		.byte	0x54
+ 1723 027f 46000000 		.4byte	.LVL32
+ 1724 0283 4E000000 		.4byte	.LVL34
+ 1725 0287 0100     		.2byte	0x1
+ 1726 0289 54       		.byte	0x54
+ 1727 028a 58000000 		.4byte	.LVL36
+ 1728 028e 60000000 		.4byte	.LVL38
+ 1729 0292 0100     		.2byte	0x1
+ 1730 0294 54       		.byte	0x54
+ 1731 0295 7C000000 		.4byte	.LVL41
+ 1732 0299 80000000 		.4byte	.LVL42
+ 1733 029d 0100     		.2byte	0x1
+ 1734 029f 53       		.byte	0x53
+ 1735 02a0 80000000 		.4byte	.LVL42
+ 1736 02a4 9A000000 		.4byte	.LVL47
+ 1737 02a8 0100     		.2byte	0x1
+ 1738 02aa 54       		.byte	0x54
+ 1739 02ab 00000000 		.4byte	0
+ 1740 02af 00000000 		.4byte	0
+ 1741              	.LLST15:
+ 1742 02b3 00000000 		.4byte	.LVL48
+ 1743 02b7 08000000 		.4byte	.LVL49
+ 1744 02bb 0100     		.2byte	0x1
+ 1745 02bd 50       		.byte	0x50
+ 1746 02be 08000000 		.4byte	.LVL49
+ 1747 02c2 0A000000 		.4byte	.LVL50
+ 1748 02c6 0300     		.2byte	0x3
+ 1749 02c8 70       		.byte	0x70
+ 1750 02c9 78       		.sleb128 -8
+ 1751 02ca 9F       		.byte	0x9f
+ 1752 02cb 0A000000 		.4byte	.LVL50
+ 1753 02cf 44000000 		.4byte	.LFE9
+ 1754 02d3 0400     		.2byte	0x4
+ 1755 02d5 F3       		.byte	0xf3
+ 1756 02d6 01       		.uleb128 0x1
+ 1757 02d7 50       		.byte	0x50
+ 1758 02d8 9F       		.byte	0x9f
+ 1759 02d9 00000000 		.4byte	0
+ 1760 02dd 00000000 		.4byte	0
+ 1761              	.LLST16:
+ 1762 02e1 00000000 		.4byte	.LVL48
+ 1763 02e5 0C000000 		.4byte	.LVL51
+ 1764 02e9 0100     		.2byte	0x1
+ 1765 02eb 51       		.byte	0x51
+ 1766 02ec 0C000000 		.4byte	.LVL51
+ 1767 02f0 1E000000 		.4byte	.LVL53
+ 1768 02f4 0100     		.2byte	0x1
+ 1769 02f6 56       		.byte	0x56
+ 1770 02f7 1E000000 		.4byte	.LVL53
+ 1771 02fb 44000000 		.4byte	.LFE9
+ 1772 02ff 0400     		.2byte	0x4
+ 1773 0301 F3       		.byte	0xf3
+ 1774 0302 01       		.uleb128 0x1
+ 1775 0303 51       		.byte	0x51
+ 1776 0304 9F       		.byte	0x9f
+ 1777 0305 00000000 		.4byte	0
+ARM GAS  C:\Users\Alan\AppData\Local\Temp\ccfVlkpm.s 			page 41
+
+
+ 1778 0309 00000000 		.4byte	0
+ 1779              	.LLST17:
+ 1780 030d 00000000 		.4byte	.LVL48
+ 1781 0311 20000000 		.4byte	.LVL54
+ 1782 0315 0100     		.2byte	0x1
+ 1783 0317 52       		.byte	0x52
+ 1784 0318 20000000 		.4byte	.LVL54
+ 1785 031c 44000000 		.4byte	.LFE9
+ 1786 0320 0400     		.2byte	0x4
+ 1787 0322 F3       		.byte	0xf3
+ 1788 0323 01       		.uleb128 0x1
+ 1789 0324 52       		.byte	0x52
+ 1790 0325 9F       		.byte	0x9f
+ 1791 0326 00000000 		.4byte	0
+ 1792 032a 00000000 		.4byte	0
+ 1793              	.LLST18:
+ 1794 032e 10000000 		.4byte	.LVL52
+ 1795 0332 38000000 		.4byte	.LVL55
+ 1796 0336 0100     		.2byte	0x1
+ 1797 0338 54       		.byte	0x54
+ 1798 0339 00000000 		.4byte	0
+ 1799 033d 00000000 		.4byte	0
+ 1800              		.section	.debug_aranges,"",%progbits
+ 1801 0000 64000000 		.4byte	0x64
+ 1802 0004 0200     		.2byte	0x2
+ 1803 0006 00000000 		.4byte	.Ldebug_info0
+ 1804 000a 04       		.byte	0x4
+ 1805 000b 00       		.byte	0
+ 1806 000c 0000     		.2byte	0
+ 1807 000e 0000     		.2byte	0
+ 1808 0010 00000000 		.4byte	.LFB0
+ 1809 0014 90000000 		.4byte	.LFE0-.LFB0
+ 1810 0018 00000000 		.4byte	.LFB1
+ 1811 001c 48000000 		.4byte	.LFE1-.LFB1
+ 1812 0020 00000000 		.4byte	.LFB2
+ 1813 0024 34000000 		.4byte	.LFE2-.LFB2
+ 1814 0028 00000000 		.4byte	.LFB3
+ 1815 002c 28000000 		.4byte	.LFE3-.LFB3
+ 1816 0030 00000000 		.4byte	.LFB4
+ 1817 0034 30000000 		.4byte	.LFE4-.LFB4
+ 1818 0038 00000000 		.4byte	.LFB5
+ 1819 003c 3C000000 		.4byte	.LFE5-.LFB5
+ 1820 0040 00000000 		.4byte	.LFB6
+ 1821 0044 30000000 		.4byte	.LFE6-.LFB6
+ 1822 0048 00000000 		.4byte	.LFB7
+ 1823 004c 34000000 		.4byte	.LFE7-.LFB7
+ 1824 0050 00000000 		.4byte	.LFB8
+ 1825 0054 B0000000 		.4byte	.LFE8-.LFB8
+ 1826 0058 00000000 		.4byte	.LFB9
+ 1827 005c 44000000 		.4byte	.LFE9-.LFB9
+ 1828 0060 00000000 		.4byte	0
+ 1829 0064 00000000 		.4byte	0
+ 1830              		.section	.debug_ranges,"",%progbits
+ 1831              	.Ldebug_ranges0:
+ 1832 0000 00000000 		.4byte	.LFB0
+ 1833 0004 90000000 		.4byte	.LFE0
+ 1834 0008 00000000 		.4byte	.LFB1
+ARM GAS  C:\Users\Alan\AppData\Local\Temp\ccfVlkpm.s 			page 42
+
+
+ 1835 000c 48000000 		.4byte	.LFE1
+ 1836 0010 00000000 		.4byte	.LFB2
+ 1837 0014 34000000 		.4byte	.LFE2
+ 1838 0018 00000000 		.4byte	.LFB3
+ 1839 001c 28000000 		.4byte	.LFE3
+ 1840 0020 00000000 		.4byte	.LFB4
+ 1841 0024 30000000 		.4byte	.LFE4
+ 1842 0028 00000000 		.4byte	.LFB5
+ 1843 002c 3C000000 		.4byte	.LFE5
+ 1844 0030 00000000 		.4byte	.LFB6
+ 1845 0034 30000000 		.4byte	.LFE6
+ 1846 0038 00000000 		.4byte	.LFB7
+ 1847 003c 34000000 		.4byte	.LFE7
+ 1848 0040 00000000 		.4byte	.LFB8
+ 1849 0044 B0000000 		.4byte	.LFE8
+ 1850 0048 00000000 		.4byte	.LFB9
+ 1851 004c 44000000 		.4byte	.LFE9
+ 1852 0050 00000000 		.4byte	0
+ 1853 0054 00000000 		.4byte	0
+ 1854              		.section	.debug_line,"",%progbits
+ 1855              	.Ldebug_line0:
+ 1856 0000 8E010000 		.section	.debug_str,"MS",%progbits,1
+ 1856      02006A00 
+ 1856      00000201 
+ 1856      FB0E0D00 
+ 1856      01010101 
+ 1857              	.LASF42:
+ 1858 0000 5C5C766D 		.ascii	"\\\\vmware-host\\Shared Folders\\Documents\\PSoC Cr"
+ 1858      77617265 
+ 1858      2D686F73 
+ 1858      745C5368 
+ 1858      61726564 
+ 1859 002e 6561746F 		.ascii	"eator\\SmartIO\\SmartIOCountUpExtClock.cydsn\000"
+ 1859      725C536D 
+ 1859      61727449 
+ 1859      4F5C536D 
+ 1859      61727449 
+ 1860              	.LASF21:
+ 1861 0059 536D6172 		.ascii	"SmartIO_Stop\000"
+ 1861      74494F5F 
+ 1861      53746F70 
+ 1861      00
+ 1862              	.LASF2:
+ 1863 0066 73686F72 		.ascii	"short int\000"
+ 1863      7420696E 
+ 1863      7400
+ 1864              	.LASF19:
+ 1865 0070 536D6172 		.ascii	"SmartIO_lut_config_struct\000"
+ 1865      74494F5F 
+ 1865      6C75745F 
+ 1865      636F6E66 
+ 1865      69675F73 
+ 1866              	.LASF18:
+ 1867 008a 73697A65 		.ascii	"sizetype\000"
+ 1867      74797065 
+ 1867      00
+ 1868              	.LASF40:
+ARM GAS  C:\Users\Alan\AppData\Local\Temp\ccfVlkpm.s 			page 43
+
+
+ 1869 0093 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 1869      4320342E 
+ 1869      392E3320 
+ 1869      32303135 
+ 1869      30333033 
+ 1870 00c6 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m0plus -mthumb -"
+ 1870      20726576 
+ 1870      6973696F 
+ 1870      6E203232 
+ 1870      31323230 
+ 1871 00f9 67202D4F 		.ascii	"g -Og -ffunction-sections -ffat-lto-objects\000"
+ 1871      67202D66 
+ 1871      66756E63 
+ 1871      74696F6E 
+ 1871      2D736563 
+ 1872              	.LASF38:
+ 1873 0125 6D6F6465 		.ascii	"mode\000"
+ 1873      00
+ 1874              	.LASF28:
+ 1875 012a 6F764374 		.ascii	"ovCtrl\000"
+ 1875      726C00
+ 1876              	.LASF26:
+ 1877 0131 636C6F63 		.ascii	"clockSrc\000"
+ 1877      6B537263 
+ 1877      00
+ 1878              	.LASF44:
+ 1879 013a 536D6172 		.ascii	"SmartIO_LUT_SelectInputs\000"
+ 1879      74494F5F 
+ 1879      4C55545F 
+ 1879      53656C65 
+ 1879      6374496E 
+ 1880              	.LASF20:
+ 1881 0153 536D6172 		.ascii	"SmartIO_Start\000"
+ 1881      74494F5F 
+ 1881      53746172 
+ 1881      7400
+ 1882              	.LASF30:
+ 1883 0161 706F7274 		.ascii	"portTerm\000"
+ 1883      5465726D 
+ 1883      00
+ 1884              	.LASF9:
+ 1885 016a 75696E74 		.ascii	"uint8\000"
+ 1885      3800
+ 1886              	.LASF23:
+ 1887 0170 536D6172 		.ascii	"SmartIO_SetBypass\000"
+ 1887      74494F5F 
+ 1887      53657442 
+ 1887      79706173 
+ 1887      7300
+ 1888              	.LASF35:
+ 1889 0182 63616C6C 		.ascii	"callStatus\000"
+ 1889      53746174 
+ 1889      757300
+ 1890              	.LASF43:
+ 1891 018d 536D6172 		.ascii	"SmartIO_Init\000"
+ 1891      74494F5F 
+ 1891      496E6974 
+ARM GAS  C:\Users\Alan\AppData\Local\Temp\ccfVlkpm.s 			page 44
+
+
+ 1891      00
+ 1892              	.LASF11:
+ 1893 019a 666C6F61 		.ascii	"float\000"
+ 1893      7400
+ 1894              	.LASF6:
+ 1895 01a0 6C6F6E67 		.ascii	"long long int\000"
+ 1895      206C6F6E 
+ 1895      6720696E 
+ 1895      7400
+ 1896              	.LASF41:
+ 1897 01ae 2E5C4765 		.ascii	".\\Generated_Source\\PSoC4\\SmartIO.c\000"
+ 1897      6E657261 
+ 1897      7465645F 
+ 1897      536F7572 
+ 1897      63655C50 
+ 1898              	.LASF4:
+ 1899 01d1 6C6F6E67 		.ascii	"long int\000"
+ 1899      20696E74 
+ 1899      00
+ 1900              	.LASF33:
+ 1901 01da 696E7075 		.ascii	"inputNum\000"
+ 1901      744E756D 
+ 1901      00
+ 1902              	.LASF37:
+ 1903 01e3 6D617070 		.ascii	"mapping\000"
+ 1903      696E6700 
+ 1904              	.LASF22:
+ 1905 01eb 72656756 		.ascii	"regVal\000"
+ 1905      616C00
+ 1906              	.LASF45:
+ 1907 01f2 536D6172 		.ascii	"SmartIO_initVar\000"
+ 1907      74494F5F 
+ 1907      696E6974 
+ 1907      56617200 
+ 1908              	.LASF31:
+ 1909 0202 536D6172 		.ascii	"SmartIO_ChipSyncMode\000"
+ 1909      74494F5F 
+ 1909      43686970 
+ 1909      53796E63 
+ 1909      4D6F6465 
+ 1910              	.LASF1:
+ 1911 0217 756E7369 		.ascii	"unsigned char\000"
+ 1911      676E6564 
+ 1911      20636861 
+ 1911      7200
+ 1912              	.LASF0:
+ 1913 0225 7369676E 		.ascii	"signed char\000"
+ 1913      65642063 
+ 1913      68617200 
+ 1914              	.LASF7:
+ 1915 0231 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1915      206C6F6E 
+ 1915      6720756E 
+ 1915      7369676E 
+ 1915      65642069 
+ 1916              	.LASF24:
+ 1917 0248 536D6172 		.ascii	"SmartIO_ClockSelect\000"
+ARM GAS  C:\Users\Alan\AppData\Local\Temp\ccfVlkpm.s 			page 45
+
+
+ 1917      74494F5F 
+ 1917      436C6F63 
+ 1917      6B53656C 
+ 1917      65637400 
+ 1918              	.LASF8:
+ 1919 025c 756E7369 		.ascii	"unsigned int\000"
+ 1919      676E6564 
+ 1919      20696E74 
+ 1919      00
+ 1920              	.LASF15:
+ 1921 0269 72656733 		.ascii	"reg32\000"
+ 1921      3200
+ 1922              	.LASF3:
+ 1923 026f 73686F72 		.ascii	"short unsigned int\000"
+ 1923      7420756E 
+ 1923      7369676E 
+ 1923      65642069 
+ 1923      6E7400
+ 1924              	.LASF36:
+ 1925 0282 536D6172 		.ascii	"SmartIO_LUT_ConfigureMode\000"
+ 1925      74494F5F 
+ 1925      4C55545F 
+ 1925      436F6E66 
+ 1925      69677572 
+ 1926              	.LASF13:
+ 1927 029c 63686172 		.ascii	"char\000"
+ 1927      00
+ 1928              	.LASF14:
+ 1929 02a1 63797374 		.ascii	"cystatus\000"
+ 1929      61747573 
+ 1929      00
+ 1930              	.LASF32:
+ 1931 02aa 6C75744E 		.ascii	"lutNum\000"
+ 1931      756D00
+ 1932              	.LASF25:
+ 1933 02b1 706F7274 		.ascii	"portChannel\000"
+ 1933      4368616E 
+ 1933      6E656C00 
+ 1934              	.LASF10:
+ 1935 02bd 75696E74 		.ascii	"uint32\000"
+ 1935      333200
+ 1936              	.LASF39:
+ 1937 02c4 536D6172 		.ascii	"SmartIO_clkConfig\000"
+ 1937      74494F5F 
+ 1937      636C6B43 
+ 1937      6F6E6669 
+ 1937      6700
+ 1938              	.LASF5:
+ 1939 02d6 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1939      20756E73 
+ 1939      69676E65 
+ 1939      6420696E 
+ 1939      7400
+ 1940              	.LASF12:
+ 1941 02e8 646F7562 		.ascii	"double\000"
+ 1941      6C6500
+ 1942              	.LASF29:
+ARM GAS  C:\Users\Alan\AppData\Local\Temp\ccfVlkpm.s 			page 46
+
+
+ 1943 02ef 536D6172 		.ascii	"SmartIO_IoSyncMode\000"
+ 1943      74494F5F 
+ 1943      496F5379 
+ 1943      6E634D6F 
+ 1943      646500
+ 1944              	.LASF17:
+ 1945 0302 6C757443 		.ascii	"lutCtl\000"
+ 1945      746C00
+ 1946              	.LASF27:
+ 1947 0309 536D6172 		.ascii	"SmartIO_HoldOverride\000"
+ 1947      74494F5F 
+ 1947      486F6C64 
+ 1947      4F766572 
+ 1947      72696465 
+ 1948              	.LASF16:
+ 1949 031e 6C757453 		.ascii	"lutSel\000"
+ 1949      656C00
+ 1950              	.LASF34:
+ 1951 0325 696E7075 		.ascii	"inputSrc\000"
+ 1951      74537263 
+ 1951      00
+ 1952              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

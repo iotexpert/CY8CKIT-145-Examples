@@ -1,0 +1,26 @@
+net ClockBlock_HFCLK
+	term   ":m0s8clockblockcell.hfclk"
+	switch ":m0s8clockblockcell.hfclk==>:interrupt_10.clock"
+	term   ":interrupt_10.clock"
+end ClockBlock_HFCLK
+net \capsense:Net_120\
+	term   ":p4csdcell.irq"
+	switch ":p4csdcell.irq==>:interrupt_idmux_10.in_0"
+	switch ":interrupt_idmux_10.interrupt_idmux_10__out==>:interrupt_10.interrupt"
+	term   ":interrupt_10.interrupt"
+end \capsense:Net_120\
+net \uart:rx_wire\
+	term   ":ioport0:pin4.fb"
+	switch ":ioport0:pin4.fb==>:ioport0:prgio_mux_out4.direct_in"
+	switch ":ioport0:prgio_mux_out4.prgio_mux_out==>:ioport0:hsiom_in4.hsiom4_in"
+	switch ":ioport0:hsiom_in4.fixed_ACT_1==>:m0s8scbcell_1__rx__hsiom_permute.ioport0__fixed_out_p4_ACT_1"
+	switch ":m0s8scbcell_1__rx__hsiom_permute.m0s8scbcell_1__rx==>:m0s8scbcell_1.rx"
+	term   ":m0s8scbcell_1.rx"
+end \uart:rx_wire\
+net \uart:tx_wire\
+	term   ":m0s8scbcell_1.tx"
+	switch ":m0s8scbcell_1.tx==>:ioport0:hsiom_out5.fixed_ACT_1"
+	switch ":ioport0:hsiom_out5.hsiom5_out==>:ioport0:prgio_mux_in5.direct_out"
+	switch ":ioport0:prgio_mux_in5.prgio_mux_in==>:ioport0:pin5.pin_input"
+	term   ":ioport0:pin5.pin_input"
+end \uart:tx_wire\

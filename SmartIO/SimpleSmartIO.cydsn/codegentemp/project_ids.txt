@@ -1,0 +1,8 @@
+\\vmware-host\Shared Folders\Documents\PSoC Creator\SmartIO\SimpleSmartIO.cydsn\SimpleSmartIO.cyprj|63a46f02-87e9-4df6-a7f7-843229b5e092
+C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|25c85788-ec0c-41cf-ac35-48b33b3c63fe
+C:\Cypress Academy\PSoC 211 v2\kit\PSoC_211_Library.cylib\PSoC_211_Library.cyprj|7c04bbe2-873f-4c4e-a234-d4671b0d0396
+C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|5c16be8e-2373-4b04-86e8-3bc82b6e495d
+C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|4411adaf-21a2-43f9-a621-130ccc98600e
+C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|ecb2a473-5e35-4dfa-b51b-cb7565fc3ad7
+\\vmware-host\Shared Folders\Documents\PSoC Creator\SmartIO\SmartIOCountUpExtClock.cydsn\SmartIOCountUpExtClock.cyprj|4f7de05b-c68e-4fd3-b662-f8fab3260e79
+\\vmware-host\Shared Folders\Documents\PSoC Creator\SmartIO\SmartIOCountUp.cydsn\SmartIOCountUp.cyprj|8825ada7-933a-4b70-bcef-a5a66d00def5

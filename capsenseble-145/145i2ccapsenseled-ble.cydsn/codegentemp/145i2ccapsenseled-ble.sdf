@@ -1,0 +1,28 @@
+(DELAYFILE
+ (SDFVERSION "IEEE 1497 4.0")
+ (DATE "2016-02-27T18:44:31Z")
+ (DESIGN "145i2ccapsenseled-ble")
+ (VENDOR "Cypress Semiconductor")
+ (PROGRAM "PSoC Creator")
+ (VERSION " 3.3 SP2.2")
+ (DIVIDER .)
+ (TIMESCALE 1 ns)
+ (CELL
+  (CELLTYPE "145i2ccapsenseled-ble")
+  (INSTANCE *)
+  (DELAY
+   (ABSOLUTE
+    (INTERCONNECT ClockBlock.hfclk \\ble\:bless_isr\\.clock (0.000:0.000:0.000))
+    (INTERCONNECT ClockBlock.hfclk \\EZI2C\:SCB_IRQ\\.clock (0.000:0.000:0.000))
+    (INTERCONNECT \\EZI2C\:SCB\\.interrupt \\EZI2C\:SCB_IRQ\\.interrupt (0.000:0.000:0.000))
+    (INTERCONNECT ClockBlock.ff_div_2 \\EZI2C\:SCB\\.clock (0.000:0.000:0.000))
+    (INTERCONNECT \\EZI2C\:scl\(0\)\\.fb \\EZI2C\:SCB\\.scl (0.000:0.000:0.000))
+    (INTERCONNECT \\EZI2C\:sda\(0\)\\.fb \\EZI2C\:SCB\\.sda (0.000:0.000:0.000))
+    (INTERCONNECT \\ble\:cy_m0s8_ble\\.interrupt \\ble\:bless_isr\\.interrupt (1.000:1.000:1.000))
+    (INTERCONNECT \\EZI2C\:sda\(0\)_PAD\\ \\EZI2C\:sda\(0\)\\.pad_in (0.000:0.000:0.000))
+    (INTERCONNECT \\EZI2C\:scl\(0\)_PAD\\ \\EZI2C\:scl\(0\)\\.pad_in (0.000:0.000:0.000))
+    (INTERCONNECT tx\(0\)_PAD tx\(0\).pad_in (0.000:0.000:0.000))
+   )
+  )
+ )
+)
