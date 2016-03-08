@@ -2,7 +2,7 @@
 --	Conversion of SmartIOCountUp.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Sat Mar 05 08:51:45 2016
+--	Tue Mar 08 02:35:18 2016
 --
 
 USE cypress.cypress.all;

@@ -1,5 +1,5 @@
 -- Project:   SmartIOCountUp
--- Generated: 03/05/2016 08:51:46
+-- Generated: 03/08/2016 02:35:19
 -- PSoC Creator  3.3 SP2.3
 
 ENTITY SmartIOCountUp IS
