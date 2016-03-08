@@ -1,8 +1,0 @@
-//vmware-host/Shared\ Folders/Documents/BLEIOSAPP/PSoC_Creator/capsenseled/145capsenseled.cydsn/CortexM0p/ARM_GCC_493/Debug/CyBootAsmGnu.o : //vmware-host/Shared\ Folders/Documents/BLEIOSAPP/PSoC_Creator/capsenseled/145capsenseled.cydsn/Generated_Source/PSoC4/CyBootAsmGnu.s //vmware-host/Shared\ Folders/Documents/BLEIOSAPP/PSoC_Creator/capsenseled/145capsenseled.cydsn/Generated_Source/PSoC4/cydevicegnu_trm.inc //vmware-host/Shared\ Folders/Documents/BLEIOSAPP/PSoC_Creator/capsenseled/145capsenseled.cydsn/Generated_Source/PSoC4/cyfittergnu.inc 
-
-//vmware-host/Shared\ Folders/Documents/BLEIOSAPP/PSoC_Creator/capsenseled/145capsenseled.cydsn/Generated_Source/PSoC4/CyBootAsmGnu.s : 
-
-//vmware-host/Shared\ Folders/Documents/BLEIOSAPP/PSoC_Creator/capsenseled/145capsenseled.cydsn/Generated_Source/PSoC4/cydevicegnu_trm.inc : 
-
-//vmware-host/Shared\ Folders/Documents/BLEIOSAPP/PSoC_Creator/capsenseled/145capsenseled.cydsn/Generated_Source/PSoC4/cyfittergnu.inc : 
-
