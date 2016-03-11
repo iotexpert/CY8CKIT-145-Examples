@@ -5,9 +5,7 @@ int main()
 {
     CyGlobalIntEnable; /* Enable global interrupts. */
     SmartIO_Start();
-    
-    PWM_Start();
-  
+
     CapSense_Start();
     CapSense_InitializeAllBaselines();
     CapSense_ScanAllWidgets();
